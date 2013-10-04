@@ -25,6 +25,10 @@ body, h1, h2, h3, h4, h5, h6 {
 
 /* =Layout
 -----------------------------------------------------------------------------*/
+html {
+	background: #000;
+    opacity: 0;
+}
 .units-container {
 	position: relative;
 }
@@ -54,6 +58,10 @@ body, h1, h2, h3, h4, h5, h6 {
 	background: rgba(#000, .5); // Overlay
     content: '';
     @include stretch;
+}
+.js {
+    opacity: 1;
+    @include single-transition();
 }
 
 /* =Footer
