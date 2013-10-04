@@ -1,0 +1,60 @@
+/* =Framework
+-----------------------------------------------------------------------------*/
+@import 'vendor/font-awesome/_font-awesome.scss';
+@import 'vendor/kube';
+@import 'vendor/bigvideo';
+@import 'compass';
+@import 'compass/layout';
+
+/* =Typography
+-----------------------------------------------------------------------------*/
+body {
+	font-size: 1em;
+}
+body, h1, h2, h3, h4, h5, h6 {
+	color: #FFF;
+	font-family: 'Source Sans Pro', sans-serif;
+	text-shadow: 0 1px 1px rgba(#000, .7);
+}
+
+/* =Links
+-----------------------------------------------------------------------------*/
+.social a {
+	color: #C37DB5;
+}
+
+/* =Layout
+-----------------------------------------------------------------------------*/
+.units-container {
+	position: relative;
+}
+
+/* =Header
+-----------------------------------------------------------------------------*/
+.headline {
+	color: #FFD200;// Textualize
+	height: 3.5em;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+/* =Nav
+-----------------------------------------------------------------------------*/
+.social {
+	text-align: center;
+	ul {
+		display: inline-block; // Centre
+		margin: 0 auto;
+	}
+}
+
+/* =Misc
+-----------------------------------------------------------------------------*/
+#big-video-wrap:after {
+	background: rgba(#000, .5); // Overlay
+    content: '';
+    @include stretch;
+}
+
+/* =Footer
+-----------------------------------------------------------------------------*/
