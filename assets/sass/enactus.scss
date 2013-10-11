@@ -1,68 +1,40 @@
-/* =Framework
------------------------------------------------------------------------------*/
-@import 'vendor/font-awesome/_font-awesome.scss';
-@import 'vendor/kube';
-@import 'vendor/bigvideo';
-@import 'compass';
-@import 'compass/layout';
+@import "vendor/normalize";
 
-/* =Typography
------------------------------------------------------------------------------*/
-body {
-	font-size: 1em;
-}
-body, h1, h2, h3, h4, h5, h6 {
-	color: #FFF;
-	font-family: 'Source Sans Pro', sans-serif;
-	text-shadow: 0 1px 1px rgba(#000, .7);
-}
+@import "vendor/bigvideo";
+@import "vendor/simpletextrotator";
+@import "vendor/typicons";
 
-/* =Links
------------------------------------------------------------------------------*/
-.social a {
-	color: #C37DB5;
+@import "vendor/foundation-settings";
+@import "foundation";
+
+@import "partials/header";
+@import "partials/content";
+
+@import "partials/media";
+
+.wrapper {
+    position: relative;
+    z-index: 1;
 }
 
-/* =Layout
------------------------------------------------------------------------------*/
-html {
-	background: #000;
-    opacity: 0;
+/*
+ * Modifiers
+ */
+a {
+    @include single-transition;
 }
-.units-container {
-	position: relative;
-}
-
-/* =Header
------------------------------------------------------------------------------*/
-.headline {
-	color: #FFD200;// Textualize
-	height: 3.5em;
-	text-align: center;
-	text-transform: uppercase;
-}
-
-/* =Nav
------------------------------------------------------------------------------*/
-.social {
-	text-align: center;
-	ul {
-		display: inline-block; // Centre
-		margin: 0 auto;
-	}
+.link--emphasis {
+    &:hover { color: #FFF !important }
+    &.primary { 
+        background: #49A942 !important;
+        &:hover { background: darken(#49A942, 5%) !important }
+    }
+    &.secondary { 
+        background: #0096D6 !important;
+        &:hover { background: darken(#0096D6, 5%) !important }
+    }
 }
 
-/* =Misc
------------------------------------------------------------------------------*/
-#big-video-wrap:after {
-	background: rgba(#000, .5); // Overlay
-    content: '';
-    @include stretch;
+.text--shadow {
+    text-shadow: 0 1px 0 rgba(#000, .5);
 }
-.js {
-    opacity: 1;
-    @include single-transition();
-}
-
-/* =Footer
------------------------------------------------------------------------------*/

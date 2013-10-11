@@ -1,12 +1,13 @@
 # Require any additional compass plugins here.
+require 'zurb-foundation'
 
 # Set this to the root of your project when deployed:
-http_path = "/"
+http_path = ""
 css_dir = "assets/css"
 sass_dir = "assets/sass"
 images_dir = "assets/img"
-fonts_dir = "assets/fonts"
 javascripts_dir = "assets/js"
+fonts_dir = "assets/fonts"
 
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed
@@ -16,7 +17,8 @@ output_style = :compressed
 relative_assets = true
 
 # To disable debugging comments that display the original location of your selectors. Uncomment:
-line_comments = false
+# line_comments = false
+
 
 # If you prefer the indented syntax, you might want to regenerate this
 # project again passing --syntax sass, or you can uncomment this:

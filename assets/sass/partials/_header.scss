@@ -1,0 +1,22 @@
+.header {
+	background: #4c4c4c;
+	padding-top: .5em;
+}
+
+	// Social navigation
+	.header__social {
+		font-size: em-calc(12px);
+		line-height: 45px;
+		list-style: none;
+		margin-bottom: 0;
+		text-transform: uppercase;
+		> li {
+			float: left;
+			padding: 0 15px;
+		}
+	}
+
+	// Main navigation
+	.header__nav {
+		
+	}
