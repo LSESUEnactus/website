@@ -23,6 +23,6 @@ $(function() {
             $centreMarginHeight = 0;
         $centreMarginObj.css('margin', $centreMarginHeight / 2 + 'px auto 0');
     }
-    $window.load(centreMargin);
+    centreMargin();
     $window.resize(centreMargin);
 });
