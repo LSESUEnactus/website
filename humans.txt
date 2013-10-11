@@ -1,8 +1,20 @@
-/* Foundation was made by ZURB, an interaction design and design strategy firm in Campbell, CA */
-/* zurb.com */
 /* humanstxt.org */
 
+/* TEAM */
+	Web unicorn: Ian Lai
+	Contact: f.i.lai [at] enactuslse.co.uk
+	Twitter: @MrSaints
+	From: London, United Kingdom
+
+/* THANKS */
+	Enactus
+	Site: enactus.org
+	Contact: contact [at] enactus.org
+	Twitter: @Enactus
+
 /* SITE */
-  Standards: HTML5, CSS3
-  Components: jQuery, Orbit, Reveal
-  Software: Coda, Textmate, Git
+	Last update: 2013/10/11
+	Language: English
+	Standards: HTML5, CSS3 (SASS)
+	Components: jQuery, Modernizr, BigVideo, Foundation, Normalize.css, Typicons
+	Software: Sublime Text 3, Photoshop, Premiere Pro, Coda, Textmate, Git
