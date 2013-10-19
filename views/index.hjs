@@ -1,0 +1,19 @@
+<!-- 
+    Content
+-->
+<div class="content landing js-centre">
+    <h1 class="landing__title">
+        Enactus is about <span class="js-rotate subheader">seeing possibilities; taking action; enabling progress; empowering others; empowering yourself; social entrepreneurship; realising ideas; building a sustainable world; unity</span>
+    </h1>
+    <a href="//facebook.com/events/1389789441257758/" target="_more" class="large button">Discover More</a>
+</div>
+
+{{#yield-scripts}}
+<script>
+	$(function() {
+	    var BV = new $.BigVideo();
+	    BV.init();
+	    BV.show('/vids/enactus.mp4', {ambient:true});
+	});
+</script>
+{{/yield-scripts}}

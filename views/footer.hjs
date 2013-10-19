@@ -1,0 +1,11 @@
+<!--
+    JavaScript
+-->
+{{#scripts}}
+<script src="{{.}}"></script>
+{{/scripts}}
+
+{{{yield-scripts}}}
+
+</body>
+</html>

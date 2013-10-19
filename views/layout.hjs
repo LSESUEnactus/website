@@ -1,0 +1,88 @@
+{{> header }}
+
+<body>
+    <div class="wrapper">
+        <!-- 
+            Header
+        -->
+        <header class="header text--shadow">
+            <div class="row">
+                <!--
+                    Logo (Image)
+                -->
+                <div class="large-2 columns">
+                    <a href="#"><img src="/img/logo.png" alt="Enactus LSESU"></a>
+                </div>
+
+                <!--
+                    Navigation
+                -->
+                <div class="large-10 columns right">
+                    <!--
+                        Social media
+                    -->
+                    <div class="large-12 columns">
+                        <ul class="header__social inline-list right">
+                            <li><a href="#">Blog</a></li>
+                            <li>
+                                <a href="//twitter.com/EnactusLSE" target="_social"><i class="typcn typcn-social-twitter"></i> Twitter</a>
+                            </li>
+                            <li>
+                                <a href="//facebook.com/EnactusLSE" target="_social"><i class="typcn typcn-social-facebook"></i> Facebook</a>
+                            </li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <!--
+                        Main navigation
+                    -->
+                    <div class="large-12 columns">
+                        <nav class="header__nav top-bar" data-options="is_hover:false">
+                            <ul class="title-area">
+                                <li class="name"></li>
+                                <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+                            </ul>
+                            <section class="top-bar-section">
+                                <ul class="right">
+                                    <li class="has-dropdown">
+                                        <a href="#">Who We Are</a>
+                                        <ul class="dropdown">
+                                            <li><a href="#">What is Enactus?</a></li>
+                                            <li><a href="#">Committee</a></li>
+                                            <li><a href="#">Business Advisory Board</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-dropdown">
+                                        <a href="#">What We Do</a>
+                                        <ul class="dropdown">
+                                            <li><a href="#">Social Projects</a></li>
+                                            <li><a href="#">Commercial Projects</a></li>
+                                            <li><a href="#">Start a Project</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-dropdown">
+                                        <a href="#">What Is New</a>
+                                        <ul class="dropdown">
+                                            <li><a href="#">Blog</a></li>
+                                            <li><a href="#">Events</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="//facebook.com/events/1389789441257758/" target="_more" class="link--emphasis primary">Join Us</a></li>
+                                    <li>
+                                        <a href="//enactus.org" target="_enactus" class="link--emphasis secondary">Enactus Worldwide</a>
+                                    </li>
+                                </ul>
+                            </section>
+                        </nav>
+                    </div>
+                    <!-- / -->
+                </div>
+            </div>
+        </header>
+
+        {{{ yield }}}
+
+    </div>
+
+{{> footer }}
