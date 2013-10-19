@@ -10,10 +10,10 @@
 
 {{#yield-scripts}}
 <script>
-	$(function() {
-	    var BV = new $.BigVideo();
-	    BV.init();
-	    BV.show('/vids/enactus.mp4', {ambient:true});
-	});
+    $(function() {
+        var BV = new $.BigVideo();
+        BV.init();
+        BV.show('/vids/enactus.mp4', {ambient:true});
+    });
 </script>
 {{/yield-scripts}}
