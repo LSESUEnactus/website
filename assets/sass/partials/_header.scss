@@ -7,11 +7,10 @@
 	.header__social {
 		font-size: em-calc(12px);
 		line-height: 45px;
-		list-style: none;
 		margin-bottom: 0;
 		text-transform: uppercase;
 		> li {
-			float: left;
+			margin: 0;
 			padding: 0 15px;
 		}
 	}
