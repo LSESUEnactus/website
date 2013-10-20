@@ -14,9 +14,9 @@ $(function() {
     var $centreMarginHeight;
     var centreMargin = function () {
         $centreMarginHeight = $window.outerHeight() - $headerObj.outerHeight() - $centreMarginObj.outerHeight();
-        if ($centreMarginHeight < 0)
-            $centreMarginHeight = 0;
-        $centreMarginObj.css('margin', $centreMarginHeight / 2 + 'px auto 0');
+        if ($centreMarginHeight <= 10)
+            $centreMarginHeight = 10;
+        $centreMarginObj.css('margin', $centreMarginHeight / 2 + 'px auto');
     }
     centreMargin();
     $window.resize(centreMargin);

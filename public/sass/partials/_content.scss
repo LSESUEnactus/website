@@ -1,18 +1,49 @@
-.landing {
-	position: relative;
-	text-align: center;
-	z-index: 1;
+.wrapper {
+    position: relative;
+    z-index: 1;
 }
 
-.landing__title {
-	color: #FFF;
+.landing--title {
 	font-weight: 300;
+}
+
+.landing__jumbotron .landing--title {
+	color: #FFF;
 	> .subheader {
 		color: $secondary-color;
 		font-weight: bold;
 	}
 }
 
-.landing__subtitle {
-
+.landing__mission {
+	background: #e6e6e6;
+	display: block;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	&:hover {
+		background: #EF4656;
+		.landing--title, .subheader { color: #FFF }
+	}
+	.subheader {
+		color: $alert-color;
+		font-weight: normal;
+	}
 }
+
+.landing__action {
+	background: #e6e6e6;
+	border-top: 1px solid darken(#e6e6e6, 15%);
+	.columns {
+		padding-top: 2em;
+		padding-bottom: 2em;
+	}
+	.landing--title {
+		font-weight: normal;
+	}
+	p {
+		font-weight: 300;
+	}
+}
+	.landing__action--opportunities {
+		border-right: 1px solid darken(#e6e6e6, 15%);
+	}
