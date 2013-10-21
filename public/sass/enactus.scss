@@ -13,6 +13,11 @@
 
 @import "partials/media";
 
+.wrapper {
+    position: relative;
+    z-index: 1;
+}
+
 /*
  * FOUT
  */
@@ -44,7 +49,6 @@ a {
         &:hover { background: darken(#0096D6, 5%) !important }
     }
 }
-
 .text--shadow {
     text-shadow: 0 1px 0 rgba(#000, .5);
 }

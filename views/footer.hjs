@@ -3,18 +3,18 @@
         <div class="large-12 columns">
             <ul class="large-block-grid-5">
                 <li>
-                    <img src="/img/logo.png" alt="">
+                    <a href="#" class="footer--logo"><img src="/img/logo.png" alt=""></a>
                 </li>
                 <li>
-                    <h6 class="footer--title">Corporate Sponsor</h6>
+                    <h6><a href="#" class="footer--title">Corporate Sponsor &rsaquo;</a></h6>
                     <img src="/img/citigroup.png" alt="">
                 </li>
                 <li>
-                    <h6 class="footer--title">eNewsletters &rsaquo;</h6>
-                    <h6 class="subheader">Sign up to receive updates on a range of Enactus LSE SU activities.</h6>
+                    <h6><a href="#" class="footer--title">eNewsletters &rsaquo;</a></h6>
+                    <p class="footer--desc">Sign up to receive updates on a range of Enactus LSE SU activities.</p>
                 </li>
                 <li>
-                    <h6 class="footer--title">Links &rsaquo;</h6>
+                    <h6><a href="#" class="footer--title">Links &rsaquo;</a></h6>
                     <ul class="footer__navigation no-bullet">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Blog</a></li>
@@ -24,16 +24,16 @@
                     </ul>
                 </li>
                 <li>
-                    <h6 class="footer--title">Contact Us &rsaquo;</h6>
-                    <h6 class="subheader">We would love to hear from you! Please get in touch with us if you have any feedback or questions.</h6>
-                    <a href="#"><h6 class="footer--link">WeAre@enactuslse.co.uk  &rsaquo;</h6></a>
+                    <h6><a href="#" class="footer--title">Contact Us &rsaquo;</a></h6>
+                    <p class="footer--desc">We would love to hear from you! Please get in touch with us if you have any feedback or questions.</p>
+                    <h6><a href="#">WeAre@enactuslse.co.uk  &rsaquo;</a></h6>
                 </li>
             </ul>
         </div>
     </div>
     <div class="row">
-        <div class="large-12 columns footer__copyright">
-            &copy; 2013 Enactus &dash; Built by Enactus LSE SU Media, with &hearts;
+        <div class="large-12 columns footer__copyright text-center">
+            &copy; 2013 Enactus &dash; Built by <a href="#">Enactus LSE SU Media</a>, with &hearts;
         </div>
     </div>
 </footer>
