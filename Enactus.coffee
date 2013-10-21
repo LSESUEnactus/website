@@ -32,7 +32,8 @@ app.use express.errorHandler() if 'development' is app.get 'env'
 
 app.get '/', routes.index;
 app.namespace '/about', ->
-	app.get '/enactus', about.enactus
+    app.get '/enactus', about.enactus
+    app.get '/us', about.lsesu
 
 http.createServer(app).listen app.get('port'), ->
   console.log "Express server listening on port #{app.get 'port'}"
