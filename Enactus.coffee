@@ -4,6 +4,7 @@ config = require './config'
 
 routes = require './routes'
 about = require './routes/about'
+projects = require './routes/projects'
 
 http = require 'http'
 path = require 'path'
@@ -31,10 +32,16 @@ app.use express.static path.join(__dirname, 'public');
 app.use express.errorHandler() if 'development' is app.get 'env'
 
 app.get '/', routes.index;
+
 app.namespace '/about', ->
     app.get '/enactus', about.enactus
     app.get '/us', about.lsesu
     app.get '/advisors', about.bab
+
+app.namespace '/projects', ->
+    app.get '/social', projects.social
+    app.get '/commercial', projects.commercial
+    app.get '/new', projects.new
 
 http.createServer(app).listen app.get('port'), ->
   console.log "Express server listening on port #{app.get 'port'}"
