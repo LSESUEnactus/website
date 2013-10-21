@@ -5,10 +5,10 @@
     <h1 class="landing--title">
         Enactus is about <span class="js-rotate subheader">seeing possibilities; taking action; enabling progress; empowering others; empowering yourself; social entrepreneurship; realising ideas; building a sustainable world; unity</span>
     </h1>
-    <a href="//facebook.com/events/1389789441257758/" target="_more" class="large button">Discover More</a>
+    <a href="#introduction" class="large button">Discover More</a>
 </div>
 
-<a href="#" class="landing__mission text-center">
+<a id="introduction" href="#" class="landing__mission text-center">
     <div class="row">
         <div class="large-12 columns">
             <h3 class="landing--title">A community of student, academic and business leaders committed to using the power of entrepreneurial action to transform lives and to shape a more sustainable world.</h3>
