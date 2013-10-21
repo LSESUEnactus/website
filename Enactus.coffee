@@ -34,6 +34,7 @@ app.get '/', routes.index;
 app.namespace '/about', ->
     app.get '/enactus', about.enactus
     app.get '/us', about.lsesu
+    app.get '/advisors', about.bab
 
 http.createServer(app).listen app.get('port'), ->
   console.log "Express server listening on port #{app.get 'port'}"
