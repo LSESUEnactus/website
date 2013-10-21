@@ -1,8 +1,12 @@
 express = require 'express'
+namespace = require 'express-namespace'
+config = require './config'
+
 routes = require './routes'
+about = require './routes/about'
+
 http = require 'http'
 path = require 'path'
-config = require './config'
 
 app = express();
 app.set 'port', process.env.PORT or 3000
@@ -27,6 +31,8 @@ app.use express.static path.join(__dirname, 'public');
 app.use express.errorHandler() if 'development' is app.get 'env'
 
 app.get '/', routes.index;
+app.namespace '/about', ->
+	app.get '/enactus', about.enactus
 
 http.createServer(app).listen app.get('port'), ->
   console.log "Express server listening on port #{app.get 'port'}"
