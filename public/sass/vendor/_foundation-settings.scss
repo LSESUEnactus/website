@@ -174,7 +174,7 @@ $enactus-blue-color: #0096D6;
 // Control header font styles @modified
 
 $header-font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-// $header-font-weight: bold;
+$header-font-weight: normal;
 // $header-font-style: normal;
 // $header-font-color: #222;
 // $header-line-height: 1.4;
@@ -535,6 +535,7 @@ $header-font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", Helvetica
 // We use this to set the background color for the breadcrumb container.
 
 // $crumb-bg: lighten($secondary-color, 5%);
+$crumb-bg: #FFF;
 
 // We use these to set the padding around the breadcrumbs.
 
@@ -553,6 +554,7 @@ $header-font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", Helvetica
 
 // $crumb-font-size: em-calc(11);
 // $crumb-font-color: $primary-color;
+$crumb-font-color: $enactus-blue-color;
 // $crumb-font-color-current: #333;
 // $crumb-font-color-unavailable: #999;
 // $crumb-font-transform: uppercase;
