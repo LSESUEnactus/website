@@ -1,0 +1,26 @@
+<div class="row">
+<div class="large-12 columns">
+	<div class="content">
+		<ul class="breadcrumbs">
+			<li><a href="/">Home</a></li>
+			<li><a href="/projects">Projects</a></li>
+			<li class="current">New Project</li>
+		</ul>
+		<h1>Start a New Project</h1>
+		<p>
+			We strongly encourage members to develop and manage their own projects. You will be able to bring sustainable changes to the community you work with, and it is also a very rewarding experience. So if you have a project idea different from the three projects we currently run, do get in touch with us.
+		</p>
+		<ol>
+			<li>
+				To get started, please begin by reading the <a href="files/project_planning.doc">new project briefing sheet</a>. The document will guide you through the process of creating a new project.
+			</li>
+			<li>
+				Download and complete the <a href="files/project_planning.doc">stage 1 project planning template document</a>.
+			</li>
+			<li>
+				You may also download our <a href="files/judging_criterion.pdf">new project judging criterion</a> for your perusal.
+			</li>
+		</ol>
+	</div>
+</div>
+</div>
