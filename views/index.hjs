@@ -24,14 +24,14 @@
             <p>
                 If you have an idea or a project in mind we can empower you with the necessary skills and resources needed to realise them.
             </p>
-            <a href="#" class="button alert">Start a Project</a>
+            <a href="/projects/new" class="button alert">Start a Project</a>
         </div>
         <div class="large-6 columns landing__action--action">
             <h4 class="landing--title">Take Action</h4>
             <p>
                 We have a vast array of established and upcoming projects. Join us in making a difference by helping out our existing projects.
             </p>
-            <a href="#" class="button alert">Join a Project</a>
+            <a href="/projects/social" class="button alert">Join a Project</a>
         </div>
     </div>
 </div>
