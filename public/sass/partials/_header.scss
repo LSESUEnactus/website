@@ -3,6 +3,10 @@
 	padding-top: .5em;
 }
 
+	.header__nav {
+		padding-right: 0;
+	}
+
 	// Social navigation
 	.header__social {
 		font-size: em-calc(12px);
@@ -12,10 +16,8 @@
 		> li {
 			margin: 0;
 			padding: 0 15px;
+			&:last-child {
+				padding: 0;
+			}
 		}
-	}
-
-	// Main navigation
-	.header__nav {
-		
 	}

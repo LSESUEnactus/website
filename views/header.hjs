@@ -37,7 +37,7 @@
                 Logo (Image)
             -->
             <div class="large-2 columns">
-                <a href="#"><img src="/img/logo.png" alt="Enactus LSESU"></a>
+                <a href="/"><img src="/img/logo.png" alt="Enactus LSESU"></a>
             </div>
 
             <!--
@@ -47,7 +47,7 @@
                 <!--
                     Social media
                 -->
-                <div class="large-12 columns">
+                <div class="large-12 columns header__nav">
                     <ul class="header__social inline-list right">
                         <li><a href="#">Blog</a></li>
                         <li>
@@ -63,8 +63,8 @@
                 <!--
                     Main navigation
                 -->
-                <div class="large-12 columns">
-                    <nav class="header__nav top-bar" data-options="is_hover:false">
+                <div class="large-12 columns header__nav">
+                    <nav class="top-bar" data-options="is_hover:false">
                         <ul class="title-area">
                             <li class="name"></li>
                             <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
@@ -74,17 +74,17 @@
                                 <li class="has-dropdown">
                                     <a href="#">Who We Are</a>
                                     <ul class="dropdown">
-                                        <li><a href="#">What is Enactus?</a></li>
-                                        <li><a href="#">Committee</a></li>
-                                        <li><a href="#">Business Advisory Board</a></li>
+                                        <li><a href="/about/enactus">What is Enactus?</a></li>
+                                        <li><a href="/about/us">Committee</a></li>
+                                        <li><a href="/about/advisors">Business Advisory Board</a></li>
                                     </ul>
                                 </li>
                                 <li class="has-dropdown">
                                     <a href="#">What We Do</a>
                                     <ul class="dropdown">
-                                        <li><a href="#">Social Projects</a></li>
-                                        <li><a href="#">Commercial Projects</a></li>
-                                        <li><a href="#">Start a Project</a></li>
+                                        <li><a href="/projects/social">Social Projects</a></li>
+                                        <li><a href="/projects/commercial">Commercial Projects</a></li>
+                                        <li><a href="/projects/new">Start a Project</a></li>
                                     </ul>
                                 </li>
                                 <li class="has-dropdown">
@@ -94,7 +94,7 @@
                                         <li><a href="#">Events</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="//facebook.com/events/1389789441257758/" target="_more" class="link--emphasis primary">Join Us</a></li>
+                                <li><a href="//fb.com/EnactusLSE" target="_more" class="link--emphasis primary">Join Us</a></li>
                                 <li>
                                     <a href="//enactus.org" target="_enactus" class="link--emphasis secondary">Enactus Worldwide</a>
                                 </li>
