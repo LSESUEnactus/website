@@ -3,10 +3,10 @@
         <div class="large-12 columns">
             <ul class="large-block-grid-5">
                 <li>
-                    <a href="#" class="footer--logo"><img src="/img/logo.png" alt=""></a>
+                    <a href="/" class="footer--logo"><img src="/img/logo.png" alt=""></a>
                 </li>
                 <li>
-                    <h6><a href="#" class="footer--title">Corporate Sponsor &rsaquo;</a></h6>
+                    <h6><a href="//www.citigroup.com" class="footer--title">Corporate Sponsor &rsaquo;</a></h6>
                     <img src="/img/citigroup.png" alt="">
                 </li>
                 <li>
@@ -16,10 +16,10 @@
                 <li>
                     <h6><a href="#" class="footer--title">Links &rsaquo;</a></h6>
                     <ul class="footer__navigation no-bullet">
-                        <li><a href="#">Home</a></li>
+                        <li><a href="/">Home</a></li>
                         <li><a href="#">Blog</a></li>
-                        <li><a href="#">Twitter</a></li>
-                        <li><a href="#">Facebook</a></li>
+                        <li><a href="//twitter.com/EnactusLSE">Twitter</a></li>
+                        <li><a href="//fb.com/EnactusLSE">Facebook</a></li>
                         <li><a href="#">Term of Use</a></li>
                     </ul>
                 </li>
@@ -33,7 +33,7 @@
     </div>
     <div class="row">
         <div class="large-12 columns footer__copyright text-center">
-            &copy; 2013 Enactus &dash; Built by <a href="#">Enactus LSE SU Media</a>, with &hearts;
+            &copy; 2013 Enactus &dash; Built by <a href="//github.com/MrSaints/Enactus-LSESU">Enactus LSE SU Media</a>, with &hearts;
         </div>
     </div>
 </footer>
