@@ -1,0 +1,27 @@
+<div class="row">
+<div class="large-12 columns">
+	<div class="content">
+		<ul class="breadcrumbs">
+			<li><a href="/">Home</a></li>
+			<li><a href="/about">About</a></li>
+			<li class="current">Enactus LSE SU</li>
+		</ul>
+		<h1>About Us</h1>
+		<ul class="no-bullet">
+			<li><b>President:</b> Mei Yan Pun</li>
+			<li><b>Managing Director:</b> Shazia Mohamed</li>
+			<li><b>Managing Director:</b> Jamie Karia</li>
+			<li><b>Secretary:</b> Wen Yi Hi</li>
+			<li><b>Finance Director:</b> Aarti Patel</li>
+			<li><b>Corporate Relations:</b> Matthew Cleary</li>
+			<li><b>Commercial Director:</b> Loran Nguyen Thu Ha</li>
+			<li><b>Media Director:</b> Ian Lai</li>
+		</ul>
+		<ul class="no-bullet">
+			<li><b>Project leader (Creative Cycle):</b> Elizabeth Wong</li>
+			<li><b>Project leader (Pathways):</b> Sana Currimbhoy</li>
+			<li><b>Project leader (LSE Support):</b> Paul Rusen</li>
+		</ul>
+	</div>
+</div>
+</div>
