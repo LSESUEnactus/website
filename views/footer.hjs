@@ -11,7 +11,7 @@
                 </li>
                 <li>
                     <h6><a href="#" class="footer--title">eNewsletters &rsaquo;</a></h6>
-                    <p class="footer--desc">Sign up to receive updates on a range of Enactus LSE SU activities.</p>
+                    <p class="footer--desc">Sign up to receive updates on a range of LSE SU Enactus activities.</p>
                 </li>
                 <li>
                     <h6><a href="#" class="footer--title">Links &rsaquo;</a></h6>
@@ -33,7 +33,7 @@
     </div>
     <div class="row">
         <div class="large-12 columns footer__copyright text-center">
-            &copy; 2013 Enactus &dash; Built by <a href="//github.com/MrSaints/Enactus-LSESU">Enactus LSE SU Media</a>, with &hearts;
+            &copy; 2013 Enactus &dash; Built by <a href="//github.com/MrSaints/Enactus-LSESU">LSE SU Enactus Media</a>, with &hearts;
         </div>
     </div>
 </footer>

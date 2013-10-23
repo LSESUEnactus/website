@@ -1,8 +1,8 @@
 exports.development = (req, res, next) ->
 	res.locals =
 	    page:
-	        title: 'Enactus LSE SU'
-	        description: 'Enactus London School of Economics and Political Science Student Union &ndash; Seeing possibilities. Taking action. Enabling progress.'
+	        title: 'LSE SU Enactus'
+	        description: 'London School of Economics and Political Science Student Union Enactus &ndash; Seeing possibilities. Taking action. Enabling progress.'
 	    styles: [
 	        '//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700'
 	        '/css/enactus.css'
