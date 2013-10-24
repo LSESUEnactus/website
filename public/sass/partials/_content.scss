@@ -34,7 +34,17 @@
 			background: image-url('photos/about-enactus.jpg') no-repeat center center;
 			@include background-size(cover);
 		}
-
+		.content__feature--about {
+			background: image-url('photos/about-us.jpg') no-repeat center top;
+			@include background-size(cover);
+		}
+		.content__feature--bab {
+			background: image-url('photos/about-bab.jpg') no-repeat center top;
+			@include background-size(cover);
+		}
+	.content__milestones {
+		margin-bottom: 1.5em !important;
+	}
 
 
 .landing--title {
