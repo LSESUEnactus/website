@@ -42,10 +42,21 @@
 			background: image-url('photos/about-bab.jpg') no-repeat center top;
 			@include background-size(cover);
 		}
+		.content__feature--social {
+			background: image-url('photos/projects-social.jpg') no-repeat center top;
+			@include background-size(cover);
+		}
+		.content__feature--commercial {
+			background: image-url('photos/projects-commercial.jpg') no-repeat center top;
+			@include background-size(cover);
+		}
+		.content__feature--project {
+			background: image-url('photos/projects-new.jpg') no-repeat center top;
+			@include background-size(cover);
+		}
 	.content__milestones {
 		margin-bottom: 1.5em !important;
 	}
-
 
 .landing--title {
 	font-weight: 300;
