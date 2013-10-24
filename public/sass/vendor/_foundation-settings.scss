@@ -87,7 +87,7 @@ $enactus-blue-color: #0096D6;
 
 // Make sure border radius matches unless we want it different.
 
-// $global-radius: 3px;
+$global-radius: 3px;
 // $global-rounded: 1000px;
 
 // Inset shadow shiny edges and depressions.
@@ -549,6 +549,7 @@ $crumb-bg: #FFF;
 // $crumb-border-style: solid;
 // $crumb-border-color: darken($crumb-bg, $crumb-function-factor);
 // $crumb-radius: $global-radius;
+$crumb-radius: 0 0 $global-radius $global-radius;
 
 // We use these to set various text styles for breadcrumbs.
 

@@ -1,9 +1,41 @@
 // @TODO: CLEAN UP
-.content {
+.content-container {
 	background: #FFF;
 	border: 10px solid #e6e6e6;
 	padding: 1em;
+	a {
+		color: #0096D6;
+		//border-bottom: 1px dotted #0096D6;
+		&:hover { 
+			//border-color: darken(#0096D6, 15%);
+			color: darken(#0096D6, 15%);
+		}
+	}
 }
+	.content__feature {
+		border: $crumb-border-size $crumb-border-style $crumb-border-color;
+		border-bottom: none;
+		height: 300px;
+	}
+		.content_feature-title {
+			background: rgba(#FFD200, .3);
+			font-weight: bold;
+			color: #FFF;
+			line-height: 300px;
+			padding: 0 1em;
+			margin: 0;
+			text-transform: uppercase;
+			@include single-transition;
+			&:hover {
+				background: rgba(#FFD200, .5);
+			}
+		}
+		.content__feature--enactus {
+			background: image-url('photos/about-enactus.jpg') no-repeat center center;
+			@include background-size(cover);
+		}
+
+
 
 .landing--title {
 	font-weight: 300;

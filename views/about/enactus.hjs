@@ -1,12 +1,16 @@
 <div class="row">
 <div class="large-12 columns">
-	<div class="content">
+	<div class="content-container">
+		<div class="content__feature content__feature--enactus">
+			<h1 class="content_feature-title text-center text--shadow">About Enactus</h1>
+		</div>
+
 		<ul class="breadcrumbs">
 			<li><a href="/">Home</a></li>
 			<li><a href="/about">About</a></li>
 			<li class="current">Enactus</li>
 		</ul>
-		<h1>About Enactus</h1>
+		
 		<p>
 			Enactus (formerly SIFE) LSE is part of an international non-profit organisation representing 48,000 students in 39 different countries that works with leaders in business and higher education to mobilize university students to make a difference in their communities while developing the skills to become socially responsible business leaders.
 		</p>
