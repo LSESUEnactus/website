@@ -25,6 +25,7 @@ app.set 'partials',
 
 app.use express.favicon path.join(__dirname, 'public/favicon.ico')
 app.use express.logger('dev')
+app.use express.compress()
 app.use express.bodyParser()
 app.use express.methodOverride()
 app.use app.router
@@ -36,7 +37,7 @@ app.get '/', routes.index;
 app.namespace '/about', ->
     app.get '/enactus', about.enactus
     app.get '/us', about.lsesu
-    app.get '/advisors', about.bab
+    app.get '/business-advisory-board', about.bab
 
 app.namespace '/projects', ->
     app.get '/social', projects.social
