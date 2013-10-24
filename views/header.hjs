@@ -94,7 +94,7 @@
                                         <li><a href="#">Events</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="{{ social.facebook }}" target="_more" class="link--emphasis primary">Join Us</a></li>
+                                <li><a href="//www.lsesu.com/activities/societies/society/7398/" class="link--emphasis primary">Join Us</a></li>
                                 <li>
                                     <a href="//enactus.org" target="_enactus" class="link--emphasis secondary">Enactus Worldwide</a>
                                 </li>
