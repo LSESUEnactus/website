@@ -9,10 +9,10 @@ projects = require './routes/projects'
 http = require 'http'
 path = require 'path'
 
-app = express();
+app = express()
 app.set 'port', process.env.PORT or 3000
 
-app.use config.development;
+app.use config.development
 
 app.enable 'view cache'
 app.engine 'hjs', require('hogan-express')
@@ -43,6 +43,10 @@ app.namespace '/projects', ->
     app.get '/social', projects.social
     app.get '/commercial', projects.commercial
     app.get '/new', projects.new
+
+app.use (req, res, next) ->
+	res.status 404
+	res.render '404'
 
 http.createServer(app).listen app.get('port'), ->
   console.log "Express server listening on port #{app.get 'port'}"
