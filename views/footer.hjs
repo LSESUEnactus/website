@@ -26,7 +26,7 @@
                 <li>
                     <h6><a href="#" class="footer--title">Contact Us &rsaquo;</a></h6>
                     <p class="footer--desc">We would love to hear from you! Please get in touch with us if you have any feedback or questions.</p>
-                    <h6><a href="mailto:WeAre@enactuslse.co.uk">WeAre@enactuslse.co.uk  &rsaquo;</a></h6>
+                    <!--<h6><a href="mailto:WeAre@enactuslse.co.uk">WeAre@enactuslse.co.uk  &rsaquo;</a></h6>-->
                 </li>
             </ul>
         </div>

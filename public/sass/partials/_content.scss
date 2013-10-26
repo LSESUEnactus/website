@@ -31,7 +31,7 @@
 			}
 		}
 		.content__feature--enactus {
-			background: image-url('photos/about-enactus.jpg') no-repeat center top;
+			background: image-url('photos/about-enactus.jpg') no-repeat center center;
 			@include background-size(cover);
 		}
 		.content__feature--about {
