@@ -127,6 +127,7 @@ $global-radius: 3px;
 // Media Queries
 
 // $small-screen: 768px;
+$small-screen: 825px;
 // $medium-screen: 1280px;
 // $large-screen: 1440px;
 
@@ -1316,6 +1317,7 @@ $topbar-link-font-size: em-calc(16);
 
 // $topbar-transition-speed: 300ms;
 // $topbar-breakpoint: 940 !default; // Change to 9999px for always mobile layout
+$topbar-breakpoint: $small-screen !default; // Change to 9999px for always mobile layout
 // $topbar-media-query: "only screen and (min-width: #{$topbar-breakpoint})";
 
 // Divider Styles
