@@ -36,19 +36,19 @@
             <!--
                 Logo (Image)
             -->
-            <div class="large-2 columns">
-                <a href="/"><img src="/img/logo.png" alt="Enactus LSESU"></a>
+            <div class="large-2 small-5 columns">
+                <a href="/"><img src="/img/logo.png" class="logo" alt="Enactus LSESU"></a>
             </div>
 
             <!--
                 Navigation
             -->
-            <div class="large-10 columns right">
+            <div class="large-10 columns right header__nav">
                 <!--
                     Social media
                 -->
-                <div class="large-12 columns header__nav">
-                    <ul class="header__social inline-list right">
+                <div class="large-12 columns header__nav-social">
+                    <ul class="inline-list right">
                         <li><a href="#">Blog</a></li>
                         <li>
                             <a href="{{ social.twitter }}" target="_social"><i class="typcn typcn-social-twitter"></i> Twitter</a>
@@ -63,7 +63,7 @@
                 <!--
                     Main navigation
                 -->
-                <div class="large-12 columns header__nav">
+                <div class="large-12 columns header__nav-main">
                     <nav class="top-bar" data-options="is_hover:false">
                         <ul class="title-area">
                             <li class="name"></li>

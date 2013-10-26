@@ -1,8 +1,7 @@
 @media #{$small} {
-	// Remove navigation background for desktops
-	.header__nav { padding-right: 0; }
+	.header__nav { padding-right: 0 }
 	.top-bar, .top-bar-section ul { background: transparent; background: transparent }
-	.header__nav .top-bar-section li {
+	.header__nav-main .top-bar-section li {
 		> a {
 			&:hover, &:not(.button) { background: transparent }
 		}
@@ -29,4 +28,8 @@
 			}
 		}
 	}
+}
+
+@media only screen and (max-width:"#{$small-screen}") {
+	.header__nav, .header__nav-main { padding: 0 }
 }
