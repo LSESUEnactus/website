@@ -30,7 +30,7 @@
 		</div>
 
 		<h1>LSE SU Enactus Committee</h1>
-		<ul class="text-center large-block-grid-4">
+		<ul class="text-center small-block-grid-4">
 			<li>
 				<img src="/img/photos/profile-mei.jpg" alt="">
 				<h6>Mei Yan Pun</h6>
@@ -79,7 +79,7 @@
 		</ul>
 
 		<h1>Project Leaders</h1>
-		<ul class="text-center large-block-grid-4">
+		<ul class="text-center small-block-grid-4">
 			<li>
 				<img src="/img/photos/profile-lizzy.jpg" alt="">
 				<h6>Elizabeth Wong</h6>
