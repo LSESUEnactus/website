@@ -74,24 +74,24 @@
                                 <li class="has-dropdown">
                                     <a href="#">Who We Are</a>
                                     <ul class="dropdown">
-                                        <li><a href="/about/enactus">What is Enactus?</a></li>
-                                        <li><a href="/about/us">Enactus &#64; LSE</a></li>
-                                        <li><a href="/about/business-advisory-board">Business Advisory Board</a></li>
+                                        <li><a href="/who-we-are/what-is-enactus">What is Enactus?</a></li>
+                                        <li><a href="/who-we-are/enactus-lse">Enactus &#64; LSE</a></li>
+                                        <li><a href="/who-we-are/business-advisory-board">Business Advisory Board</a></li>
                                     </ul>
                                 </li>
                                 <li class="has-dropdown">
                                     <a href="#">What We Do</a>
                                     <ul class="dropdown">
-                                        <li><a href="/projects/social">Social Projects</a></li>
-                                        <li><a href="/projects/commercial">Commercial Projects</a></li>
-                                        <li><a href="/projects/new">Start a New Project</a></li>
+                                        <li><a href="/what-we-do/social-projects">Social Projects</a></li>
+                                        <li><a href="/what-we-do/commercial-projects">Commercial Projects</a></li>
+                                        <li><a href="/what-we-do/start-a-new-project">Start a New Project</a></li>
                                     </ul>
                                 </li>
                                 <li class="has-dropdown">
                                     <a href="#">What Is New</a>
                                     <ul class="dropdown">
-                                        <li><a href="#">Blog</a></li>
-                                        <li><a href="#">Events</a></li>
+                                        <li><a href="#tba">Blog</a></li>
+                                        <li><a href="#tba">Events</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="//www.lsesu.com/activities/societies/society/7398/" class="link--emphasis primary">Join Us</a></li>

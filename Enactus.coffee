@@ -34,15 +34,15 @@ app.use express.errorHandler() if 'development' is app.get 'env'
 
 app.get '/', routes.index;
 
-app.namespace '/about', ->
-    app.get '/enactus', about.enactus
-    app.get '/us', about.lsesu
+app.namespace '/who-we-are', ->
+    app.get '/what-is-enactus', about.enactus
+    app.get '/enactus-lse', about.lsesu
     app.get '/business-advisory-board', about.bab
 
-app.namespace '/projects', ->
-    app.get '/social', projects.social
-    app.get '/commercial', projects.commercial
-    app.get '/new', projects.new
+app.namespace '/what-we-do', ->
+    app.get '/social-projects', projects.social
+    app.get '/commercial-projects', projects.commercial
+    app.get '/start-a-new-project', projects.new
 
 app.use (req, res, next) ->
 	res.status 404
