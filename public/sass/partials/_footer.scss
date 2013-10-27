@@ -1,3 +1,4 @@
+// @TODO : FIXED VIDEO WRAP
 .footer {
 	background: #4c4c4c;
 	box-sizing: content-box;
@@ -24,4 +25,14 @@
 		}
 		.footer--copyright {
 			color: #FFF;
+			> span {
+				color: lighten($alert-color, 15%);
+			}
+			> a {
+				color: #FFF;
+				border-bottom: 1px dotted #FFF;
+				&:hover {
+					color: darken(#FFF, 15%);
+				}
+			}
 		}
