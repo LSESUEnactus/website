@@ -31,7 +31,7 @@
     <!-- 
         Header
     -->
-    <header class="header text--shadow">
+    <header class="header">
         <div class="row">
             <!--
                 Logo (Image)
