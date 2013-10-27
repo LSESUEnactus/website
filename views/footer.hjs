@@ -4,19 +4,19 @@
             <a href="/"><img src="/img/logo.png" class="footer--logo" alt="LSE SU Enactus"></a>
         </div>
         <div class="large-2 small-3 columns">
-            <a href="/"><img src="/img/citigroup.png" class="footer--logo" alt="Citigroup"></a>
+            <a href="//www.citigroup.com/"><img src="/img/citigroup.png" class="footer--logo" alt="Citigroup"></a>
         </div>
         <div class="large-8 small-6 columns text-right">
             <div class="row">
                 <div class="large-12 columns">
                     <ul class="inline-list footer__navigation">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="#tba">Blog</a></li>
+                        <li><a href="#tba">Contact Us</a></li>
                     </ul>
                 </div>
                 <div class="large-12 columns footer--copyright">
-                    &copy; 2013 Enactus &bull; Built with &hearts; by LSE SU Enactus Media
+                    &copy; 2013 <a href="//www.enactus.org" target="_enactus">Enactus</a> &bull; Built with <span>&hearts;</span> by <a href="//www.github.com/MrSaints/Enactus-LSESU" target="_enactus">LSE SU Enactus Media</a>
                 </div>
             </div>
         </div>

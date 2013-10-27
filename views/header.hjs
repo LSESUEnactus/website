@@ -49,14 +49,14 @@
                 -->
                 <div class="large-12 columns header__nav-social">
                     <ul class="inline-list right">
-                        <li><a href="#">Blog</a></li>
+                        <li><a href="#tba">Blog</a></li>
                         <li>
                             <a href="{{ social.twitter }}" target="_social"><i class="typcn typcn-social-twitter"></i> Twitter</a>
                         </li>
                         <li>
                             <a href="{{ social.facebook }}" target="_social"><i class="typcn typcn-social-facebook"></i> Facebook</a>
                         </li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#tba">Contact Us</a></li>
                     </ul>
                 </div>
 
@@ -96,7 +96,7 @@
                                 </li>
                                 <li><a href="//www.lsesu.com/activities/societies/society/7398/" class="link--emphasis primary">Join Us</a></li>
                                 <li>
-                                    <a href="//enactus.org" target="_enactus" class="link--emphasis secondary">Enactus Worldwide</a>
+                                    <a href="//www.enactus.org" target="_enactus" class="link--emphasis secondary">Enactus Worldwide</a>
                                 </li>
                             </ul>
                         </section>
