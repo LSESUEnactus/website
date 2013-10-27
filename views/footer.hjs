@@ -1,39 +1,24 @@
-<footer class="footer text--shadow">
-    <div class="row">
-        <div class="large-12 columns">
-            <ul class="large-block-grid-5">
-                <li>
-                    <a href="/" class="footer--logo"><img src="/img/logo.png" alt=""></a>
-                </li>
-                <li>
-                    <h6><a href="//www.citigroup.com" class="footer--title">Corporate Sponsor &rsaquo;</a></h6>
-                    <img src="/img/citigroup.png" alt="">
-                </li>
-                <li>
-                    <h6><a href="#" class="footer--title">eNewsletters &rsaquo;</a></h6>
-                    <p class="footer--desc">Sign up to receive updates on a range of LSE SU Enactus activities.</p>
-                </li>
-                <li>
-                    <h6><a href="#" class="footer--title">Links &rsaquo;</a></h6>
-                    <ul class="footer__navigation no-bullet">
-                        <li><a href="/">Home</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="{{ social.twitter }}" target="_social">Twitter</a></li>
-                        <li><a href="{{ social.facebook }}" target="_social">Facebook</a></li>
-                        <li><a href="#">Terms of Use</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <h6><a href="#" class="footer--title">Contact Us &rsaquo;</a></h6>
-                    <p class="footer--desc">We would love to hear from you! Please get in touch with us if you have any feedback or questions.</p>
-                    <!--<h6><a href="mailto:WeAre@enactuslse.co.uk">WeAre@enactuslse.co.uk  &rsaquo;</a></h6>-->
-                </li>
-            </ul>
+<footer class="footer">
+    <div class="row footer__content">
+        <div class="large-2 small-3 columns">
+            <a href="/"><img src="/img/logo.png" class="footer--logo" alt="LSE SU Enactus"></a>
         </div>
-    </div>
-    <div class="row">
-        <div class="large-12 columns footer__copyright text-center">
-            &copy; 2013 Enactus &dash; Built by <a href="//github.com/MrSaints/Enactus-LSESU">LSE SU Enactus Media</a>, with &hearts;
+        <div class="large-2 small-3 columns">
+            <a href="/"><img src="/img/citigroup.png" class="footer--logo" alt="Citigroup"></a>
+        </div>
+        <div class="large-8 small-6 columns text-right">
+            <div class="row">
+                <div class="large-12 columns">
+                    <ul class="inline-list footer__navigation">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="large-12 columns footer--copyright">
+                    &copy; 2013 Enactus &bull; Built with &hearts; by LSE SU Enactus Media
+                </div>
+            </div>
         </div>
     </div>
 </footer>

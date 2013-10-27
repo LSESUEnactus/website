@@ -388,4 +388,14 @@ $(function() {
     }
     centreMargin();
     $window.resize(centreMargin);
+
+    var $footerObj = $('.footer__content');
+    var displayFooter = function () {
+        if ($(this).scrollTop() > 200)
+            $footerObj.show();
+        else
+            $footerObj.hide();
+    }
+    displayFooter();
+    $window.scroll(displayFooter);
 });

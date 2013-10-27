@@ -1,5 +1,7 @@
 {{> header }}
 
-{{{ yield }}}
+<div class="body">
+	{{{ yield }}}
+</div>
 
 {{> footer }}
