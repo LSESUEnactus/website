@@ -1,11 +1,11 @@
 exports.social = (req, res) ->
 	res.locals.page.title = res.locals.page.title + " - Social Projects"
-	res.render 'projects/social'
+	res.render 'what-we-do/social-projects'
 
 exports.commercial = (req, res) ->
-	res.locals.page.title = res.locals.page.title + " - Comercial Projects"
-	res.render 'projects/commercial'
+	res.locals.page.title = res.locals.page.title + " - Commercial Projects"
+	res.render 'what-we-do/commercial-projects'
 
 exports.new = (req, res) ->
 	res.locals.page.title = res.locals.page.title + " - Start a New Project"
-	res.render 'projects/new'
+	res.render 'what-we-do/start-a-new-project'

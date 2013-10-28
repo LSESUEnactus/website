@@ -1,0 +1,17 @@
+<div class="row">
+<div class="large-12 columns">
+	<div class="content-container">
+		<div class="content__feature content__feature--commercial">
+			<h1 class="content_feature-title text-center text--shadow">Commercial Projects</h1>
+		</div>
+
+		<ul class="breadcrumbs">
+			<li><a href="/">Home</a></li>
+			<li><a href="/what-we-do">What We Do</a></li>
+			<li class="current">Commercial Projects</li>
+		</ul>
+
+		<h1 class="subheader">TBA</h1>
+	</div>
+</div>
+</div>

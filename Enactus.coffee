@@ -5,6 +5,7 @@ config = require './config'
 routes = require './routes'
 about = require './routes/about'
 projects = require './routes/projects'
+activities = require './routes/activities'
 
 http = require 'http'
 path = require 'path'
@@ -43,6 +44,9 @@ app.namespace '/what-we-do', ->
     app.get '/social-projects', projects.social
     app.get '/commercial-projects', projects.commercial
     app.get '/start-a-new-project', projects.new
+
+app.namespace '/what-is-new', ->
+    app.get '/events', activities.events
 
 app.use (req, res, next) ->
 	res.status 404

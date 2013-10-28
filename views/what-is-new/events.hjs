@@ -1,0 +1,29 @@
+<div class="row">
+<div class="large-12 columns">
+	<div class="content-container">
+		<div class="content__feature content__feature--events">
+			<h1 class="content_feature-title text-center text--shadow">Events</h1>
+		</div>
+
+		<ul class="breadcrumbs">
+			<li><a href="/">Home</a></li>
+			<li><a href="/what-is-new">What Is New</a></li>
+			<li class="current">Events</li>
+		</ul>
+
+		<h1 id="training">Enactus Training Weekend</h1>
+		<p>
+			We invite you all to take part in the Enactus Training Weekend. It is a great way to meet 400 students from 50 universities who all have the same passion as you to develop great projects! Take part in fun team building exercises, dress up for an exciting social on the Saturday night and develop your skills through workshops throughout the weekend.
+		</p>
+		<ul class="no-bullet">
+			<li><b>Date:</b> 15th - 17th November 2013</li>
+			<li><b>Location:</b> Grantham, Lincolnshire</li>
+			<li><b>Price:</b> < &pound;30 (Including food, accomodation and transport)</li>
+			<li><b>Application Deadline:</b> <u>30th October 2013</u></li>
+		</ul>
+		<p>
+			<a href="https://docs.google.com/forms/d/16AvJcD8jGZ6BfuFTqzHMgHYldho5ny-8B2YsBGB-DKE/viewform" target="_event" class="button">Participate</a>
+		</p>
+	</div>
+</div>
+</div>

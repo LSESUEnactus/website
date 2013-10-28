@@ -32,7 +32,16 @@
         Header
     -->
     <header class="header">
-        <div class="row">
+        <div class="header-notice">
+            <div class="row">
+                <div class="large-12 columns">
+                    <a href="/what-is-new/events#training">
+                        LSE SU Enactus is going to Grantham, Lincolnshire for a training weekend! Find out more &raquo;
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row header-main">
             <!--
                 Logo (Image)
             -->
@@ -91,7 +100,7 @@
                                     <a href="#">What Is New</a>
                                     <ul class="dropdown">
                                         <li><a href="#tba">Blog</a></li>
-                                        <li><a href="#tba">Events</a></li>
+                                        <li><a href="/what-is-new/events">Events</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="//www.lsesu.com/activities/societies/society/7398/" class="link--emphasis primary">Join Us</a></li>

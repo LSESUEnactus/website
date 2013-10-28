@@ -1,7 +1,20 @@
 .header {
 	background: #4c4c4c;
-	padding-top: .5em;
 }
+	.header-notice {
+		background: lighten(#000, 15%);
+		color: #FFF;
+		font-weight: 300;
+		padding: .5em 0;
+		text-align: center;
+		@include single-transition;
+		&:hover {
+			background: lighten(#000, 10%);
+		}
+	}
+	.header-main {
+		padding-top: .5em;
+	}
 
 	.header__nav-main {
 		//padding-right: 0;

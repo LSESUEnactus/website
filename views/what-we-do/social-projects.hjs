@@ -1,0 +1,29 @@
+<div class="row">
+<div class="large-12 columns">
+	<div class="content-container">
+		<div class="content__feature content__feature--social">
+			<h1 class="content_feature-title text-center text--shadow">Social Projects</h1>
+		</div>
+
+		<ul class="breadcrumbs">
+			<li><a href="/">Home</a></li>
+			<li><a href="/what-we-do">What We Do</a></li>
+			<li class="current">Social Projects</li>
+		</ul>
+
+		<h1>Current Projects</h1>
+
+		<h2 class="subheader">Trading Futures</h2>
+		<p>Our flagship international financial literacy project.</p>
+
+		<h2 class="subheader">LSE Support</h2>
+		<p>Providing consultancy services for small charities and local businesses.</p>
+
+		<h2 class="subheader">Trading Futures</h2>
+		<p>Providing support and employment skills for the homeless.</p>
+
+		<h2 class="subheader">Enyorata</h2>
+		<p>Our international project that is building a tourism business for a local tribe in Tanzania.</p>
+	</div>
+</div>
+</div>
