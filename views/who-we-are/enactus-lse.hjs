@@ -76,6 +76,11 @@
 				<h6>Ian Lai</h6>
 				<h6 class="subheader">Media Director</h6>
 			</li>
+			<li>
+				<img src="/img/photos/profile-none.jpg" alt="">
+				<h6>YOU</h6>
+				<h6 class="subheader"><a href="#tba">Join The Team &raquo;</a></h6>
+			</li>
 		</ul>
 
 		<h1>Project Leaders</h1>
@@ -94,6 +99,11 @@
 				<img src="/img/photos/profile-paul.jpg" alt="">
 				<h6>Paul Rusen</h6>
 				<h6 class="subheader">LSE Support</h6>
+			</li>
+			<li>
+				<img src="/img/photos/profile-none.jpg" alt="">
+				<h6>YOU</h6>
+				<h6 class="subheader"><a href="/what-we-do/start-a-new-project">Start a New Project &raquo;</a></h6>
 			</li>
 		</ul>
 	</div>
