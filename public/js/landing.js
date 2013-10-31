@@ -370,7 +370,7 @@ $(function() {
     BV.show('/vids/enactus.mp4', {ambient:true});
 
     $(".js-rotate").textrotator({
-      animation: "flipCube",
+      //animation: "flipCube",
       separator: ";",
       speed: 2000
     });
