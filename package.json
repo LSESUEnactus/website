@@ -1,15 +1,13 @@
 {
   "name": "application-name",
-  "version": "0.0.1",
+  "version": "1.11.71",
   "private": true,
   "scripts": {
-    "start": "node app.js"
+    "start": "coffee Enactus.coffee"
   },
   "dependencies": {
     "express": "3.4.2",
-    "jade": "*",
     "hogan-express": "~0.5.0",
-    "express-namespace": "~0.1.1",
     "coffee-script": "~1.6.3"
   }
 }
