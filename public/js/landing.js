@@ -364,7 +364,7 @@
 /*
  * Application
  */
-$(function() {
+$(function () {
     var BV = new $.BigVideo();
     BV.init();
     BV.show('/vids/enactus.mp4', {ambient:true});
@@ -388,14 +388,4 @@ $(function() {
     }
     centreMargin();
     $window.resize(centreMargin);
-
-    var $footerObj = $('.footer__content');
-    var displayFooter = function () {
-        if ($(this).scrollTop() > 200)
-            $footerObj.show();
-        else
-            $footerObj.hide();
-    }
-    displayFooter();
-    $window.scroll(displayFooter);
 });
