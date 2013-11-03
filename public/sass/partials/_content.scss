@@ -21,6 +21,34 @@
 		border: $crumb-border-size $crumb-border-style $crumb-border-color;
 		border-bottom: none;
 		height: 300px;
+		&.what-is-enactus {
+			background: image-url('photos/about-enactus.jpg') no-repeat center center;
+			@include background-size(cover);
+		}
+		&.enactus-lse {
+			background: image-url('photos/about-us.jpg') no-repeat center top;
+			@include background-size(cover);
+		}
+		&.business-advisory-board {
+			background: image-url('photos/about-bab.jpg') no-repeat center top;
+			@include background-size(cover);
+		}
+		&.social-projects {
+			background: image-url('photos/projects-social.jpg') no-repeat center top;
+			@include background-size(cover);
+		}
+		&.commercial-projects {
+			background: image-url('photos/projects-commercial.jpg') no-repeat center top;
+			@include background-size(cover);
+		}
+		&.start-a-new-project {
+			background: image-url('photos/projects-new.jpg') no-repeat center top;
+			@include background-size(cover);
+		}
+		&.events {
+			background: image-url('photos/events.jpg') no-repeat center top;
+			@include background-size(cover);
+		}
 	}
 		.content_feature-title {
 			background: rgba(#FFD200, .3);
@@ -34,34 +62,6 @@
 			&:hover {
 				background: rgba(#FFD200, .5);
 			}
-		}
-		.content__feature--enactus {
-			background: image-url('photos/about-enactus.jpg') no-repeat center center;
-			@include background-size(cover);
-		}
-		.content__feature--about {
-			background: image-url('photos/about-us.jpg') no-repeat center top;
-			@include background-size(cover);
-		}
-		.content__feature--bab {
-			background: image-url('photos/about-bab.jpg') no-repeat center top;
-			@include background-size(cover);
-		}
-		.content__feature--social {
-			background: image-url('photos/projects-social.jpg') no-repeat center top;
-			@include background-size(cover);
-		}
-		.content__feature--commercial {
-			background: image-url('photos/projects-commercial.jpg') no-repeat center top;
-			@include background-size(cover);
-		}
-		.content__feature--project {
-			background: image-url('photos/projects-new.jpg') no-repeat center top;
-			@include background-size(cover);
-		}
-		.content__feature--events {
-			background: image-url('photos/events.jpg') no-repeat center top;
-			@include background-size(cover);
 		}
 	.content__milestones {
 		margin-bottom: 1.5em !important;

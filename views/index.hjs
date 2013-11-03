@@ -1,41 +1,45 @@
-<!-- 
-    Content
--->
-<div class="landing__jumbotron js-centre text-center">
-    <h1 class="landing--title">
-        Enactus is about <span class="js-rotate subheader">seeing possibilities; taking action; enabling progress; empowering others; empowering yourself; social entrepreneurship; realising ideas; building a sustainable world; unity</span>
-    </h1>
-    <a href="#introduction" class="large button">Discover More</a>
-</div>
+{{> header }}
 
-<a id="introduction" href="/who-we-are/what-is-enactus" class="landing__mission text-center">
-    <div class="row">
-        <div class="large-12 columns">
-            <h3 class="landing--title">A community of student, academic and business leaders committed to using the power of entrepreneurial action to transform lives and to shape a more sustainable world.</h3>
-            <h5 class="subheader">Read Our Mission &raquo;</h5>
+<div class="body">
+
+    <!-- 
+        Content
+    -->
+    <div class="landing__jumbotron js-centre text-center">
+        <h1 class="landing--title">
+            Enactus is about <span class="js-rotate subheader">seeing possibilities; taking action; enabling progress; empowering others; empowering yourself; social entrepreneurship; realising ideas; building a sustainable world; unity</span>
+        </h1>
+        <a href="#introduction" class="large button">Discover More</a>
+    </div>
+
+    <a id="introduction" href="/who-we-are/what-is-enactus" class="landing__mission text-center">
+        <div class="row">
+            <div class="large-12 columns">
+                <h3 class="landing--title">A community of student, academic and business leaders committed to using the power of entrepreneurial action to transform lives and to shape a more sustainable world.</h3>
+                <h5 class="subheader">Read Our Mission &raquo;</h5>
+            </div>
+        </div>
+    </a>
+
+    <div class="landing__action text-center">
+        <div class="row">
+            <div class="small-6 columns landing__action--opportunities">
+                <h4 class="landing--title">See Opportunities?</h4>
+                <p>
+                    If you have an idea or a project in mind we can empower you with the necessary skills and resources needed to realise them.
+                </p>
+                <a href="/what-we-do/start-a-new-project" class="button alert">Start a Project</a>
+            </div>
+            <div class="small-6 columns landing__action--action">
+                <h4 class="landing--title">Take Action</h4>
+                <p>
+                    We have a vast array of established and upcoming projects. Join us in making a difference by helping out our existing projects.
+                </p>
+                <a href="/what-we-do/social-projects" class="button alert">Join a Project</a>
+            </div>
         </div>
     </div>
-</a>
 
-<div class="landing__action text-center">
-    <div class="row">
-        <div class="small-6 columns landing__action--opportunities">
-            <h4 class="landing--title">See Opportunities?</h4>
-            <p>
-                If you have an idea or a project in mind we can empower you with the necessary skills and resources needed to realise them.
-            </p>
-            <a href="/what-we-do/start-a-new-project" class="button alert">Start a Project</a>
-        </div>
-        <div class="small-6 columns landing__action--action">
-            <h4 class="landing--title">Take Action</h4>
-            <p>
-                We have a vast array of established and upcoming projects. Join us in making a difference by helping out our existing projects.
-            </p>
-            <a href="/what-we-do/social-projects" class="button alert">Join a Project</a>
-        </div>
-    </div>
 </div>
 
-{{#yield-scripts}}
-    
-{{/yield-scripts}}
+{{> footer }}

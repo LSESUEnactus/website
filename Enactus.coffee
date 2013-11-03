@@ -1,11 +1,8 @@
 express = require 'express'
-namespace = require 'express-namespace'
-config = require './config'
 
-routes = require './routes'
-about = require './routes/about'
-projects = require './routes/projects'
-activities = require './routes/activities'
+config = require './config'
+actions = require './config/actions'
+routes = require './config/routes'
 
 http = require 'http'
 path = require 'path'
@@ -29,28 +26,43 @@ app.use express.logger('dev')
 app.use express.compress()
 app.use express.bodyParser()
 app.use express.methodOverride()
-app.use app.router
 app.use express.static path.join(__dirname, 'public');
+app.use app.router
 app.use express.errorHandler() if 'development' is app.get 'env'
 
-app.get '/', routes.index;
+NotFound = (req, res) ->
+    res.locals.page.title = "Oops, we can't find what you are looking for! - #{res.locals.page.title}"
+    res.status 404
+    res.render '404', layout: false
 
-app.namespace '/who-we-are', ->
-    app.get '/what-is-enactus', about.enactus
-    app.get '/enactus-lse', about.lsesu
-    app.get '/business-advisory-board', about.bab
+app.get '/', actions.index;
 
-app.namespace '/what-we-do', ->
-    app.get '/social-projects', projects.social
-    app.get '/commercial-projects', projects.commercial
-    app.get '/start-a-new-project', projects.new
+app.get '/:namespace/:page', (req, res) ->
+    try
+        namespace = routes[req.params.namespace]
+        page = namespace.subpages[req.params.page]
+        res.locals.page.title = "#{page.title} - #{res.locals.page.title}"
 
-app.namespace '/what-is-new', ->
-    app.get '/events', activities.events
+        res.locals.current =
+            title: page.title
+            slug: req.params.page
+            location: []
+
+        res.locals.current.location.push
+            title: namespace.title
+            slug: req.params.namespace
+        res.locals.current.location.push
+            title: page.title
+            slug: req.params.page
+            active: true
+
+        res.render "#{req.params.namespace}/#{req.params.page}"
+    catch error
+        console.log error
+        NotFound req, res
 
 app.use (req, res, next) ->
-	res.status 404
-	res.render '404'
+    NotFound req, res
 
 http.createServer(app).listen app.get('port'), ->
   console.log "Express server listening on port #{app.get 'port'}"

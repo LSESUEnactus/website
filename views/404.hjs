@@ -1,4 +1,6 @@
-<div class="row">
+{{> header }}
+
+<div class="body row">
 <div class="large-12 columns">
 	<div class="content-container">
 		<iframe 
@@ -11,3 +13,5 @@
 	</div>
 </div>
 </div>
+
+{{> footer }}
