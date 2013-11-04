@@ -32,17 +32,16 @@
         Header
     -->
     <header class="header">
-        {{!
         <div class="header-notice">
             <div class="row">
                 <div class="large-12 columns">
-                    <a href="/what-is-new/events#training">
-                        LSE SU Enactus is going to Grantham, Lincolnshire for a training weekend! You are invited to join us &raquo;
+                    <a href="/what-is-new/events#recruitment">
+                        LSE Support, Pathways and Creative Cycle are currently recruiting! Do you have what it takes to be part of something big?
                     </a>
                 </div>
             </div>
         </div>
-        }}
+
         <div class="row header-main">
             <!--
                 Logo (Image)
