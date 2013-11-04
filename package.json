@@ -1,6 +1,6 @@
 {
   "name": "application-name",
-  "version": "1.11.71",
+  "version": "1.11.74",
   "private": true,
   "scripts": {
     "start": "coffee Enactus.coffee"

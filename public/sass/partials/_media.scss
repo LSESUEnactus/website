@@ -32,4 +32,8 @@
 
 @media only screen and (max-width:"#{$small-screen}") {
 	.header__nav, .header__nav-main { padding: 0 }
+	.footer__content {
+		bottom: 0;
+		position: relative;
+	}
 }
