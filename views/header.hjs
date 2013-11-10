@@ -17,11 +17,11 @@
     <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
     <link rel="prefetch" href="/vids/enactus.mp4">
 
-    {{#styles}}
-    <link rel="stylesheet" href="{{.}}">
-    {{/styles}}
+    {{# styles }}
+    <link rel="stylesheet" href="{{ . }}">
+    {{/ styles }}
 
-    {{{yield-styles}}}
+    {{{ yield-styles }}}
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
 </head>

@@ -28,11 +28,11 @@
 <!--
     JavaScript
 -->
-{{#scripts}}
+{{# scripts }}
 <script src="{{.}}"></script>
-{{/scripts}}
+{{/ scripts }}
 
-{{{yield-scripts}}}
+{{{ yield-scripts }}}
 
 <!--
     Google Analytics
