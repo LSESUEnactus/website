@@ -4,12 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>{{ page.title }}</title>
     <meta name="description" content="{{ page.description }}">
-    <link rel="author" href="humans.txt">
+    <link rel="author" href="/humans.txt">
 
     <link rel="dns-prefetch" href="//themes.googleusercontent.com">
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -23,7 +23,7 @@
 
     {{{yield-styles}}}
 
-    <script src="/js/vendor/modernizr.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
 </head>
 
 <body>
@@ -61,10 +61,10 @@
                     <ul class="inline-list right">
                         <li><a href="#tba">Blog</a></li>
                         <li>
-                            <a href="{{ social.twitter }}" target="_social"><i class="typcn typcn-social-twitter"></i> Twitter</a>
+                            <a href="{{ social.twitter }}" target="social"><i class="typcn typcn-social-twitter"></i> Twitter</a>
                         </li>
                         <li>
-                            <a href="{{ social.facebook }}" target="_social"><i class="typcn typcn-social-facebook"></i> Facebook</a>
+                            <a href="{{ social.facebook }}" target="social"><i class="typcn typcn-social-facebook"></i> Facebook</a>
                         </li>
                         <li><a href="#tba">Contact Us</a></li>
                     </ul>
@@ -106,7 +106,7 @@
                                 </li>
                                 <li><a href="//www.lsesu.com/activities/societies/society/7398/" class="link--emphasis primary">Join Us</a></li>
                                 <li>
-                                    <a href="//www.enactus.org" target="_enactus" class="link--emphasis secondary">Enactus Worldwide</a>
+                                    <a href="//www.enactus.org" target="enactus" class="link--emphasis secondary">Enactus Worldwide</a>
                                 </li>
                             </ul>
                         </section>
