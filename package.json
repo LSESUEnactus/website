@@ -1,6 +1,6 @@
 {
-  "name": "application-name",
-  "version": "1.11.74",
+  "name": "lsesu-enactus",
+  "version": "1.11.86",
   "private": true,
   "scripts": {
     "start": "coffee Enactus.coffee"
