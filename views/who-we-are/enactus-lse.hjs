@@ -4,7 +4,6 @@
 		<img src="/img/logos/citigroup-2.png" alt="">
 	</div>
 	<div class="large-8 columns">
-		<p>
 			<ul class="no-bullet">
 				<li><b>Corporate Sponsor:</b> Citigroup</li>
 				<li>Enactus UK National Competition Rookies of the Year 2010</li>
@@ -12,7 +11,6 @@
 				<li>LSE SU STARS Gold Award 2012</li>
 				<li>LSE SU STARS Silver Award 2013</li>
 			</ul>
-		</p>
 	</div>
 </div>
 
@@ -54,14 +52,14 @@
 		<h6 class="subheader">Commercial Director</h6>
 	</li>
 	<li>
+		<img src="/img/photos/profile-jan.jpg" alt="">
+		<h6>Jan Niezychowski</h6>
+		<h6 class="subheader">Sponsorship Director</h6>
+	</li>
+	<li>
 		<img src="/img/photos/profile-ian.jpg" alt="">
 		<h6>Ian Lai</h6>
 		<h6 class="subheader">Media Director</h6>
-	</li>
-	<li>
-		<img src="/img/photos/profile-unknown.jpg" alt="">
-		<h6>Vacant</h6>
-		<h6 class="subheader"><a href="#tba">Sponsorship Director &raquo;</a></h6>
 	</li>
 	<li>
 		<img src="/img/photos/profile-unknown.jpg" alt="">
