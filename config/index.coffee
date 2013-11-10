@@ -14,7 +14,7 @@ exports.development = (req, res, next) ->
 	        '/css/enactus.css'
 	    ]
 	    scripts: [
-	        '//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js'
+	        '/js/vendor/jquery.js'
 	        '/js/vendor/foundation/foundation.js'
 	        '/js/vendor/foundation/foundation.topbar.js'
 	        '/js/plugins.js'
