@@ -3,6 +3,9 @@ exports.development = (req, res, next) ->
 	    page:
 	        title: 'LSE SU Enactus'
 	        description: 'London School of Economics and Political Science Student Union Enactus &ndash; Seeing possibilities. Taking action. Enabling progress.'
+	    analytics:
+	    	id: 'UA-5243796-8'
+	    	url: 'enactuslse.co.uk'
 	    social:
 	    	twitter: '//twitter.com/EnactusLSE'
 	    	facebook: '//fb.com/LSESUEnactus'

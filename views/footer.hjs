@@ -16,7 +16,7 @@
                     </ul>
                 </div>
                 <div class="large-12 columns footer--copyright">
-                    &copy; 2013 <a href="//www.enactus.org" target="_enactus">Enactus</a> &bull; Built with <span>&hearts;</span> by <a href="//www.github.com/MrSaints/Enactus-LSESU" target="_enactus">LSE SU Enactus Media</a>
+                    &copy; 2013 <a href="//www.enactus.org" target="enactus">Enactus</a> &bull; Built with <span>&hearts;</span> by <a href="//www.github.com/MrSaints/Enactus-LSESU" target="enactus">LSE SU Enactus Media</a>
                 </div>
             </div>
         </div>
@@ -43,7 +43,7 @@
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    ga('create', 'UA-5243796-8', 'enactuslse.co.uk');
+    ga('create', '{{ analytics.id }}', '{{ analytics.url }}');
     ga('send', 'pageview');
 </script>
 
