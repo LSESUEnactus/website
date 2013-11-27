@@ -59,7 +59,7 @@
                 -->
                 <div class="large-12 columns header__nav-social">
                     <ul class="inline-list right">
-                        <li><a href="#tba">Blog</a></li>
+                        <li><a href="//blog.enactuslse.co.uk" target="social">Blog</a></li>
                         <li>
                             <a href="{{ social.twitter }}" target="social"><i class="typcn typcn-social-twitter"></i> Twitter</a>
                         </li>
@@ -100,7 +100,7 @@
                                 <li class="has-dropdown">
                                     <a href="#">What Is New</a>
                                     <ul class="dropdown">
-                                        <li><a href="#tba">Blog</a></li>
+                                        <li><a href="//blog.enactuslse.co.uk">Blog</a></li>
                                         <li><a href="/what-is-new/events">Events</a></li>
                                     </ul>
                                 </li>
