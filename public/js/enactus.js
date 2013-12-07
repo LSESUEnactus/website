@@ -9,7 +9,7 @@ $(function () {
 	        doOut: function () {
 	            $(this).find('.footer__content').hide();
 	        },
-	        tolerance: '-200'
+	        tolerance: '-50'
 	    });
 	}
 });
