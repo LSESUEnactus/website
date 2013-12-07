@@ -11,12 +11,12 @@ exports.development = (req, res, next) ->
 	    	facebook: '//fb.com/LSESUEnactus'
 	    styles: [
 	        '//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700'
+	        '/components/typicons/font/typicons.min.css'
 	        '/css/enactus.css'
 	    ]
 	    scripts: [
 	        '//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js'
-	        '/js/vendor/foundation/foundation.js'
-	        '/js/vendor/foundation/foundation.topbar.js'
+	        '/components/foundation/js/foundation.min.js'
 	        '/js/plugins.js'
 	        '/js/enactus.js'
 	    ]
