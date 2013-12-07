@@ -1,13 +1,9 @@
-@import "vendor/normalize";
-
-@import "vendor/bigvideo";
-@import "vendor/simpletextrotator";
-@import "vendor/typicons";
-
 @import "compass";
-@import "vendor/foundation-settings";
+@import "normalize";
+@import "partials/settings";
 @import "foundation";
 
+@import "partials/vendor";
 @import "partials/header";
 @import "partials/content";
 @import "partials/footer";
@@ -18,6 +14,9 @@
     position: relative;
     z-index: 1;
 }
+    .landing.wrapper {
+        background: rgba(#000, .5);
+    }
 
 /*
  * FOUT

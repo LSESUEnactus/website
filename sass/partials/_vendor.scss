@@ -1,3 +1,15 @@
+/* ===========================================================
+ * jQuery Simple Text Rotator
+ * ===========================================================
+ * Copyright 2013 Pete Rojwongsuriya.
+ * http://www.thepetedesign.com
+ *
+ * A very simple and light weight jQuery plugin that 
+ * allows you to rotate multiple text without changing 
+ * the layout
+ * https://github.com/peachananr/simple-text-rotator
+ *
+ * ========================================================== */
 .rotating {
   display: inline-block;
   -webkit-transform-style: preserve-3d;
@@ -58,8 +70,6 @@
   -o-transform: rotate(360deg) scale(0);
   transform: rotate(360deg) scale(0);
 }
-
-
 
 .rotating.flip .back {
   z-index: 2;

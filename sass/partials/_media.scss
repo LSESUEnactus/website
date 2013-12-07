@@ -1,4 +1,4 @@
-@media #{$small} {
+@media #{$small-up} {
 	.header__nav { padding-right: 0 }
 	.top-bar, .top-bar-section ul { background: transparent; background: transparent }
 	.header__nav-main .top-bar-section li {
@@ -10,7 +10,6 @@
 			background: #FFF;
 			border: 2px solid #d2d2d2;
 			border-top: none;
-			font-size: .8em;
 			//margin-top: 1em;
 			text-align: center;
 			text-shadow: none;
@@ -21,16 +20,17 @@
 			}
 			a {
 				color: #4c4c4c;
-				padding: 1em;
+				padding: 1rem;
+				font-size: rem-calc(14);
 				&:hover {
-					color: $enactus-blue-color;
+					color: $info-color;
 				}
 			}
 		}
 	}
 }
 
-@media only screen and (max-width:"#{$small-screen}") {
+@media #{$small-only} {
 	.header__nav, .header__nav-main { padding: 0 }
 	.footer__content {
 		bottom: 0;

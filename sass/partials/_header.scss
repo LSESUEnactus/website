@@ -5,7 +5,7 @@
 		background: lighten(#000, 15%);
 		color: #FFF;
 		font-weight: 300;
-		padding: .5em 0;
+		padding: .5rem 0;
 		text-align: center;
 		@include single-transition;
 		&:hover {
@@ -13,7 +13,7 @@
 		}
 	}
 	.header-main {
-		padding-top: .5em;
+		padding-top: .5rem;
 	}
 
 	.header__nav-main {
@@ -23,7 +23,7 @@
 	// Social navigation
 	.header__nav-social {
 		> ul {
-			font-size: em-calc(12px);
+			font-size: rem-calc(12px);
 			line-height: 45px;
 			margin-bottom: 0;
 			text-transform: uppercase;
