@@ -1,6 +1,25 @@
-Enactus.bat
-.sass-cache
+# Created by http://gitignore.io
 
+### Bower ###
+bower_components
+
+
+### Windows ###
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+### SASS ###
+### SASS Ignores - "Sassy CSS" http://sass-lang.com/
+*.sass-cache
+
+### Node ###
 lib-cov
 *.seed
 *.log
@@ -16,3 +35,5 @@ results
 
 npm-debug.log
 node_modules
+
+Enactus.bat
