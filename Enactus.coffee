@@ -27,6 +27,7 @@ app.use express.compress()
 app.use express.bodyParser()
 app.use express.methodOverride()
 app.use express.static path.join(__dirname, 'public');
+app.use '/components', express.static path.join(__dirname, 'bower_components');
 app.use app.router
 app.use express.errorHandler() if 'development' is app.get 'env'
 
@@ -35,7 +36,7 @@ NotFound = (req, res) ->
     res.status 404
     res.render '404', layout: false
 
-app.get '/', actions.index;
+app.get '/', actions.index
 
 ## 
 ## Christmas Bash Facebook Event (Temporary)
