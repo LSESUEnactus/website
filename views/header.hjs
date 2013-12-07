@@ -27,7 +27,7 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="{{ page.class }} wrapper">
     <!-- 
         Header
     -->
@@ -75,7 +75,7 @@
                     Main navigation
                 -->
                 <div class="large-12 columns header__nav-main">
-                    <nav class="top-bar" data-options="is_hover:false">
+                    <nav class="top-bar" data-topbar data-options="is_hover:false">
                         <ul class="title-area">
                             <li class="name"></li>
                             <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
