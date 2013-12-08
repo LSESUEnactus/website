@@ -1,5 +1,17 @@
 {
   "name": "lsesu-enactus",
+  "authors": [
+    "Ian Lai <ian@fyianlai.com>"
+  ],
+  "license": "http://ian.mit-license.org/",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
   "dependencies": {
     "foundation": "~5.0.2",
     "typicons": "~2.0.2",

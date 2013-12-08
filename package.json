@@ -1,6 +1,11 @@
 {
   "name": "lsesu-enactus",
-  "version": "1.11.93",
+  "version": "2.0.0",
+  "author": "Ian Lai <ian@fyianlai.com>",
+  "licenses" : [{
+    "type": "MIT",
+    "url": "http://ian.mit-license.org/"
+  }],
   "private": true,
   "scripts": {
     "start": "coffee Enactus.coffee",

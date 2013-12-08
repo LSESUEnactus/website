@@ -18,9 +18,9 @@
 	Contact: http://www.sxc.hu/profile/aozuas
 
 /* SITE */
-	Last update: 2013/11/27
+	Last update: 2013/12/07
 	Language: English
 	Standards: HTML5, CSS3 (SASS with Compass)
-	Components: Modernizr, Foundation, Normalize.css, Typicons, jQuery, HTML5 Background Video, Simple Text Rotator, onScreen.js
+	Components: Normalize.css, Foundation, Typicons, Modernizr, jQuery, HTML5 Background Video, Simple Text Rotator, onScreen.js
 	Software: Sublime Text 3, Photoshop, Premiere Pro, Coda, Textmate, Git
-	Others: HTML5 Boilerplate, Express
+	Others: NPM, Bower, HTML5 Boilerplate, Express
