@@ -15,6 +15,7 @@
   "dependencies": {
     "foundation": "~5.0.2",
     "typicons": "~2.0.2",
-    "background-video": "*"
+    "background-video": "*",
+    "Morphext": "*"
   }
 }
