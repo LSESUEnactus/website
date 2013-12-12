@@ -1,10 +1,10 @@
 <footer class="footer">
     <div class="row footer__content">
         <div class="large-2 small-3 columns">
-            <a href="/"><img src="/img/logo.png" class="footer--logo" alt="LSE SU Enactus"></a>
+            <a href="/" title="Home"><img src="/img/logo.png" class="footer--logo" alt="LSE SU Enactus"></a>
         </div>
         <div class="large-2 small-3 columns">
-            <a href="//www.citigroup.com/"><img src="/img/logos/citigroup.png" class="footer--logo" alt="Citigroup"></a>
+            <a href="//www.citigroup.com/" title="LSE SU Enactus Corporate Sponsor"><img src="/img/logos/citigroup.png" class="footer--logo" alt="Citigroup"></a>
         </div>
         <div class="large-8 small-6 columns text-right">
             <div class="row">
@@ -16,7 +16,7 @@
                     </ul>
                 </div>
                 <div class="large-12 columns footer--copyright">
-                    &copy; 2013 <a href="//www.enactus.org" target="enactus">Enactus</a> &bull; Built with <span>&hearts;</span> by <a href="//www.github.com/MrSaints/Enactus-LSESU" target="enactus">LSE SU Enactus Media</a>
+                    &copy; 2013 <a href="//www.enactus.org" target="enactus">Enactus</a> &bull; Built with <span class="fa fa-heart"></span> by <a href="//www.github.com/MrSaints/Enactus-LSESU" target="enactus">LSE SU Enactus Media</a>
                 </div>
             </div>
         </div>
