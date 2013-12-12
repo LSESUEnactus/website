@@ -11,5 +11,7 @@ $(function () {
 	        },
 	        tolerance: '-50'
 	    });
+	} else {
+		$('.footer').css('position', 'relative').show();
 	}
 });
