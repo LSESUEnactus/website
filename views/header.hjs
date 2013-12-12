@@ -48,7 +48,7 @@
                 Logo (Image)
             -->
             <div class="large-2 small-5 columns">
-                <a href="/"><img src="/img/logo.png" class="logo" alt="Enactus LSESU"></a>
+                <a href="/" title="Home"><img src="/img/logo.png" class="logo" alt="LSE SU Enactus"></a>
             </div>
 
             <!--
@@ -62,10 +62,10 @@
                     <ul class="inline-list right">
                         <li><a href="//blog.enactuslse.co.uk" target="social">Blog</a></li>
                         <li>
-                            <a href="{{ social.twitter }}" target="social"><i class="typcn typcn-social-twitter"></i> Twitter</a>
+                            <a href="{{ social.twitter }}" target="social"><i class="fa fa-twitter"></i> Twitter</a>
                         </li>
                         <li>
-                            <a href="{{ social.facebook }}" target="social"><i class="typcn typcn-social-facebook"></i> Facebook</a>
+                            <a href="{{ social.facebook }}" target="social"><i class="fa fa-facebook"></i> Facebook</a>
                         </li>
                         <li><a href="#tba">Contact Us</a></li>
                     </ul>
