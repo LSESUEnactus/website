@@ -32,6 +32,7 @@
         Header
     -->
     <header class="header">
+        <!--
         <div class="header-notice show-for-medium-up">
             <div class="row">
                 <div class="large-12 columns">
@@ -42,6 +43,7 @@
                 </div>
             </div>
         </div>
+        -->
 
         <div class="row header-main">
             <!--

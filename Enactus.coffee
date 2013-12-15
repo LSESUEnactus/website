@@ -38,12 +38,6 @@ NotFound = (req, res) ->
 
 app.get '/', actions.index
 
-## 
-## Christmas Bash Facebook Event (Temporary)
-## 
-app.get '/xmas', (req, res) ->
-    res.redirect 'https://www.facebook.com/events/233160706853421'
-
 app.get '/:namespace/:page', (req, res) ->
     try
         namespace = routes[req.params.namespace]
