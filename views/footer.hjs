@@ -1,5 +1,5 @@
 <footer class="footer">
-    <div class="row footer__content">
+    <div class="row footer__content js-onScreen">
         <div class="large-2 small-3 columns">
             <a href="/" title="Home"><img src="/img/logo.png" class="footer--logo" alt="LSE SU Enactus"></a>
         </div>
