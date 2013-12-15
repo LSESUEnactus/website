@@ -2,19 +2,19 @@
  * Application
  */
 $(function () {
-    // Background Video
-    var $backgroundVideo = new $.backgroundVideo(
-        $('body'), {
-        "align": "centerXY",
-        "width": 854,
-        "height": 480,
-        "path": "vids/",
-        "filename": "enactus",
-        "types": ["webm", "mp4", "ogv"]
-    });
-    // Image Fallback
+    // Background Video (w/ Image Fallback)
     if (!Modernizr.video || Modernizr.touch)
         $('body').addClass('body--noVid');
+    else
+        var $backgroundVideo = new $.backgroundVideo(
+            $('body'), {
+            "align": "centerXY",
+            "width": 854,
+            "height": 480,
+            "path": "vids/",
+            "filename": "enactus",
+            "types": ["webm", "mp4", "ogv"]
+        });
 
     // Simple Text Rotator
     $(".js-rotate").Morphext({
