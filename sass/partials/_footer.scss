@@ -1,12 +1,12 @@
 // @TODO : FIXED VIDEO WRAP
 .footer {
 	background: #4c4c4c;
-	padding: 2em 0;
+	padding: 2rem 0;
 	height: 90px;
 	@include box-sizing(content-box);
 }
 	.footer__content {
-		bottom: 2em;
+		bottom: 2rem;
 		display: none;
 		left: 0;
 		position: fixed;
