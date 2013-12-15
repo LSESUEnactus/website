@@ -52,3 +52,7 @@ a {
 .text--shadow {
     text-shadow: 0 1px 0 rgba(#000, .5);
 }
+.body--noVid {
+    background: image-url('enactus.jpg') no-repeat center center fixed;
+    @include background-size(cover);
+}

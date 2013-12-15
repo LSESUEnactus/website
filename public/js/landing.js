@@ -12,6 +12,9 @@ $(function () {
         "filename": "enactus",
         "types": ["webm", "mp4", "ogv"]
     });
+    // Image Fallback
+    if (!Modernizr.video)
+        $('body').addClass('body--noVid');
 
     // Simple Text Rotator
     $(".js-rotate").Morphext({
