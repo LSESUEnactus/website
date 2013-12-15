@@ -13,7 +13,7 @@ $(function () {
         "types": ["webm", "mp4", "ogv"]
     });
     // Image Fallback
-    if (!Modernizr.video)
+    if (!Modernizr.video || Modernizr.touch)
         $('body').addClass('body--noVid');
 
     // Simple Text Rotator
