@@ -10,7 +10,7 @@ $(function () {
         "height": 480,
         "path": "vids/",
         "filename": "enactus",
-        "types": ["mp4"]
+        "types": ["webm", "mp4", "ogv"]
     });
 
     // Simple Text Rotator
