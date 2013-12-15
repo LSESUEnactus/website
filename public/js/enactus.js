@@ -4,14 +4,17 @@ $(function () {
 	if (!Modernizr.touch) {
 	    $('.footer').onScreen({
 	        doIn: function () {
-	            $(this).find('.footer__content').show();
+	            $(this).find('.js-onScreen').show();
 	        },
 	        doOut: function () {
-	            $(this).find('.footer__content').hide();
+	            $(this).find('.js-onScreen').hide();
 	        },
 	        tolerance: '-50'
 	    });
 	} else {
-		$('.footer').css('position', 'relative').show();
+		$('.js-onScreen').css({
+			'bottom': '0',
+			'position': 'relative'
+		}).show();
 	}
 });
