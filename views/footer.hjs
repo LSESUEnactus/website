@@ -12,7 +12,7 @@
                     <ul class="inline-list footer__navigation">
                         <li><a href="/">Home</a></li>
                         <li><a href="//blog.enactuslse.co.uk" target="social">Blog</a></li>
-                        <li><a href="#tba">Contact Us</a></li>
+                        <li><a href="mailto:WeAre@enactuslse.co.uk">Contact Us</a></li>
                     </ul>
                 </div>
                 <div class="large-12 columns footer--copyright">
