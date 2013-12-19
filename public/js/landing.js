@@ -18,7 +18,6 @@ $(function () {
 
     // Simple Text Rotator
     $(".js-rotate").Morphext({
-        animation: "fadeInRight",
         separator: ";",
         speed: 3000
     });
