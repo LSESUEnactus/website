@@ -16,6 +16,7 @@
     "foundation": "~5.0.2",
     "background-video": "*",
     "Morphext": "*",
-    "font-awesome": "~4.0.3"
+    "font-awesome": "~4.0.3",
+    "jquery-snowfall": "*"
   }
 }
