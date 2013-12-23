@@ -36,6 +36,10 @@ NotFound = (req, res) ->
     res.status 404
     res.render '404', layout: false
 
+app.all '/*', (req, res, next) ->
+    res.redirect 301, '//enactuslse.co.uk' if req.header('host').match /sifelse/i
+    next()
+
 app.get '/', actions.index
 
 app.get '/:namespace/:page', (req, res) ->
