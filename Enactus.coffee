@@ -42,6 +42,8 @@ app.all '/*', (req, res, next) ->
 
 app.get '/', actions.index
 
+app.get '/contact-us', actions.contact
+
 app.get '/:namespace/:page', (req, res) ->
     try
         namespace = routes[req.params.namespace]
@@ -56,10 +58,6 @@ app.get '/:namespace/:page', (req, res) ->
         res.locals.current.location.push
             title: namespace.title
             slug: req.params.namespace
-        res.locals.current.location.push
-            title: page.title
-            slug: req.params.page
-            active: true
 
         res.render "#{req.params.namespace}/#{req.params.page}"
     catch error

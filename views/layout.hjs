@@ -10,13 +10,9 @@
         <ul class="breadcrumbs">
             <li><a href="/">Home</a></li>
             {{# current.location }}
-                {{# active }}
-                    <li class="current">{{ title }}</li>
-                {{/ active }}
-                {{^ active }}
-                    <li><a href="/{{ slug }}">{{ title }}</a></li>
-                {{/ active }}
+                <li><a href="/{{ slug }}">{{ title }}</a></li>
             {{/ current.location }}
+            <li class="current">{{ current.title }}</li>
         </ul>
 
         {{{ yield }}}
