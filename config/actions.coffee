@@ -6,3 +6,10 @@ exports.index = (req, res) ->
     res.locals.scripts.push '/components/Morphext/morphext.min.js'
     res.locals.scripts.push '/js/landing.js'
     res.render 'index', layout: false
+
+exports.contact = (req, res) ->
+    res.locals.page.title = "Contact Us - #{res.locals.page.title}"
+    res.locals.current =
+        title: 'Contact Us'
+        slug: 'contact-us'
+    res.render 'contact-us'
