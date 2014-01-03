@@ -12,4 +12,5 @@ exports.contact = (req, res) ->
     res.locals.current =
         title: 'Contact Us'
         slug: 'contact-us'
+    res.locals.scripts.push '/js/contact.js'
     res.render 'contact-us'

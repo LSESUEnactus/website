@@ -47,6 +47,10 @@
 			background: image-url('photos/events.jpg') no-repeat center top;
 			@include background-size(cover);
 		}
+		&.contact-us {
+			background: image-url('photos/contact-us.jpg') no-repeat center top;
+			@include background-size(cover);
+		}
 	}
 		.content_feature-title {
 			background: rgba(#FFD200, .3);
@@ -64,6 +68,71 @@
 	.content__milestones {
 		margin-bottom: 2rem !important;
 	}
+	.content__contact-us {
+		margin: 5rem 0;
+		text-align: center;
+	}
+		.contact__form {
+			> .subheader {
+				margin: 1rem 0 2.5rem;
+			}
+		}
+		.contact__form-projects {
+			display: none;
+		}
+		.contact__form-details {
+			display: inline-block;
+			position: relative;
+		}
+			.contact__form-placeholder {
+				border-bottom: 2px dotted $info-color;
+			}
+			.contact__form-input {
+				> input {
+					&:focus {
+						background: $info-color;
+						border: none;
+					}
+					background: $info-color;
+					border: none;
+					color: #FFF;
+					cursor: pointer;
+					font-size: .8em;
+					height: auto;
+					margin: 0;
+					padding-right: 3rem;
+				}
+				.fa {
+					color: #FFF;
+					font-size: .6em;
+					line-height: 56px;
+					position: absolute;
+					right: 1rem;
+					top: 0;
+				}
+				.contact__form-select {
+					background: $info-color;
+					color: #FFF;
+					cursor: pointer;
+					margin: 0;
+					text-transform: capitalize;
+					> li {
+						padding: 1rem;
+						@include single-transition();
+						&:hover {
+							background: darken($info-color, 10%);
+						}
+					}
+				}
+
+				display: none;
+				left: 0;
+				position: absolute;
+				top: 0;
+				min-width: 10rem;
+				width: 100%;
+				z-index: 2;
+			}
 
 .landing--title {
 	font-weight: 300;

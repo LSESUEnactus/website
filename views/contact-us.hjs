@@ -1,1 +1,51 @@
-Hello World!
+<div class="content__contact-us">
+	<h1>Hi, how can we help you?</h1>
+	<form class="contact__form">
+		<h2 class="subheader">
+			My name is 
+			<div class="contact__form-details">
+				<a class="contact__form-placeholder">enter your name</a>
+				<div class="contact__form-input">
+					<input type="text">
+					<a class="contact__form-confirm"><i class="fa fa-arrow-right"></i></a>
+				</div>
+			</div> 
+			and I would like to 
+			<div class="contact__form-details">
+				<a class="contact__form-placeholder">get in touch with you</a>
+				<div class="contact__form-input">
+					<ul class="contact__form-select no-bullet">
+						<li>get in touch with you</li>
+						<li>create a new project</li>
+						<li>join an existing project</li>
+					</ul>
+				</div>
+			</div>. 
+			<div class="contact__form-projects">
+				I am interested in 
+				<div class="contact__form-details">
+					<a class="contact__form-placeholder">Trading Futures</a>
+					<div class="contact__form-input">
+						<ul class="contact__form-select no-bullet">
+							<li>Trading Futures</li>
+							<li>LSE Support</li>
+							<li>Pathways</li>
+							<li>Commercial Projects</li>
+						</ul>
+					</div>
+				</div>. 
+			</div>
+			Please contact me at 
+			<div class="contact__form-details">
+				<a class="contact__form-placeholder">enter your e-mail</a>
+				<div class="contact__form-input">
+					<input type="email">
+					<a class="contact__form-confirm"><i class="fa fa-arrow-right"></i></a>
+				</div>
+			</div>.
+		</h2>
+		<div class="contact__form-submit">
+			<a href="#" class="button secondary">I look forward to hearing from you soon.</a>
+		</div>
+	</form>
+</div>
