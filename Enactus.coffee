@@ -24,17 +24,17 @@ app.set 'partials',
 app.disable 'x-powered-by'
 app.use express.logger 'dev'
 app.use express.compress()
+app.use express.methodOverride()
 app.use express.json()
 app.use express.urlencoded()
-app.use express.methodOverride()
-
-app.use '/contact-us', express.cookieParser()
-app.use '/contact-us', express.session { secret: 'not so secret' }
-app.use '/contact-us', express.csrf()
 
 app.use express.favicon path.join __dirname, 'public/favicon.ico'
 app.use express.static path.join __dirname, 'public'
 app.use '/components', express.static path.join __dirname, 'bower_components'
+
+app.use '/contact-us', express.cookieParser()
+app.use '/contact-us', express.session { secret: 'not so secret' }
+app.use '/contact-us', express.csrf()
 
 app.use app.router
 app.use express.errorHandler() if 'development' is app.get 'env'
