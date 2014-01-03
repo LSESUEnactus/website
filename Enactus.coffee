@@ -13,21 +13,29 @@ app.set 'port', process.env.PORT or 3000
 app.use config.development
 
 app.enable 'view cache'
-app.engine 'hjs', require('hogan-express')
-app.set 'views', path.join(__dirname, 'views')
+app.engine 'hjs', require 'hogan-express'
+app.set 'views', path.join __dirname, 'views'
 app.set 'view engine', 'hjs'
 app.set 'layout', 'layout'
 app.set 'partials', 
     header: 'header'
     footer: 'footer'
 
-app.use express.favicon path.join(__dirname, 'public/favicon.ico')
-app.use express.logger('dev')
+app.disable 'x-powered-by'
+app.use express.logger 'dev'
 app.use express.compress()
-app.use express.bodyParser()
+app.use express.json()
+app.use express.urlencoded()
 app.use express.methodOverride()
-app.use express.static path.join(__dirname, 'public')
-app.use '/components', express.static path.join(__dirname, 'bower_components')
+
+app.use '/contact-us', express.cookieParser()
+app.use '/contact-us', express.session { secret: 'not so secret' }
+app.use '/contact-us', express.csrf()
+
+app.use express.favicon path.join __dirname, 'public/favicon.ico'
+app.use express.static path.join __dirname, 'public'
+app.use '/components', express.static path.join __dirname, 'bower_components'
+
 app.use app.router
 app.use express.errorHandler() if 'development' is app.get 'env'
 
@@ -43,6 +51,7 @@ app.all '/*', (req, res, next) ->
 app.get '/', actions.index
 
 app.get '/contact-us', actions.contact
+app.post '/contact-us', actions.contact
 
 app.get '/:namespace/:page', (req, res) ->
     try

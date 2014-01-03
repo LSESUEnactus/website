@@ -12,5 +12,10 @@ exports.contact = (req, res) ->
     res.locals.current =
         title: 'Contact Us'
         slug: 'contact-us'
+    res.locals.token = req.csrfToken()
     res.locals.scripts.push '/js/contact.js'
+
+    #if req.method === 'POST'
+        # E-mail
+
     res.render 'contact-us'
