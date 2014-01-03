@@ -1,12 +1,12 @@
 <div class="content__contact-us">
 	<h1>Hi, how can we help you?</h1>
-	<form class="contact__form">
+	<form class="contact__form" method="POST">
 		<h2 class="subheader">
 			My name is 
 			<div class="contact__form-details">
 				<a class="contact__form-placeholder">enter your name</a>
 				<div class="contact__form-input">
-					<input type="text">
+					<input name="name" type="text">
 					<a class="contact__form-confirm"><i class="fa fa-arrow-right"></i></a>
 				</div>
 			</div> 
@@ -19,6 +19,7 @@
 						<li>create a new project</li>
 						<li>join an existing project</li>
 					</ul>
+					<input name="type" type="hidden" value="0">
 				</div>
 			</div>. 
 			<div class="contact__form-projects">
@@ -32,6 +33,7 @@
 							<li>Pathways</li>
 							<li>Commercial Projects</li>
 						</ul>
+						<input name="project" type="hidden" value="0">
 					</div>
 				</div>. 
 			</div>
@@ -39,13 +41,14 @@
 			<div class="contact__form-details">
 				<a class="contact__form-placeholder">enter your e-mail</a>
 				<div class="contact__form-input">
-					<input type="email">
+					<input name="email" type="email">
 					<a class="contact__form-confirm"><i class="fa fa-arrow-right"></i></a>
 				</div>
 			</div>.
 		</h2>
 		<div class="contact__form-submit">
-			<a href="#" class="button secondary">I look forward to hearing from you soon.</a>
+			<input type="hidden" name="_csrf" value="{{token}}">
+			<input type="submit" name="submit" class="button secondary" value="I look forward to hearing from you soon.">
 		</div>
 	</form>
 </div>
