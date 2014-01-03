@@ -22,7 +22,7 @@ app.set 'partials',
     footer: 'footer'
 
 app.disable 'x-powered-by'
-app.use express.logger 'dev'
+app.use express.logger('dev' if 'development' is app.get 'env')
 app.use express.compress()
 app.use express.methodOverride()
 app.use express.json()
