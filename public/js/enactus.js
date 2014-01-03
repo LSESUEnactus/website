@@ -1,5 +1,5 @@
 $(document).foundation();
-$(document).snowfall({ shadow : true, flakeCount: 100 });
+//$(document).snowfall({ shadow : true, flakeCount: 100 });
 
 $(function () {
 	if (!Modernizr.touch) {

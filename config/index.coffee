@@ -17,7 +17,7 @@ exports.development = (req, res, next) ->
 	    scripts: [
 	        '//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js'
 	        '//cdnjs.cloudflare.com/ajax/libs/foundation/5.0.2/js/foundation.min.js'
-	        '/components/jquery-snowfall/snowfall.min.jquery.js'
+	        #'/components/jquery-snowfall/snowfall.min.jquery.js'
 	        '/js/plugins.js'
 	        '/js/enactus.js'
 	    ]
