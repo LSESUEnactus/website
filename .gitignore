@@ -15,6 +15,9 @@ Desktop.ini
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
 
+### Compass ###
+.sass-cache
+
 ### SASS ###
 ### SASS Ignores - "Sassy CSS" http://sass-lang.com/
 *.sass-cache
@@ -37,3 +40,7 @@ npm-debug.log
 node_modules
 
 Enactus.bat
+
+### SublimeText ###
+# SublimeText project files
+*.sublime-workspace
