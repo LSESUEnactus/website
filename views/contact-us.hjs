@@ -18,6 +18,7 @@
 						<li>get in touch with you</li>
 						<li>create a new project</li>
 						<li>join an existing project</li>
+						<li>join the mailing list</li>
 					</ul>
 					<input name="type" type="hidden" value="0">
 				</div>
