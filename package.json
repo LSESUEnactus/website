@@ -2,10 +2,12 @@
   "name": "lsesu-enactus",
   "version": "2.2.1",
   "author": "Ian Lai <ian@fyianlai.com>",
-  "licenses" : [{
-    "type": "MIT",
-    "url": "http://ian.mit-license.org/"
-  }],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://ian.mit-license.org/"
+    }
+  ],
   "private": true,
   "scripts": {
     "start": "coffee Enactus.coffee",
@@ -15,6 +17,7 @@
     "express": "3.4.2",
     "hogan-express": "~0.5.0",
     "coffee-script": "~1.6.3",
-    "bower": "~1.2.8"
+    "bower": "~1.2.8",
+    "mailgun-js": "~0.2.2"
   }
 }
