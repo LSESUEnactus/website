@@ -1,4 +1,4 @@
-exports.development = (req, res, next) ->
+exports.production = (req, res, next) ->
 	res.locals =
 	    page:
 	        title: 'LSE SU Enactus'

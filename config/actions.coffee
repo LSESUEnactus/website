@@ -1,3 +1,6 @@
+##
+## Controllers
+##
 exports.index = (req, res) ->
     res.locals.page.title += " - Welcome!"
     res.locals.page.class = 'landing'
