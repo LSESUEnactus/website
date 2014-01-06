@@ -27,12 +27,15 @@ class Controller
                     location: []
 
                 if action?
+                    # Set history
                     res.locals.current.location.push
                         title: controller.title
                         slug: req.params.controller
                 else
+                    # Set index as the default action if undefined
                     req.params.action = 'index'
 
+                # Call controller if it exists
                 if @controllers[req.params.controller]?[req.params.action]?
                     @controllers[req.params.controller][req.params.action] req, res
 
