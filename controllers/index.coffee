@@ -18,7 +18,7 @@ class Controller
                 controller = app.get('routes')[req.params.controller]
                 action = controller.actions?[req.params.action]
 
-                pageTitle = action?.title? ? controller.title
+                pageTitle = action?.title ? controller.title
 
                 res.locals.page.title = "#{pageTitle} - #{res.locals.page.title}"
                 res.locals.current =
@@ -39,11 +39,12 @@ class Controller
                 if @controllers[req.params.controller]?[req.params.action]?
                     @controllers[req.params.controller][req.params.action] req, res
 
-                res.render "#{req.params.controller}/#{req.params.action}"
+                res.render "#{req.params.controller}/#{req.params.action}", {}, (error, html) =>
+                    return @_notFound req, res if error
+                    res.end html
+
             catch error
                 console.log error
-                console.log error.stack
-
                 @_notFound req, res
 
         app.use (req, res, next) =>
