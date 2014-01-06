@@ -1,9 +1,12 @@
 variables = (req, res, next) -> # Set template globals
+    date = new Date()
     res.locals = 
         page:
             title: 'LSE SU Enactus'
             description: 'London School of Economics and Political Science Student Union Enactus &ndash; Seeing possibilities. Taking action. Enabling progress.'
             url: 'enactuslse.co.uk'
+        date:
+            year: date.getFullYear()
         analytics:
             id: 'UA-5243796-8'
         social:
