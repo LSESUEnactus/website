@@ -1,4 +1,6 @@
-{{> header }}
+{{#yield-styles}}
+    <link rel="prefetch" href="/vids/enactus.mp4">
+{{/yield-styles}}
 
 <div class="body">
 
@@ -41,5 +43,3 @@
     </div>
 
 </div>
-
-{{> footer }}
