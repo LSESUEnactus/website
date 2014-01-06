@@ -9,7 +9,5 @@ index = (req, res) ->
     #if req.method === 'POST'
         # E-mail
 
-    res.render 'contact-us'
-
 module.exports = 
 	index: index

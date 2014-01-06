@@ -16,14 +16,14 @@ class Controller
         app.get '/:controller/:action?', (req, res) =>
             try
                 controller = app.get('routes')[req.params.controller]
-                action = controller.actions[req.params.action]
+                action = controller.actions?[req.params.action]
 
-                pageTitle = action.title or controller.title
+                pageTitle = action?.title? ? controller.title
 
                 res.locals.page.title = "#{pageTitle} - #{res.locals.page.title}"
                 res.locals.current =
                     title: pageTitle
-                    slug: req.params.action or req.params.controller
+                    slug: req.params.action ? req.params.controller
                     location: []
 
                 if action?
@@ -31,7 +31,6 @@ class Controller
                         title: controller.title
                         slug: req.params.controller
                 else
-
                     req.params.action = 'index'
 
                 if @controllers[req.params.controller]?[req.params.action]?
@@ -40,6 +39,8 @@ class Controller
                 res.render "#{req.params.controller}/#{req.params.action}"
             catch error
                 console.log error
+                console.log error.stack
+
                 @_notFound req, res
 
         app.use (req, res, next) =>
