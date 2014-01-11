@@ -2,6 +2,7 @@ index = (req, res, ctrl) ->
     res.locals.token = req.csrfToken()
     res.locals.scripts.push '/js/contact.js'
 
+    # @TODO Refactor in the future (decouple)
     if req.method is 'POST'
         metadata = ctrl.routes['contact-us']
         ctrl._setTitle res, metadata.title
@@ -15,7 +16,6 @@ index = (req, res, ctrl) ->
 
         res.locals.form_errors = req.validationErrors(true)
 
-        # @TODO Refactor in the future (decouple)
         if not res.locals.form_errors
             switch req.param('type')
                 when 1
@@ -44,6 +44,7 @@ index = (req, res, ctrl) ->
                         You can contact and/or assist the requester at <b>#{req.param('email')}</b>.<br /><br />
                         Thank you!"
 
+            # @TODO Redirect to original page to prevent multiple requests from reloading?
             return ctrl.app.get('mailgun').messages.send message, (error, response, body) =>
                 if response.statusCode is 200
                     res.locals.form_success = true

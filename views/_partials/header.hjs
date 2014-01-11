@@ -68,7 +68,7 @@
                         <li>
                             <a href="{{ social.facebook }}" target="social"><i class="fa fa-facebook"></i> Facebook</a>
                         </li>
-                        <li><a href="mailto:WeAre@enactuslse.co.uk">Contact Us</a></li>
+                        <li><a href="/contact-us">Contact Us</a></li>
                     </ul>
                 </div>
 
