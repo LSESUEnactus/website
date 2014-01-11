@@ -71,6 +71,20 @@
 	.content__contact-us {
 		margin: 5rem 0;
 		text-align: center;
+
+		.alert-box {
+			a {
+				color: #FFF;
+				text-decoration: underline;
+				&:hover {
+					color: darken(#FFF, 10%);
+				}
+			}
+			ul {
+				font-size: inherit;
+				margin: 0;
+			}
+		}
 	}
 		.contact__form {
 			> .subheader {
@@ -84,8 +98,15 @@
 			display: inline-block;
 			position: relative;
 		}
-			.contact__form-placeholder {
+			a.contact__form-placeholder {
 				border-bottom: 2px dotted $info-color;
+				&.error {
+					border-color: $alert-color;
+					color: $alert-color;
+					&:hover {
+						color: darken($alert-color, 10%);
+					}
+				}
 			}
 			.contact__form-input {
 				> input {
