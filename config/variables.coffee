@@ -25,6 +25,7 @@ variables = (req, res, next) -> # Set template globals
             '/js/enactus.js'
         ]
         contacts:
+            admin: 'website@enactuslse.co.uk'
             general: 'weare@enactuslse.co.uk'
             create: 'create@enactuslse.co.uk'
             mailing: 'newsletter@enactuslse.co.uk'
