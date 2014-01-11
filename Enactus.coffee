@@ -4,6 +4,7 @@
 express = require 'express'
 http = require 'http'
 path = require 'path'
+validator = require 'express-validator'
 
 ##
 ## Express
@@ -13,7 +14,7 @@ app = express()
 ##
 ## Mailgun (Email)
 ##
-mailgun = require('mailgun-js') process.env.MAILGUN_API_KEY, process.env.MAILGUN_API_URL if process.env.MAILGUN_API_KEY?
+app.set 'mailgun', require('mailgun-js') process.env.MAILGUN_API_KEY, process.env.MAILGUN_API_URL if process.env.MAILGUN_API_KEY?
 
 ##
 ## Templating
@@ -35,6 +36,7 @@ app.use express.logger('dev' if 'development' is app.get 'env')
 app.use express.compress()
 app.use express.methodOverride()
 app.use express.json()
+app.use validator()
 app.use express.urlencoded()
 
 ##
