@@ -7,8 +7,7 @@ $(function () {
 		if (e.type === 'keydown' && e.keyCode !== 13)
 			return;
 		e.preventDefault();
-		$(this).parent().prev().text( $(this).val() || $(this).parent().prev().text() );
-		$(this).parent().fadeOut();
+		$(this).parent().fadeOut().prev().text( $(this).val() || $(this).parent().prev().text() ).removeClass('error');
 	});
 	$('.contact__form-confirm').click(function () {
 		$(this).parent().prev().text( $(this).prev().val() || $(this).parent().prev().text() );
