@@ -1,10 +1,38 @@
 <div class="content__contact-us">
 	<h1>Hi, how can we help you?</h1>
+
+	{{# form_errors }}
+	<div data-alert class="alert-box alert">
+		Hang on! There appears to be a few problems with the information you have provided us:
+		<ul>
+			{{# email}}<li>{{msg}}</li>{{/ email}}
+			{{# name}}<li>{{msg}}</li>{{/ name}}
+		</ul>
+		<a href="#" class="close">&times;</a>
+	</div>
+	{{/ form_errors }}
+
+	{{# form_success }}
+	<div data-alert class="alert-box success">
+		Thank you for your enquiry! We will respond to you as soon as possible.
+		<a href="#" class="close">&times;</a>
+	</div>
+	{{/ form_success }}
+
+	{{# form_failure }}
+	<div data-alert class="alert-box warning">
+		Whoops! There appears to be a technical problem on our side. Please try again soon or notify an admin (<a href="mailto:admin@enactuslse.co.uk">admin@enactuslse.co.uk</a>).
+		<a href="#" class="close">&times;</a>
+	</div>
+	{{/ form_failure }}
+
 	<form class="contact__form" method="POST">
 		<h2 class="subheader">
 			My name is 
 			<div class="contact__form-details">
-				<a class="contact__form-placeholder">enter your name</a>
+				<a class="contact__form-placeholder {{#form_errors.name}}error{{/form_errors.name}}">
+					enter your name
+				</a>
 				<div class="contact__form-input">
 					<input name="name" type="text">
 					<a class="contact__form-confirm"><i class="fa fa-arrow-right"></i></a>
@@ -40,7 +68,9 @@
 			</div>
 			Please contact me at 
 			<div class="contact__form-details">
-				<a class="contact__form-placeholder">enter your e-mail</a>
+				<a class="contact__form-placeholder {{#form_errors.email}}error{{/form_errors.email}}">
+					enter your e-mail
+				</a>
 				<div class="contact__form-input">
 					<input name="email" type="email">
 					<a class="contact__form-confirm"><i class="fa fa-arrow-right"></i></a>
