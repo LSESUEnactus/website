@@ -6,51 +6,51 @@ class Controller
         @_redirectSIFE()
 
         # Index
-        app.get '/', @controllers['home']['index']
+        @app.get '/', @controllers['home']['index']
 
         # Contact us
         if process.env.MAILGUN_API_KEY?
-            app.post '/contact-us', @controllers['contact-us']['index']
+            @app.post '/contact-us', (req, res) =>
+                @controllers['contact-us']['index'](req, res, @)
 
         # Other pages
-        app.get '/:controller/:action?', (req, res) =>
-            try
-                controller = app.get('routes')[req.params.controller]
-                action = controller.actions?[req.params.action]
+        @app.get '/:controller/:action?', (req, res) =>
+            # Find controller and return 404 if it is not found
+            controller = @routes[req.params.controller] ? @_notFound req, res
+            action = controller.actions?[req.params.action]
+            currentTitle = action?.title ? controller.title
 
-                pageTitle = action?.title ? controller.title
+            # Set metadata
+            @_setTitle res, currentTitle
+            @_setBreadcrumbs res, currentTitle, req.params.action ? req.params.controller, 
+                            [title: controller.title, slug: req.params.controller] if action?
 
-                res.locals.page.title = "#{pageTitle} - #{res.locals.page.title}"
-                res.locals.current =
-                    title: pageTitle
-                    slug: req.params.action ? req.params.controller
-                    location: []
+            req.params.action ?= 'index'
 
-                if action?
-                    # Set history
-                    res.locals.current.location.push
-                        title: controller.title
-                        slug: req.params.controller
-                else
-                    # Set index as the default action if undefined
-                    req.params.action = 'index'
+            # Call controller if it exists
+            if @controllers[req.params.controller]?[req.params.action]?
+                @controllers[req.params.controller][req.params.action] req, res, @
 
-                # Call controller if it exists
-                if @controllers[req.params.controller]?[req.params.action]?
-                    @controllers[req.params.controller][req.params.action] req, res
+            @_render res, "#{req.params.controller}/#{req.params.action}"
 
-                res.render "#{req.params.controller}/#{req.params.action}", {}, (error, html) =>
-                    return @_notFound req, res if error
-                    res.end html
+        @app.use @_notFound
 
-            catch error
-                console.log error
-                @_notFound req, res
+    _setTitle: (res, title) ->
+        res.locals.page.title = "#{title} - #{res.locals.page.title}"
 
-        app.use (req, res, next) =>
-            @_notFound req, res, next
+    _setBreadcrumbs: (res, title, slug, location) ->
+        res.locals.current =
+            title: title
+            slug: slug
+            location: location
+
+    _render: (res, template) ->
+        res.render template, {}, (error, html) =>
+            return @_notFound false, res if error
+            res.end html
 
     _buildControllers: ->
+        @routes = @app.get('routes')
         @controllers = 
             'home': require './home.coffee'
             'contact-us': require './contact.coffee'
