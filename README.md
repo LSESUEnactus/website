@@ -1,6 +1,49 @@
-Enactus LSE SU
+LSE SU Enactus
 ==============
-A work in progress.
 
-The official, dynamic web site for the London School of Economics and Political Science Studen Union Enactus society.
-It was inspired by [Enactus' official web site](http://enactus.org/).
+_A work in progress._
+
+The official, flat-file, dynamic web site for the London School of Economics and Political Science Studen Union Enactus society.
+The design was inspired by [Enactus' official web site](http://enactus.org/).
+
+
+Installation
+-------------
+
+1. Install [NodeJS](http://nodejs.org/).
+2. Fork / clone or download this repository.
+3. Run `npm install` in the main Enactus-LSESU directory *(containing package.json)*.
+4. Run `bower install` IF NPM's package.json postinstall script fails *(it was included with Heroku in mind)*.
+5. Run or compile Enactus.coffee et al.
+
+### Modifying / extending:
+* Template variables and route definitions are located in the config/* directory; amend them accordingly to your likings.
+* Template files / views are located in the views/* directory.
+* E-mail services are reliant upon [Mailgun](http://mailgun.com). The MAILGUN_API_KEY and MAILGUN_API_URL environment variables must be set for the services to be functional.
+* Forms are CSRF-protected. You may amend the session secret by setting the SESSION_SECRET environment variable.
+* Refer to bower.json and package.json for a list of the web site's dependencies (front-end and back-end respectively).
+* To modify the styles, you will need Ruby for SASS and Foundation.
+
+
+Roadmap
+-------
+- Major refactoring (cache routes).
+- Admin panel?
+
+
+Boring Stuff
+------------
+
+### Acknowledgements
+- [Enactus](http://enactus.org/) and [Enactus UK](http://www.enactusuk.org/).
+- [Express](http://expressjs.com).
+- [Foundation by ZURB](http://foundation.zurb.com/).
+- [CloudFlare](http://cloudflare.com).
+- [Mailgun](http://www.mailgun.com/).
+- [Heroku](http://heroku.com/).
+
+### Copyright
+Copyright (C) 2014, Ian Lai.
+
+### Licensing
+[The MIT License (MIT)](http://ian.mit-license.org/) / LICENSE
