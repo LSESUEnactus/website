@@ -51,6 +51,7 @@ index = (req, res, ctrl) ->
                 else
                     res.locals.form_failure = false
                 ctrl._render res, 'contact-us/index'
+                res.end()
 
         ctrl._render res, 'contact-us/index'
 
