@@ -31,18 +31,16 @@
         Header
     -->
     <header class="header">
-        <!--
         <div class="header-notice show-for-medium-up">
             <div class="row">
                 <div class="large-12 columns">
-                    <a href="/xmas">
-                        Join us for an awesome night of pizza, drinks and party with other Enactus teams! 
-                        Find out more about our end of term Christmas bash &raquo;
+                    <a href="/what-is-new/events#shadow">
+                        Join our shadow committee! 
+                        Work alongside our committee members and attend our business advisory board meetings &raquo;
                     </a>
                 </div>
             </div>
         </div>
-        -->
 
         <div class="row header-main">
             <!--
