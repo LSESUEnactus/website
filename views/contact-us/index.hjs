@@ -40,29 +40,29 @@
 			</div> 
 			and I would like to 
 			<div class="contact__form-details">
-				<a class="contact__form-placeholder">get in touch with you</a>
+				<a class="contact__form-placeholder">{{selected.type.title}}</a>
 				<div class="contact__form-input">
 					<ul class="contact__form-select no-bullet">
-						<li>get in touch with you</li>
-						<li>create a new project</li>
-						<li>join an existing project</li>
-						<li>join the mailing list</li>
+						{{# contacts }}
+							{{^ignore}}
+								<li>{{ title }}</li>
+							{{/ignore}}
+						{{/ contacts }}
 					</ul>
-					<input name="type" type="hidden" value="0">
+					<input name="type" type="hidden" value="{{selected.type.value}}">
 				</div>
 			</div>. 
-			<div class="contact__form-projects">
+			<div class="contact__form-projects" {{#selected.showProjects}}style="display: inline-block"{{/selected.showProjects}}>
 				I am interested in 
 				<div class="contact__form-details">
-					<a class="contact__form-placeholder">Trading Futures</a>
+					<a class="contact__form-placeholder">{{selected.project.title}}</a>
 					<div class="contact__form-input">
 						<ul class="contact__form-select no-bullet">
-							<li>Trading Futures</li>
-							<li>LSE Support</li>
-							<li>Pathways</li>
-							<li>Commercial Projects</li>
+							{{# projects }}
+								<li>{{ title }}</li>
+							{{/ projects }}
 						</ul>
-						<input name="project" type="hidden" value="0">
+						<input name="project" type="hidden" value="{{selected.project.value}}">
 					</div>
 				</div>. 
 			</div>
