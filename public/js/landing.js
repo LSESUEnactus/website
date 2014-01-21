@@ -30,8 +30,8 @@ $(function () {
     var $centreMarginHeight;
     var centreMargin = function () {
         $centreMarginHeight = $window.outerHeight() - $headerObj.outerHeight() - $centreMarginObj.outerHeight();
-        if ($centreMarginHeight <= 20)
-            $centreMarginHeight = 20;
+        if ($centreMarginHeight <= 100)
+            $centreMarginHeight = 100;
         $centreMarginObj.css('margin', $centreMarginHeight / 2 + 'px auto');
     }
     centreMargin();
