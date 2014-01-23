@@ -3,13 +3,14 @@ _getMeta = (array, slug, ignore = true) ->
         item.value = index
         return item
 
+# GET index
 index = (req, res, ctrl) ->
     res.locals.token = req.csrfToken()
     res.locals.scripts.push '/js/contact.js'
 
+    # Get and set form parameters
     typeMeta = _getMeta res.locals.contacts, req.param('type')
     projectMeta = _getMeta res.locals.projects, req.param('project')
-
     res.locals.selected =
         type:
             title: typeMeta?.title ? res.locals.contacts[0].title
@@ -19,49 +20,55 @@ index = (req, res, ctrl) ->
             value: projectMeta?.value ? 0
         showProjects: true if req.param('type') is 'join'
 
-    # @TODO Refactor in the future
-    if req.method is 'POST'
-        metadata = ctrl.routes['contact-us']
-        ctrl._setTitle res, metadata.title
-        ctrl._setBreadcrumbs res, metadata.title, 'contact-us', []
+# POST index
+postIndex = (req, res, ctrl) ->
+    # Call GET index
+    index req, res, ctrl
 
-        req.checkBody('name', 'We do not know what your name is.').notEmpty().len(3, 20)
-        req.checkBody('email', 'Your e-mail is unreachable. Perhaps you entered it incorrectly?').notEmpty().isEmail()
+    # Set metadata
+    metadata = ctrl.routes['contact-us']
+    ctrl._setTitle res, metadata.title
+    ctrl._setBreadcrumbs res, metadata.title, 'contact-us', []
 
-        req.sanitize('type').toInt()
-        req.sanitize('project').toInt()
+    # Validate form data
+    req.checkBody('name', 'We do not know what your name is.').notEmpty().len(3, 20)
+    req.checkBody('email', 'Your e-mail is unreachable. Perhaps you entered it incorrectly?').notEmpty().isEmail()
 
-        res.locals.form_errors = req.validationErrors(true)
+    req.sanitize('type').toInt()
+    req.sanitize('project').toInt()
 
-        if not res.locals.form_errors
-            admin = _getMeta(res.locals.contacts, 'admin', false).email
+    res.locals.form_errors = req.validationErrors(true)
 
-            if req.param('type') is 2
-                action = 'join your project'
-                recipient = res.locals.projects[req.param('project')].email
+    if not res.locals.form_errors
+        admin = _getMeta(res.locals.contacts, 'admin', false).email
+
+        if req.param('type') is 2
+            action = 'join your project'
+            recipient = res.locals.projects[req.param('project')].email
+        else
+            action = res.locals.contacts[req.param('type')].title
+            recipient = res.locals.contacts[req.param('type')].email
+
+        message =
+            from: "LSE SU Enactus Website <#{admin}>"
+            to: recipient ? admin
+            subject: "A new request from #{req.param('name')} @ #{res.locals.page.title}"
+            html: "Hello,<br /><br />
+                    <b>#{req.param('name')}</b> has made a request to <b>#{action}</b>, at #{res.locals.page.title}.<br />
+                    You can contact and/or assist the requester at <b>#{req.param('email')}</b>.<br /><br />
+                    Thank you!"
+
+        # @TODO Redirect to original page to prevent multiple requests from reloading?
+        return ctrl.app.get('mailgun').messages.send message, (error, response, body) =>
+            if response.statusCode is 200
+                res.locals.form_success = true
             else
-                action = res.locals.contacts[req.param('type')].title
-                recipient = res.locals.contacts[req.param('type')].email
+                res.locals.form_failure = false
+            ctrl._render res, 'contact-us/index'
+            res.end()
 
-            message =
-                from: "LSE SU Enactus Website <#{admin}>"
-                to: recipient ? admin
-                subject: "A new request from #{req.param('name')} @ #{res.locals.page.title}"
-                html: "Hello,<br /><br />
-                        <b>#{req.param('name')}</b> has made a request to <b>#{action}</b>, at #{res.locals.page.title}.<br />
-                        You can contact and/or assist the requester at <b>#{req.param('email')}</b>.<br /><br />
-                        Thank you!"
-
-            # @TODO Redirect to original page to prevent multiple requests from reloading?
-            return ctrl.app.get('mailgun').messages.send message, (error, response, body) =>
-                if response.statusCode is 200
-                    res.locals.form_success = true
-                else
-                    res.locals.form_failure = false
-                ctrl._render res, 'contact-us/index'
-                res.end()
-
-        ctrl._render res, 'contact-us/index'
+    ctrl._render res, 'contact-us/index'
 
 module.exports = 
     index: index
+    postIndex: postIndex

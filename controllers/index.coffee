@@ -11,7 +11,7 @@ class Controller
         # Contact us
         if process.env.MAILGUN_API_KEY?
             @app.post '/contact-us', (req, res) =>
-                @controllers['contact-us']['index'](req, res, @)
+                @controllers['contact-us']['postIndex'](req, res, @)
 
         # Other pages
         @app.get '/:controller/:action?', (req, res) =>
