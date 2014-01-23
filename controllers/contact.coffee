@@ -1,5 +1,5 @@
-_getMeta = (array, slug) ->
-    for item, index in array when item.slug is slug and not item.ignore?
+_getMeta = (array, slug, ignore = true) ->
+    for item, index in array when item.slug is slug and (not ignore or not item.ignore?)
         item.value = index
         return item
 
@@ -34,7 +34,7 @@ index = (req, res, ctrl) ->
         res.locals.form_errors = req.validationErrors(true)
 
         if not res.locals.form_errors
-            admin = 'website@enactuslse.co.uk'
+            admin = _getMeta(res.locals.contacts, 'admin', false).email
 
             if req.param('type') is 2
                 action = 'join your project'
