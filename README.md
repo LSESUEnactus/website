@@ -6,6 +6,8 @@ _A work in progress._
 The official, flat-file, dynamic web site for the London School of Economics and Political Science Studen Union [Enactus society](http://www.lsesu.com/activities/societies/society/7398/).
 The design was inspired by [Enactus' official web site](http://enactus.org/).
 
+[Enactus](http://enactus.org/) is an international non-profit organization that brings together student, academic and business leaders who are committed to using the power of entrepreneurial action to improve the quality of life and standard of living for people in need.
+
 
 Installation
 -------------
