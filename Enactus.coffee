@@ -42,9 +42,13 @@ app.use express.urlencoded()
 ##
 ## Assets
 ##
-app.use express.favicon path.join __dirname, 'public/favicon.ico'
-app.use express.static path.join __dirname, 'public'
-app.use '/components', express.static path.join __dirname, 'bower_components'
+expires = 2628000000
+app.use express.favicon path.join(__dirname, 'public/favicon.ico'),
+	maxAge: expires
+app.use express.static path.join(__dirname, 'public'),
+	maxAge: expires
+app.use '/components', express.static path.join(__dirname, 'bower_components'),
+	maxAge: expires
 
 ##
 ## Config
