@@ -1,24 +1,29 @@
 {
-  "name": "lsesu-enactus",
-  "version": "3.2.1",
-  "author": "Ian Lai <ian@fyianlai.com>",
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://ian.mit-license.org/"
+    "name": "lsesu-enactus",
+    "version": "3.2.2",
+    "author": "Ian Lai <ian@fyianlai.com>",
+    "homepage": "http://www.enactuslse.co.uk",
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "http://ian.mit-license.org/"
+        }
+    ],
+    "private": true,
+    "scripts": {
+        "start": "coffee Enactus.coffee",
+        "postinstall": "./node_modules/bower/bin/bower install"
+    },
+    "dependencies": {
+        "bower": "~1.2.8",
+        "coffee-script": "~1.6.3",
+        "express": "3.4.2",
+        "express-validator": "~1.0.1",
+        "hogan-express": "~0.5.0",
+        "mailgun-js": "~0.2.2"
+    },
+    "devDependencies": {
+        "grunt": "~0.4.2",
+        "grunt-contrib-compass": "~0.7.1"
     }
-  ],
-  "private": true,
-  "scripts": {
-    "start": "coffee Enactus.coffee",
-    "postinstall": "./node_modules/bower/bin/bower install"
-  },
-  "dependencies": {
-    "express": "3.4.2",
-    "hogan-express": "~0.5.0",
-    "coffee-script": "~1.6.3",
-    "bower": "~1.2.8",
-    "mailgun-js": "~0.2.2",
-    "express-validator": "~1.0.1"
-  }
 }
