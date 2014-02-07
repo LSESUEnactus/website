@@ -1,5 +1,4 @@
 $(document).foundation();
-//$(document).snowfall({ shadow : true, flakeCount: 100 });
 
 $(function () {
 	var $onScreenObj = $('.js-onScreen');
