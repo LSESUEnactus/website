@@ -1,21 +1,21 @@
 {
-  "name": "lsesu-enactus",
-  "authors": [
-    "Ian Lai <ian@fyianlai.com>"
-  ],
-  "license": "http://ian.mit-license.org/",
-  "private": true,
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
-    "background-video": "*",
-    "font-awesome": "~4.0.3",
-    "foundation": "~5.0.2",
-    "Morphext": "*"
-  }
+    "name": "lsesu-enactus",
+    "authors": [
+        "Ian Lai <ian@fyianlai.com>"
+    ],
+    "license": "http://ian.mit-license.org/",
+    "private": true,
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "background-video": "*",
+        "font-awesome": "~4.0.3",
+        "foundation": "~5.0.2",
+        "Morphext": "*"
+    }
 }

@@ -1,6 +1,7 @@
 {
     "name": "lsesu-enactus",
     "version": "3.2.2",
+    "description": "The official web site for the LSE SU Enactus society.",
     "author": "Ian Lai <ian@fyianlai.com>",
     "homepage": "http://www.enactuslse.co.uk",
     "licenses": [
