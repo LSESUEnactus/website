@@ -10,8 +10,8 @@ variables = (req, res, next) -> # Set template globals
         analytics:
             id: 'UA-5243796-8'
         social:
-            twitter: 'EnactusLSE'
-            facebook: 'LSESUEnactus'
+            twitter: '//twitter.com/EnactusLSE'
+            facebook: '//facebook.com/LSESUEnactus'
         styles: [
             '//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700'
             '//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css'
