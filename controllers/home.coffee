@@ -7,5 +7,5 @@ index = (req, res) ->
     res.locals.scripts.push '/js/landing.js'
     res.render 'index', layout: '_layouts/blank'
 
-module.exports = 
+module.exports =
     index: index
