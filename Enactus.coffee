@@ -14,7 +14,10 @@ app = express()
 ##
 ## Mailgun (Email)
 ##
-app.set 'mailgun', require('mailgun-js') process.env.MAILGUN_API_KEY, process.env.MAILGUN_API_URL if process.env.MAILGUN_API_KEY?
+MAILGUN_API_KEY = process.env.MAILGUN_API_KEY
+MAILGUN_API_URL = process.env.MAILGUN_API_URL
+if MAILGUN_API_KEY?
+    app.set 'mailgun', require('mailgun-js') MAILGUN_API_KEY, MAILGUN_API_URL
 
 ##
 ## Templating
@@ -24,7 +27,7 @@ app.engine 'hjs', require 'hogan-express'
 app.set 'views', path.join __dirname, 'views'
 app.set 'view engine', 'hjs'
 app.set 'layout', '_layouts/default'
-app.set 'partials', 
+app.set 'partials',
     header: '_partials/header'
     footer: '_partials/footer'
 
@@ -43,12 +46,12 @@ app.use express.urlencoded()
 ## Assets
 ##
 expires = 2628000000
-app.use express.favicon path.join(__dirname, 'public/favicon.ico'),
-	maxAge: expires
-app.use express.static path.join(__dirname, 'public'),
-	maxAge: expires
+app.use express.favicon path.join(__dirname, 'public/dist/favicon.ico'),
+    maxAge: expires
+app.use express.static path.join(__dirname, 'public/dist'),
+    maxAge: expires
 app.use '/components', express.static path.join(__dirname, 'bower_components'),
-	maxAge: expires
+    maxAge: expires
 
 ##
 ## Config
@@ -61,7 +64,8 @@ app.use require './config/variables'
 ## Session
 ##
 app.use '/contact-us', express.cookieParser()
-app.use '/contact-us', express.session { secret: process.env.SESSION_SECRET or 'not so secret' }
+app.use '/contact-us', express.session
+    secret: process.env.SESSION_SECRET or 'not so secret'
 app.use '/contact-us', express.csrf()
 
 ##
@@ -73,4 +77,4 @@ app.use express.errorHandler() if 'development' is app.get 'env'
 require('./controllers') app
 
 http.createServer(app).listen app.get('port'), ->
-  console.log "Express server listening on port #{app.get 'port'}"
+    console.log "Express server listening on port #{app.get 'port'}"
