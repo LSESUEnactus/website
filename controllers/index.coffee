@@ -2,8 +2,8 @@ class Controller
     constructor: (@app) ->
         @_buildControllers()
 
-        # sifelse.co.uk -> enactuslse.co.uk
-        @_redirectSIFE()
+        # cdn.enactuslse.co.uk or sifelse.co.uk -> enactuslse.co.uk
+        @_redirects()
 
         # Index
         @app.get '/', @controllers['home']['index']
@@ -22,7 +22,7 @@ class Controller
 
             # Set metadata
             @_setTitle res, currentTitle
-            @_setBreadcrumbs res, currentTitle, req.params.action ? req.params.controller, 
+            @_setBreadcrumbs res, currentTitle, req.params.action ? req.params.controller,
                             [title: controller.title, slug: req.params.controller] if action?
 
             req.params.action ?= 'index'
@@ -51,13 +51,13 @@ class Controller
 
     _buildControllers: ->
         @routes = @app.get('routes')
-        @controllers = 
+        @controllers =
             'home': require './home.coffee'
             'contact-us': require './contact.coffee'
 
-    _redirectSIFE: ->
-        @app.all '/*', (req, res, next) =>
-            res.redirect 301, '//enactuslse.co.uk' if req.header('host').match /sifelse/i
+    _redirects: ->
+        @app.all '/*', (req, res, next) ->
+            res.redirect 301, '//' + res.locals.page.url if req.header('host').match /(cdn.enactuslse|sifelse)/i
             next()
 
     _notFound: (req, res, next) ->
