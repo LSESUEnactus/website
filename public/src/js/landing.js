@@ -1,7 +1,7 @@
 /*
  * Application
  */
-$(function () {
+(function ($) {
     // Background Video (w/ Image Fallback)
     if (!Modernizr.video || Modernizr.touch)
         $('body').addClass('body--noVid');
@@ -36,4 +36,4 @@ $(function () {
     }
     centreMargin();
     $window.resize(centreMargin);
-});
+})(jQuery);

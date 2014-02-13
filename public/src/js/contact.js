@@ -1,4 +1,4 @@
-$(function () {
+(function ($) {
 	/*
 	 * WARNING: Extremely messy.
 	 * @TODO: Clean up of course (use functions).
@@ -28,4 +28,4 @@ $(function () {
 	$('.contact__form-placeholder').click(function () {
 		$(this).next().fadeIn().find('input').focus();
 	});
-});
+})(jQuery);

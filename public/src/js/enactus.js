@@ -1,6 +1,6 @@
-$(document).foundation();
+(function ($) {
+	$(document).foundation();
 
-$(function () {
 	var $onScreenObj = $('.js-onScreen');
 
 	if (!Modernizr.touch)
@@ -18,4 +18,4 @@ $(function () {
 			'bottom': '0',
 			'position': 'relative'
 		}).show();
-});
+})(jQuery);
