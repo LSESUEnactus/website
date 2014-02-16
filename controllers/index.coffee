@@ -1,39 +1,39 @@
 class Controller
     constructor: (@app) ->
-        @_buildControllers()
-
         # cdn.enactuslse.co.uk or sifelse.co.uk -> enactuslse.co.uk
         @_redirects()
 
         # Index
-        @app.get '/', @controllers['home']['index']
+        @app.get '/', require('./home.coffee')['index']
 
-        # Contact us
-        if process.env.MAILGUN_API_KEY?
-            @app.post '/contact-us', (req, res) =>
-                @controllers['contact-us']['postIndex'](req, res, @)
+        # CONTACT US NEEDS FIXING
 
         # Other pages
-        @app.get '/:controller/:action?', (req, res) =>
-            # Find controller and return 404 if it is not found
-            controller = @routes[req.params.controller] ? @_notFound req, res
-            action = controller.actions?[req.params.action]
-            currentTitle = action?.title ? controller.title
+        @routes = @app.get('routes')
+        for controller of @routes
+            if not @routes[controller]['actions']?
+                return @_setGet controller
 
-            # Set metadata
-            @_setTitle res, currentTitle
-            @_setBreadcrumbs res, currentTitle, req.params.action ? req.params.controller,
-                            [title: controller.title, slug: req.params.controller] if action?
+            for action of @routes[controller]['actions']
+                @_setGet controller, action
 
-            req.params.action ?= 'index'
-
-            # Call controller if it exists
-            if @controllers[req.params.controller]?[req.params.action]?
-                @controllers[req.params.controller][req.params.action] req, res, @
-
-            @_render res, "#{req.params.controller}/#{req.params.action}"
-
+        # 404
         @app.use @_notFound
+
+    _setGet: (controller, action) ->
+        if action?
+            @app.get "/#{controller}/#{action}", (req, res) =>
+                title = @routes[controller]['actions'][action]['title']
+                @_setTitle res, title
+                @_setBreadcrumbs res, title, action, 
+                                [ title: @routes[controller]['title'], slug: controller ]
+                @_render res, "#{controller}/#{action}"
+        else
+            @app.get "/#{controller}", (req, res) =>
+                title = @routes[controller]['title']
+                @_setTitle res, title
+                @_setBreadcrumbs res, title, controller
+                @_render res, "#{controller}/index"
 
     _setTitle: (res, title) ->
         res.locals.page.title = "#{title} - #{res.locals.page.title}"
@@ -48,12 +48,6 @@ class Controller
         res.render template, {}, (error, html) =>
             return @_notFound false, res if error
             res.end html
-
-    _buildControllers: ->
-        @routes = @app.get('routes')
-        @controllers =
-            'home': require './home.coffee'
-            'contact-us': require './contact.coffee'
 
     _redirects: ->
         @app.all '/*', (req, res, next) ->
