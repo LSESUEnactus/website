@@ -20,11 +20,7 @@ routes =
     'what-is-new':
         title: 'What Is New'
         actions:
-            blog:
-                title: 'Blog'
-            events:
+            'events':
                 title: 'Events'
-    'contact-us':
-        title: 'Contact Us'
 
 module.exports = routes
