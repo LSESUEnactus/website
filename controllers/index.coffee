@@ -6,7 +6,10 @@ class Controller
         # Index
         @app.get '/', require('./home.coffee')['index']
 
-        # CONTACT US NEEDS FIXING
+        # Contact us
+        if process.env.MAILGUN_API_KEY?
+            @app.post '/contact-us', (req, res) =>
+                require("./contact.coffee")['postIndex'](req, res, @)
 
         # Other pages
         @routes = @app.get('routes')
@@ -22,18 +25,25 @@ class Controller
 
     _setGet: (controller, action) ->
         if action?
-            @app.get "/#{controller}/#{action}", (req, res) =>
-                title = @routes[controller]['actions'][action]['title']
-                @_setTitle res, title
-                @_setBreadcrumbs res, title, action, 
-                                [ title: @routes[controller]['title'], slug: controller ]
-                @_render res, "#{controller}/#{action}"
+            route = "/#{controller}/#{action}"
+            title = @routes[controller]['actions'][action]['title']
+            custom = @routes[controller]['actions'][action]['custom']
         else
-            @app.get "/#{controller}", (req, res) =>
-                title = @routes[controller]['title']
-                @_setTitle res, title
+            route = "/#{controller}"
+            title = @routes[controller]['title']
+            custom = @routes[controller]['custom']
+            action = 'index'
+
+        @app.get route, (req, res) =>
+            require("./#{custom}.coffee")[action](req, res, @) if custom?
+
+            @_setTitle res, title
+            if action is 'index'
                 @_setBreadcrumbs res, title, controller
-                @_render res, "#{controller}/index"
+            else
+                @_setBreadcrumbs res, title, action,
+                                [ title: @routes[controller]['title'], slug: controller ]
+            @_render res, "#{controller}/#{action}"
 
     _setTitle: (res, title) ->
         res.locals.page.title = "#{title} - #{res.locals.page.title}"

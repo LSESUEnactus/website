@@ -22,5 +22,8 @@ routes =
         actions:
             'events':
                 title: 'Events'
+    'contact-us':
+        title: 'Contact Us'
+        custom: 'contact'
 
 module.exports = routes
