@@ -3,7 +3,7 @@ module.exports = (grunt) ->
         dist: 'public/dist'
         src: 'public/src'
         pkg: grunt.file.readJSON 'package.json'
-        clean: ['<%= dist %>/css', '<%= dist %>/js']
+        clean: ['<%= dist %>/css', '<%= dist %>/js', '<%= dist %>/img']
         coffeelint:
             app: ['Enactus.coffee']
             grunt: ['Gruntfile.coffee']
@@ -41,8 +41,16 @@ module.exports = (grunt) ->
                     importPath: 'bower_components/foundation/scss'
                     force: true
                     watch: true
+        copy:
+            images:
+                files: [
+                    expand: true
+                    cwd: '<%= src %>/img/'
+                    src: ['**']
+                    dest: '<%= dist %>/img/'
+                ]
         imagemin:
-            dynamic:
+            images:
                 files: [
                     expand: true
                     cwd: '<%= src %>/img/'
@@ -53,7 +61,7 @@ module.exports = (grunt) ->
             options:
                 mangle:
                     except: ['jQuery']
-            my_target:
+            main:
                 files: [
                     '<%= dist %>/js/enactus.js': [
                         '<%= src %>/js/plugins.js', '<%= src %>/js/enactus.js'
@@ -67,9 +75,10 @@ module.exports = (grunt) ->
     grunt.loadNpmTasks 'grunt-contrib-compass'
     grunt.loadNpmTasks 'grunt-contrib-imagemin'
     grunt.loadNpmTasks 'grunt-contrib-uglify'
+    grunt.loadNpmTasks 'grunt-contrib-copy'
 
     grunt.registerTask 'default', [
-        'clean', 'imagemin', 'uglify', 'compass:dist'
+        'clean', 'copy', 'imagemin', 'uglify', 'compass:dist'
     ]
     grunt.registerTask 'dev', ['default', 'test', 'compass:dev']
     grunt.registerTask 'test', ['coffeelint']
