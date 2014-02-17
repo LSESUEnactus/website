@@ -59,13 +59,16 @@ postIndex = (req, res, ctrl) ->
                     Thank you!"
 
         # @TODO Redirect to original page to prevent multiple requests from reloading?
-        return ctrl.app.get('mailgun').messages.send message, (error, response, body) ->
-            if response.statusCode is 200
-                res.locals.form_success = true
-            else
-                res.locals.form_failure = false
-            ctrl._render res, 'contact-us/index'
-            res.end()
+        if 'development' is ctrl.app.get 'env'
+            console.log message
+        else
+            return ctrl.app.get('mailgun').messages.send message, (error, response, body) ->
+                if response.statusCode is 200
+                    res.locals.form_success = true
+                else
+                    res.locals.form_failure = false
+                ctrl._render res, 'contact-us/index'
+                res.end()
 
     ctrl._render res, 'contact-us/index'
 
