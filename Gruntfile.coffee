@@ -1,9 +1,14 @@
 module.exports = (grunt) ->
     grunt.initConfig
-        dist: 'public/dist'
-        src: 'public/src'
         pkg: grunt.file.readJSON 'package.json'
-        clean: ['<%= dist %>/css', '<%= dist %>/js']
+        dirs:
+            dist: 'public/dist'
+            src: 'public/src'
+        clean: [
+            '<%= dirs.dist %>/css'
+            '<%= dirs.dist %>/js'
+            '<%= dirs.dist %>/img'
+        ]
         coffeelint:
             app: ['Enactus.coffee']
             grunt: ['Gruntfile.coffee']
@@ -26,8 +31,8 @@ module.exports = (grunt) ->
             dist:
                 options:
                     httpPath: '<%= pkg.cdn %>'
-                    cssDir: '<%= dist %>/css'
-                    sassDir: '<%= src %>/sass'
+                    cssDir: '<%= dirs.dist %>/css'
+                    sassDir: '<%= dirs.src %>/sass'
                     imagesDir: 'img'
                     importPath: 'bower_components/foundation/scss'
                     environment: 'production'
@@ -35,8 +40,8 @@ module.exports = (grunt) ->
                     force: true
             dev:
                 options:
-                    cssDir: '<%= dist %>/css'
-                    sassDir: '<%= src %>/sass'
+                    cssDir: '<%= dirs.dist %>/css'
+                    sassDir: '<%= dirs.src %>/sass'
                     imagesDir: 'img'
                     importPath: 'bower_components/foundation/scss'
                     force: true
@@ -45,17 +50,19 @@ module.exports = (grunt) ->
             images:
                 files: [
                     expand: true
-                    cwd: '<%= src %>/img/'
+                    cwd: '<%= dirs.src %>/img/'
                     src: ['**']
-                    dest: '<%= dist %>/img/'
+                    dest: '<%= dirs.dist %>/img/'
                 ]
         imagemin:
+            options:
+                cache: false
             images:
                 files: [
                     expand: true
-                    cwd: '<%= src %>/img/'
+                    cwd: '<%= dirs.src %>/img/'
                     src: ['**/*.{png,jpg,gif}']
-                    dest: '<%= dist %>/img/'
+                    dest: '<%= dirs.dist %>/img/'
                 ]
         uglify:
             options:
@@ -63,11 +70,16 @@ module.exports = (grunt) ->
                     except: ['jQuery']
             main:
                 files: [
-                    '<%= dist %>/js/enactus.js': [
-                        '<%= src %>/js/plugins.js', '<%= src %>/js/enactus.js'
+                    '<%= dirs.dist %>/js/enactus.js': [
+                        '<%= dirs.src %>/js/plugins.js'
+                        '<%= dirs.src %>/js/enactus.js'
                     ]
-                    '<%= dist %>/js/landing.js':['<%= src %>/js/landing.js']
-                    '<%= dist %>/js/contact.js': ['<%= src %>/js/contact.js']
+                    '<%= dirs.dist %>/js/landing.js': [
+                        '<%= dirs.src %>/js/landing.js'
+                    ]
+                    '<%= dirs.dist %>/js/contact.js': [
+                        '<%= dirs.src %>/js/contact.js'
+                    ]
                 ]
 
     grunt.loadNpmTasks 'grunt-contrib-clean'
@@ -75,10 +87,9 @@ module.exports = (grunt) ->
     grunt.loadNpmTasks 'grunt-contrib-compass'
     grunt.loadNpmTasks 'grunt-contrib-imagemin'
     grunt.loadNpmTasks 'grunt-contrib-uglify'
-    grunt.loadNpmTasks 'grunt-contrib-copy'
 
     grunt.registerTask 'default', [
-        'clean', 'uglify', 'compass:dist'
+        'clean', 'imagemin', 'uglify', 'compass:dist'
     ]
     grunt.registerTask 'dev', ['default', 'test', 'compass:dev']
     grunt.registerTask 'test', ['coffeelint']
