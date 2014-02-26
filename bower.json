@@ -15,7 +15,7 @@
     "dependencies": {
         "background-video": "*",
         "font-awesome": "~4.0.3",
-        "foundation": "~5.0.2",
+        "foundation": "~5.1.1",
         "Morphext": "*"
     }
 }
