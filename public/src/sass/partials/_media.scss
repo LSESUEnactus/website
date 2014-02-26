@@ -1,7 +1,7 @@
 @media #{$small-up} {
 	.header__nav { padding-right: 0 }
-	.top-bar, .top-bar-section ul { background: transparent; background: transparent }
-	.header__nav-main .top-bar-section li {
+	.top-bar, .top-bar-section ul { background: transparent }
+	.header__nav-main .top-bar-section li:not(.has-form) {
 		> a {
 			&:hover, &:not(.button) { background: transparent }
 		}
@@ -20,6 +20,7 @@
 			}
 			a {
 				color: #4c4c4c;
+				line-height: 1;
 				padding: 1rem;
 				font-size: rem-calc(14);
 				&:hover {
