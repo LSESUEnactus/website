@@ -18,7 +18,7 @@
 	Contact: http://www.sxc.hu/profile/aozuas
 
 /* SITE */
-	Last update: 2014/02/07
+	Last update: 2014/02/26
 	Language: English
 	Standards: HTML5, CSS3 (SASS with Compass)
 	Components: Normalize.css, Foundation, Typicons, Modernizr, jQuery, HTML5 Background Video, Simple Text Rotator, onScreen.js
