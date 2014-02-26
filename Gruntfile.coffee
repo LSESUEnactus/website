@@ -3,7 +3,7 @@ module.exports = (grunt) ->
         dist: 'public/dist'
         src: 'public/src'
         pkg: grunt.file.readJSON 'package.json'
-        clean: ['<%= dist %>/css', '<%= dist %>/js', '<%= dist %>/img']
+        clean: ['<%= dist %>/css', '<%= dist %>/js']
         coffeelint:
             app: ['Enactus.coffee']
             grunt: ['Gruntfile.coffee']
@@ -78,7 +78,7 @@ module.exports = (grunt) ->
     grunt.loadNpmTasks 'grunt-contrib-copy'
 
     grunt.registerTask 'default', [
-        'clean', 'copy', 'imagemin', 'uglify', 'compass:dist'
+        'clean', 'uglify', 'compass:dist'
     ]
     grunt.registerTask 'dev', ['default', 'test', 'compass:dev']
     grunt.registerTask 'test', ['coffeelint']
