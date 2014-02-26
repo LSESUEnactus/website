@@ -15,7 +15,8 @@ class Controller
         @routes = @app.get('routes')
         for controller of @routes
             if not @routes[controller]['actions']?
-                return @_setGet controller
+                @_setGet controller
+                continue
 
             for action of @routes[controller]['actions']
                 @_setGet controller, action
