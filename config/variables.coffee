@@ -18,8 +18,8 @@ variables = (req, res, next) -> # Set template globals
             '/css/enactus.css'
         ]
         scripts: [
-            '//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js'
-            '//cdnjs.cloudflare.com/ajax/libs/foundation/5.0.2/js/foundation.min.js'
+            '//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js'
+            '//cdnjs.cloudflare.com/ajax/libs/foundation/5.1.1/js/foundation.min.js'
             '/js/enactus.js'
         ]
         contacts: [
