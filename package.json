@@ -1,6 +1,6 @@
 {
   "name": "lsesu-enactus",
-  "version": "3.2.2",
+  "version": "3.3.3",
   "description": "The official web site for the LSE SU Enactus society.",
   "author": "Ian Lai <ian@fyianlai.com>",
   "homepage": "http://www.enactuslse.co.uk",
@@ -18,16 +18,16 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "bower": "~1.2.8",
-    "coffee-script": "~1.6.3",
-    "express": "3.4.2",
+    "bower": "*",
+    "coffee-script": "~1.7.1",
+    "express": "3.4.8",
     "express-validator": "~1.0.1",
-    "hogan-express": "~0.5.0",
-    "mailgun-js": "~0.2.2"
+    "hogan-express": "~0.5.2",
+    "mailgun-js": "~0.3.2"
   },
   "devDependencies": {
     "grunt": "~0.4.2",
-    "grunt-contrib-compass": "~0.7.1",
+    "grunt-contrib-compass": "~0.7.2",
     "grunt-contrib-imagemin": "~0.5.0",
     "grunt-contrib-uglify": "~0.3.2",
     "grunt-contrib-clean": "~0.5.0",
