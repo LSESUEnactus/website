@@ -31,18 +31,16 @@
         Header
     -->
     <header class="header">
-        <!--
         <div class="header-notice show-for-medium-up">
             <div class="row">
                 <div class="large-12 columns">
-                    <a href="/what-is-new/events#shadow">
-                        Join our shadow committee! 
-                        Work alongside our committee members and attend our business advisory board meetings &raquo;
+                    <a href="/what-is-new/events#agm">
+                        Join us for our AGM &amp; election meeting on the 12th March! 
+                        All managing committee positions will be open for contest &raquo;
                     </a>
                 </div>
             </div>
         </div>
-        -->
 
         <div class="row header-main">
             <!--
