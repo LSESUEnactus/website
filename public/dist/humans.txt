@@ -21,6 +21,6 @@
 	Last update: 2014/03/03
 	Language: English
 	Standards: HTML5, CSS3 (SASS with Compass)
-	Components: Normalize.css, Foundation, Typicons, Modernizr, jQuery, HTML5 Background Video, Simple Text Rotator, onScreen.js
+	Components: Normalize.css, Foundation, Font Awesome, Modernizr, jQuery, HTML5 Background Video, Animate.css, Morphext, onScreen.js
 	Software: Sublime Text 3, Photoshop, Premiere Pro, Coda, Textmate, Git
-	Others: NPM, Bower, HTML5 Boilerplate, Express
+	Others: NPM, Bower, Grunt, HTML5 Boilerplate, Express
