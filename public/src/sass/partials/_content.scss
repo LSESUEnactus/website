@@ -23,7 +23,9 @@
 	.content__feature {
 		border: $crumb-border-size $crumb-border-style $crumb-border-color;
 		border-bottom: none;
+		display: table;
 		height: 300px;
+		width: 100%;
 		&.what-is-enactus {
 			background: image-url('photos/about-enactus.jpg') no-repeat center center;
 			@include background-size(cover);
@@ -59,12 +61,13 @@
 	}
 		.content_feature-title {
 			background: rgba(#FFD200, .3);
-			font-weight: bold;
 			color: #FFF;
-			line-height: 300px;
-			padding: 0 1rem;
+			display: table-cell;
+			font-weight: bold;
 			margin: 0;
+			padding: 0 1rem;
 			text-transform: uppercase;
+			vertical-align: middle;
 			@include single-transition;
 			&:hover {
 				background: rgba(#FFD200, .5);
