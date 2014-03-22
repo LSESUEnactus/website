@@ -34,5 +34,5 @@
         $centreMarginObj.css('margin', $centreMarginHeight / 2 + 'px auto');
     }
     centreMargin();
-    $window.resize(centreMargin);
+    $window.on('resize', Foundation.utils.throttle(centreMargin, 300));
 })(jQuery);
