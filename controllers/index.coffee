@@ -65,9 +65,6 @@ class Controller
             res.redirect 301, '//' + res.locals.page.url if req.header('host').match /(cdn.enactuslse|sifelse)/i
             next()
 
-        @app.get '/agm', (req, res, next) ->
-            res.redirect '/what-is-new/events#agm'
-
     _notFound: (req, res, next) ->
         res.locals.page.title = "Oops, we can't find what you are looking for! - #{res.locals.page.title}"
         res.status 404
