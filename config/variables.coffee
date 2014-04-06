@@ -15,12 +15,12 @@ variables = (req, res, next) -> # Set template globals
         styles: [
             '//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700'
             '//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css'
-            '/css/enactus.css'
+            '//cdn.enactuslse.co.uk/css/enactus.css'
         ]
         scripts: [
             '//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js'
             '//cdnjs.cloudflare.com/ajax/libs/foundation/5.1.1/js/foundation.min.js'
-            '/js/enactus.js'
+            '//cdn.enactuslse.co.uk/js/enactus.js'
         ]
         contacts: [
             (

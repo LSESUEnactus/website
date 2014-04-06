@@ -4,7 +4,7 @@ index = (req, res) ->
     res.locals.styles.unshift '//cdnjs.cloudflare.com/ajax/libs/animate.css/3.0.0/animate.min.css'
     res.locals.scripts.push '/components/background-video/jquery.backgroundvideo.min.js'
     res.locals.scripts.push '/components/Morphext/dist/morphext.min.js'
-    res.locals.scripts.push '/js/landing.js'
+    res.locals.scripts.push '//cdn.enactuslse.co.uk/js/landing.js'
     res.render 'index', layout: '_layouts/blank'
 
 module.exports =
