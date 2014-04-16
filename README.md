@@ -2,6 +2,7 @@ LSE SU Enactus
 ==============
 
 [![Build Status](https://travis-ci.org/MrSaints/Enactus-LSESU.png?branch=master)](https://travis-ci.org/MrSaints/Enactus-LSESU)
+[![Dependency Status](https://david-dm.org/MrSaints/Enactus-LSESU.svg)](https://david-dm.org/MrSaints/Enactus-LSESU)
 
 _A work in progress._
 
