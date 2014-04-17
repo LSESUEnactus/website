@@ -91,5 +91,5 @@ module.exports = (grunt) ->
     grunt.registerTask 'default', [
         'clean', 'imagemin', 'uglify', 'compass:dist'
     ]
-    grunt.registerTask 'dev', ['default', 'test', 'compass:dev']
+    grunt.registerTask 'dev', ['test', 'compass:dev']
     grunt.registerTask 'test', ['coffeelint']
