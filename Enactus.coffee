@@ -17,7 +17,8 @@ app = express()
 MAILGUN_API_KEY = process.env.MAILGUN_API_KEY
 MAILGUN_API_URL = process.env.MAILGUN_API_URL
 if MAILGUN_API_KEY?
-    app.set 'mailgun', require('mailgun-js') MAILGUN_API_KEY, MAILGUN_API_URL
+    Mailgun = require 'mailgun-js'
+    app.set 'mailgun', new Mailgun apikey: MAILGUN_API_KEY, domain: MAILGUN_API_URL
 
 ##
 ## Templating

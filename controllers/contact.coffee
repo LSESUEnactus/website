@@ -62,11 +62,11 @@ postIndex = (req, res, ctrl) ->
         if 'development' is ctrl.app.get 'env'
             console.log message
         else
-            return ctrl.app.get('mailgun').messages.send message, (error, response, body) ->
-                if response.statusCode is 200
-                    res.locals.form_success = true
+            return ctrl.app.get('mailgun').messages().send message, (error, body) ->
+                if error
+                    res.locals.form_failure = true
                 else
-                    res.locals.form_failure = false
+                    res.locals.form_success = true
                 ctrl._render res, 'contact-us/index'
                 res.end()
 
