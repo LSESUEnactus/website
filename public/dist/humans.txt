@@ -13,12 +13,12 @@
 	Twitter: @Enactus
 
 	Aleph Ozuas
-	Background Photo on the Index Page
+	Background Photo (Polyfill) on the Homepage
 	Site: http://www.ciberarte.com.br
 	Contact: http://www.sxc.hu/profile/aozuas
 
 /* SITE */
-	Last update: 2014/03/03
+	Last update: 2014/04/18
 	Language: English
 	Standards: HTML5, CSS3 (SASS with Compass)
 	Components: Normalize.css, Foundation, Font Awesome, Modernizr, jQuery, HTML5 Background Video, Animate.css, Morphext, onScreen.js
