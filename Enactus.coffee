@@ -18,7 +18,8 @@ MAILGUN_API_KEY = process.env.MAILGUN_API_KEY
 MAILGUN_API_URL = process.env.MAILGUN_API_URL
 if MAILGUN_API_KEY?
     Mailgun = require 'mailgun-js'
-    app.set 'mailgun', new Mailgun apikey: MAILGUN_API_KEY, domain: MAILGUN_API_URL
+    app.set 'mailgun', new Mailgun
+        apikey: MAILGUN_API_KEY, domain: MAILGUN_API_URL
 
 ##
 ## Templating
