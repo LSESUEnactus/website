@@ -7,7 +7,7 @@ class Controller
         @app.get '/', require('./home.coffee')['index']
 
         # Contact us
-        if process.env.MAILGUN_API_KEY?
+        if @app.get('mailgun')?
             @app.post '/contact-us', (req, res) =>
                 require("./contact.coffee")['postIndex'](req, res, @)
 

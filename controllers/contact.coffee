@@ -37,7 +37,7 @@ postIndex = (req, res, ctrl) ->
     req.sanitize('type').toInt()
     req.sanitize('project').toInt()
 
-    res.locals.form_errors = req.validationErrors(true)
+    res.locals.form_errors = req.validationErrors true
 
     if not res.locals.form_errors
         admin = _getMeta(res.locals.contacts, 'admin', false).email

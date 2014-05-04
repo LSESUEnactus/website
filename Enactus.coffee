@@ -2,21 +2,24 @@
 ## Dependencies
 ##
 express = require 'express'
-http = require 'http'
-path = require 'path'
-validator = require 'express-validator'
+logger = require 'morgan'
+favicon = require 'serve-favicon'
+bodyParser = require 'body-parser'
+cookieParser = require 'cookie-parser'
+session = require 'express-session'
 
 ##
 ## Express
 ##
-app = express()
+app = module.exports = express()
+app.disable 'x-powered-by'
+app.use logger 'dev' unless module.parent
+app.use require('compression')()
 
 ##
 ## Mailgun (Email)
 ##
-MAILGUN_API_KEY = process.env.MAILGUN_API_KEY
-MAILGUN_API_URL = process.env.MAILGUN_API_URL
-if MAILGUN_API_KEY?
+if MAILGUN_API_KEY = process.env.MAILGUN_API_KEY and MAILGUN_API_URL = process.env.MAILGUN_API_URL
     Mailgun = require 'mailgun-js'
     app.set 'mailgun', new Mailgun
         apikey: MAILGUN_API_KEY, domain: MAILGUN_API_URL
@@ -24,36 +27,30 @@ if MAILGUN_API_KEY?
 ##
 ## Templating
 ##
-app.enable 'view cache'
 app.engine 'hjs', require 'hogan-express'
-app.set 'views', path.join __dirname, 'views'
 app.set 'view engine', 'hjs'
+app.set 'views', __dirname + '/views'
 app.set 'layout', '_layouts/default'
 app.set 'partials',
     header: '_partials/header'
     footer: '_partials/footer'
 
 ##
-## Middleware
-##
-app.disable 'x-powered-by'
-app.use express.logger('dev' if 'development' is app.get 'env')
-app.use express.compress()
-app.use express.methodOverride()
-app.use express.json()
-app.use validator()
-app.use express.urlencoded()
-
-##
 ## Assets
 ##
 expires = 2628000000
-app.use express.favicon path.join(__dirname, 'public/dist/favicon.ico'),
+app.use favicon __dirname + '/public/dist/favicon.ico',
     maxAge: expires
-app.use express.static path.join(__dirname, 'public/dist'),
+app.use express.static __dirname + '/public/dist',
     maxAge: expires
-app.use '/components', express.static path.join(__dirname, 'bower_components'),
+app.use '/components', express.static __dirname + '/bower_components',
     maxAge: expires
+
+##
+## Request body
+##
+app.use bodyParser()
+app.use require('express-validator')()
 
 ##
 ## Config
@@ -65,18 +62,17 @@ app.use require './config/variables'
 ##
 ## Session
 ##
-app.use '/contact-us', express.cookieParser()
-app.use '/contact-us', express.session
-    secret: process.env.SESSION_SECRET or 'not so secret'
-app.use '/contact-us', express.csrf()
+app.use '/contact-us', cookieParser process.env.COOKIE_SECRET or 'not so secret cookie'
+app.use '/contact-us', session
+    secret: process.env.SESSION_SECRET or 'not so secret session'
+app.use '/contact-us', require('csurf')()
 
 ##
-## Router
+## Routes
 ##
-app.use app.router
-app.use express.errorHandler() if 'development' is app.get 'env'
-
 require('./controllers') app
+app.use require('errorhandler')() if 'development' is app.get 'env'
 
-http.createServer(app).listen app.get('port'), ->
-    console.log "Express server listening on port #{app.get 'port'}"
+unless module.parent
+    app.listen app.get 'port'
+    console.log "\nExpress server listening on port #{app.get 'port'}\n"
