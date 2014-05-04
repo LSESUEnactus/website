@@ -57,12 +57,13 @@ class Controller
 
     _render: (res, template) ->
         res.render template, {}, (error, html) =>
-            return @_notFound false, res if error
-            res.end html
+            return res.end html unless error
+            console.error error
+            @_notFound false, res
 
     _redirects: ->
         @app.all '/*', (req, res, next) ->
-            res.redirect 301, '//' + res.locals.page.url if req.header('host').match /(cdn.enactuslse|sifelse)/i
+            res.redirect 301, '//' + res.locals.page.url + '/' if req.header('host').match /(cdn.enactuslse|sifelse)/i
             next()
 
     _notFound: (req, res, next) ->
