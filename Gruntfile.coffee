@@ -15,18 +15,14 @@ module.exports = (grunt) ->
             config:
                 files:
                     src: ['config/*.coffee']
-                options:
-                    'max_line_length':
-                        'level': 'ignore'
             controllers:
                 files:
                     src: ['controllers/*.coffee']
-                options:
-                    'max_line_length':
-                        'level': 'ignore'
             options:
                 'indentation':
                     value: 4
+                'max_line_length':
+                    'level': 'ignore'
         compass:
             dist:
                 options:
