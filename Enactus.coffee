@@ -68,7 +68,7 @@ app.use '/contact-us', session
 app.use '/contact-us', require('csurf')()
 
 ##
-## Routes
+## Router
 ##
 require('./controllers') app
 app.use require('errorhandler')() if 'development' is app.get 'env'
