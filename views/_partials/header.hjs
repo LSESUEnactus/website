@@ -14,7 +14,7 @@
     <link rel="dns-prefetch" href="//themes.googleusercontent.com">
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link rel="dns-prefetch" href="//ajax.googleapis.com">
-    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
 
     {{# styles }}
     <link rel="stylesheet" href="{{ . }}">
