@@ -1,40 +1,44 @@
 @media #{$small-up} {
-	.header__nav { padding-right: 0 }
-	.top-bar, .top-bar-section ul { background: transparent }
-	.header__nav-main .top-bar-section li:not(.has-form) {
-		> a {
-			&:hover, &:not(.button) { background: transparent }
-		}
+    .header__nav { padding-right: 0 }
+    .top-bar, .top-bar-section ul { background: transparent }
+    .header__nav-main .top-bar-section li:not(.has-form) {
+        a:not(.button) {
+            background: transparent
+        }
 
-		> .dropdown {
-			background: #FFF;
-			border: 2px solid #d2d2d2;
-			border-top: none;
-			//margin-top: 1em;
-			text-align: center;
-			text-shadow: none;
-			li {
-				border-bottom: 1px solid #d2d2d2;
-				//padding: .5em 0;
-				&:last-child { border: none }
-			}
-			a {
-				color: #4c4c4c;
-				line-height: 1;
-				padding: 1rem;
-				font-size: rem-calc(14);
-				&:hover {
-					color: $info-color;
-				}
-			}
-		}
-	}
+        .dropdown {
+            background: #FFF;
+            border: 2px solid #d2d2d2;
+            border-top: none;
+            //margin-top: 1em;
+            text-align: center;
+            text-shadow: none;
+
+            li {
+                border-bottom: 1px solid #d2d2d2;
+                //padding: .5em 0;
+                &:last-child { border: none }
+
+                a {
+                    color: #4c4c4c;
+                    line-height: 1;
+                    padding: 1rem;
+                    font-size: rem-calc(14);
+                }
+
+                &:not(.has-form):hover > a:not(.button) {
+                    background: transparent;
+                    color: $info-color;
+                }
+            }
+        }
+    }
 }
 
 @media #{$small-only} {
-	.header__nav, .header__nav-main { padding: 0 }
-	.footer__content {
-		bottom: 0;
-		position: relative;
-	}
+    .header__nav, .header__nav-main { padding: 0 }
+    .footer__content {
+        bottom: 0;
+        position: relative;
+    }
 }
