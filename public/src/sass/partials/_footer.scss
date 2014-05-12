@@ -1,39 +1,39 @@
 // @TODO : FIXED VIDEO WRAP
 .footer {
-	background: #4c4c4c;
-	padding: 2rem 0;
-	height: 90px;
-	@include box-sizing(content-box);
+    background: #4c4c4c;
+    padding: 2rem 0;
+    height: 90px;
+    @include box-sizing(content-box);
 }
-	.footer__content {
-		bottom: 2rem;
-		display: none;
-		left: 0;
-		position: fixed;
-		right: 0;
-		-webkit-transform: translateZ(0);
-	}
-	.footer--logo {
-		max-height: 90px;
-	}
+    .footer__content {
+        bottom: 2rem;
+        display: none;
+        left: 0;
+        position: fixed;
+        right: 0;
+        -webkit-transform: translateZ(0);
+    }
+    .footer--logo {
+        max-height: 90px;
+    }
 
-	.footer__navigation, .footer__copyright {
-		line-height: 45px;
-	}
-		.footer__navigation {
-			float: right;
-			margin: 0;
-		}
-		.footer--copyright {
-			color: #FFF;
-			> span {
-				color: lighten($alert-color, 15%);
-			}
-			> a {
-				color: #FFF;
-				border-bottom: 1px dotted #FFF;
-				&:hover {
-					color: darken(#FFF, 15%);
-				}
-			}
-		}
+    .footer__navigation, .footer__copyright {
+        line-height: 45px;
+    }
+        .footer__navigation {
+            float: right;
+            margin: 0;
+        }
+        .footer--copyright {
+            color: #FFF;
+            > span {
+                color: lighten($alert-color, 15%);
+            }
+            > a {
+                color: #FFF;
+                border-bottom: 1px dotted #FFF;
+                &:hover {
+                    color: darken(#FFF, 15%);
+                }
+            }
+        }

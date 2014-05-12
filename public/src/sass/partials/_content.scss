@@ -4,206 +4,206 @@
 }
 
 .accordion {
-	margin-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 .content-container {
-	background: #FFF;
-	border: 10px solid #e6e6e6;
-	padding: 1rem;
-	a:not(.button) {
-		color: #0096D6;
-		//border-bottom: 1px dotted #0096D6;
-		&:hover { 
-			//border-color: darken(#0096D6, 15%);
-			color: darken(#0096D6, 15%);
-		}
-	}
+    background: #FFF;
+    border: 10px solid #e6e6e6;
+    padding: 1rem;
+    a:not(.button) {
+        color: #0096D6;
+        //border-bottom: 1px dotted #0096D6;
+        &:hover { 
+            //border-color: darken(#0096D6, 15%);
+            color: darken(#0096D6, 15%);
+        }
+    }
 }
-	.content__feature {
-		border: $crumb-border-size $crumb-border-style $crumb-border-color;
-		border-bottom: none;
-		display: table;
-		height: 300px;
-		width: 100%;
-		&.what-is-enactus {
-			background: image-url('photos/about-enactus.jpg') no-repeat center center;
-			@include background-size(cover);
-		}
-		&.enactus-lse {
-			background: image-url('photos/about-us.jpg') no-repeat center top;
-			@include background-size(cover);
-		}
-		&.business-advisory-board {
-			background: image-url('photos/about-bab-2.jpg') no-repeat center top;
-			@include background-size(cover);
-		}
-		&.social-projects {
-			background: image-url('photos/projects-social.jpg') no-repeat center top;
-			@include background-size(cover);
-		}
-		&.commercial-projects {
-			background: image-url('photos/projects-commercial.jpg') no-repeat center top;
-			@include background-size(cover);
-		}
-		&.start-a-new-project {
-			background: image-url('photos/projects-new.jpg') no-repeat center top;
-			@include background-size(cover);
-		}
-		&.events {
-			background: image-url('photos/events.jpg') no-repeat center top;
-			@include background-size(cover);
-		}
-		&.contact-us {
-			background: image-url('photos/contact-us.jpg') no-repeat center top;
-			@include background-size(cover);
-		}
-	}
-		.content_feature-title {
-			background: rgba(#FFD200, .3);
-			color: #FFF;
-			display: table-cell;
-			font-weight: bold;
-			margin: 0;
-			padding: 0 1rem;
-			text-transform: uppercase;
-			vertical-align: middle;
-			@include single-transition;
-			&:hover {
-				background: rgba(#FFD200, .5);
-			}
-		}
-	.content__milestones {
-		margin-bottom: 2rem !important;
-	}
-	.content__contact-us {
-		margin: 5rem 0;
-		text-align: center;
+    .content__feature {
+        border: $crumb-border-size $crumb-border-style $crumb-border-color;
+        border-bottom: none;
+        display: table;
+        height: 300px;
+        width: 100%;
+        &.what-is-enactus {
+            background: image-url('photos/about-enactus.jpg') no-repeat center center;
+            @include background-size(cover);
+        }
+        &.enactus-lse {
+            background: image-url('photos/about-us.jpg') no-repeat center top;
+            @include background-size(cover);
+        }
+        &.business-advisory-board {
+            background: image-url('photos/about-bab-2.jpg') no-repeat center top;
+            @include background-size(cover);
+        }
+        &.social-projects {
+            background: image-url('photos/projects-social.jpg') no-repeat center top;
+            @include background-size(cover);
+        }
+        &.commercial-projects {
+            background: image-url('photos/projects-commercial.jpg') no-repeat center top;
+            @include background-size(cover);
+        }
+        &.start-a-new-project {
+            background: image-url('photos/projects-new.jpg') no-repeat center top;
+            @include background-size(cover);
+        }
+        &.events {
+            background: image-url('photos/events.jpg') no-repeat center top;
+            @include background-size(cover);
+        }
+        &.contact-us {
+            background: image-url('photos/contact-us.jpg') no-repeat center top;
+            @include background-size(cover);
+        }
+    }
+        .content_feature-title {
+            background: rgba(#FFD200, .3);
+            color: #FFF;
+            display: table-cell;
+            font-weight: bold;
+            margin: 0;
+            padding: 0 1rem;
+            text-transform: uppercase;
+            vertical-align: middle;
+            @include single-transition;
+            &:hover {
+                background: rgba(#FFD200, .5);
+            }
+        }
+    .content__milestones {
+        margin-bottom: 2rem !important;
+    }
+    .content__contact-us {
+        margin: 5rem 0;
+        text-align: center;
 
-		.alert-box {
-			a {
-				color: #FFF;
-				&:hover {
-					color: darken(#FFF, 10%);
-				}
-			}
-			ul {
-				font-size: inherit;
-				list-style-position: inside;
-				margin: 0;
-			}
-		}
-	}
-		.contact__form {
-			> .subheader {
-				margin: 1rem 0 2.5rem;
-			}
-		}
-		.contact__form-projects {
-			display: none;
-		}
-		.contact__form-details {
-			display: inline-block;
-			position: relative;
-		}
-			a.contact__form-placeholder {
-				border-bottom: 2px dotted $info-color;
-				&.error {
-					border-color: $alert-color;
-					color: $alert-color;
-					&:hover {
-						color: darken($alert-color, 10%);
-					}
-				}
-			}
-			.contact__form-input {
-				> input {
-					&:focus {
-						background: $info-color;
-						border: none;
-					}
-					background: $info-color;
-					border: none;
-					color: #FFF;
-					cursor: pointer;
-					font-size: .8em;
-					height: auto;
-					margin: 0;
-					padding-right: 3rem;
-				}
-				.fa {
-					color: #FFF;
-					font-size: .6em;
-					line-height: 56px;
-					position: absolute;
-					right: 1rem;
-					top: 0;
-				}
-				.contact__form-select {
-					background: $info-color;
-					color: #FFF;
-					cursor: pointer;
-					margin: 0;
-					text-transform: capitalize;
-					> li {
-						padding: 1rem;
-						@include single-transition();
-						&:hover {
-							background: darken($info-color, 10%);
-						}
-					}
-				}
+        .alert-box {
+            a {
+                color: #FFF;
+                &:hover {
+                    color: darken(#FFF, 10%);
+                }
+            }
+            ul {
+                font-size: inherit;
+                list-style-position: inside;
+                margin: 0;
+            }
+        }
+    }
+        .contact__form {
+            > .subheader {
+                margin: 1rem 0 2.5rem;
+            }
+        }
+        .contact__form-projects {
+            display: none;
+        }
+        .contact__form-details {
+            display: inline-block;
+            position: relative;
+        }
+            a.contact__form-placeholder {
+                border-bottom: 2px dotted $info-color;
+                &.error {
+                    border-color: $alert-color;
+                    color: $alert-color;
+                    &:hover {
+                        color: darken($alert-color, 10%);
+                    }
+                }
+            }
+            .contact__form-input {
+                > input {
+                    &:focus {
+                        background: $info-color;
+                        border: none;
+                    }
+                    background: $info-color;
+                    border: none;
+                    color: #FFF;
+                    cursor: pointer;
+                    font-size: .8em;
+                    height: auto;
+                    margin: 0;
+                    padding-right: 3rem;
+                }
+                .fa {
+                    color: #FFF;
+                    font-size: .6em;
+                    line-height: 56px;
+                    position: absolute;
+                    right: 1rem;
+                    top: 0;
+                }
+                .contact__form-select {
+                    background: $info-color;
+                    color: #FFF;
+                    cursor: pointer;
+                    margin: 0;
+                    text-transform: capitalize;
+                    > li {
+                        padding: 1rem;
+                        @include single-transition();
+                        &:hover {
+                            background: darken($info-color, 10%);
+                        }
+                    }
+                }
 
-				display: none;
-				left: 0;
-				position: absolute;
-				top: 0;
-				min-width: 10rem;
-				width: 100%;
-				z-index: 2;
-			}
+                display: none;
+                left: 0;
+                position: absolute;
+                top: 0;
+                min-width: 10rem;
+                width: 100%;
+                z-index: 2;
+            }
 
 .landing--title {
-	font-weight: 300;
+    font-weight: 300;
 }
 
 .landing__jumbotron .landing--title {
-	color: #FFF;
-	> .subheader {
-		color: $secondary-color;
-		font-weight: bold;
-	}
+    color: #FFF;
+    > .subheader {
+        color: $secondary-color;
+        font-weight: bold;
+    }
 }
 
 .landing__mission {
-	background: #e6e6e6;
-	display: block;
-	padding-top: 2rem;
-	padding-bottom: 2rem;
-	&:hover {
-		background: #EF4656;
-		.landing--title, .subheader { color: #FFF }
-	}
-	.subheader {
-		color: $alert-color;
-		font-weight: normal;
-	}
+    background: #e6e6e6;
+    display: block;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    &:hover {
+        background: #EF4656;
+        .landing--title, .subheader { color: #FFF }
+    }
+    .subheader {
+        color: $alert-color;
+        font-weight: normal;
+    }
 }
 
 .landing__action {
-	background: #e6e6e6;
-	border-top: 1px solid darken(#e6e6e6, 15%);
-	.columns {
-		padding-top: 2rem;
-		padding-bottom: 2rem;
-	}
-	.landing--title {
-		font-weight: normal;
-	}
-	p {
-		font-weight: 300;
-	}
+    background: #e6e6e6;
+    border-top: 1px solid darken(#e6e6e6, 15%);
+    .columns {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .landing--title {
+        font-weight: normal;
+    }
+    p {
+        font-weight: 300;
+    }
 }
-	.landing__action--opportunities {
-		border-right: 1px solid darken(#e6e6e6, 15%);
-	}
+    .landing__action--opportunities {
+        border-right: 1px solid darken(#e6e6e6, 15%);
+    }
