@@ -14,12 +14,12 @@ variables = (req, res, next) -> # Set template globals
             twitter: '//twitter.com/EnactusLSE'
             facebook: '//facebook.com/LSESUEnactus'
         styles: [
-            '//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700'
+            '//brick.a.ssl.fastly.net/Source+Sans+Pro:300,400,700'
             '//cdn.jsdelivr.net/fontawesome/4.0.3/css/font-awesome.min.css'
             "#{cdn}/css/enactus.css"
         ]
         scripts: [
-            '//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js'
+            '//cdn.jsdelivr.net/jquery/2.1.1/jquery.min.js'
             '//cdn.jsdelivr.net/foundation/5.2.2/js/foundation.min.js'
             "#{cdn}/js/enactus.js"
         ]
