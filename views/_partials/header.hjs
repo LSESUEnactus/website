@@ -22,7 +22,7 @@
 
     {{{ yield-styles }}}
 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
+    <script src="//cdn.jsdelivr.net/modernizr/2.8.2/modernizr.min.js"></script>
 </head>
 
 <body>
