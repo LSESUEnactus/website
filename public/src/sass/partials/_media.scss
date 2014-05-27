@@ -37,8 +37,24 @@
 
 @media #{$small-only} {
     .header__nav, .header__nav-main { padding: 0 }
+    .footer {
+        height: auto;
+    }
     .footer__content {
         bottom: 0;
         position: relative;
+    }
+    .footer__navigation {
+        float: none;
+        margin: 1rem 0;
+        > li {
+            display: inline-block;
+            float: none;
+        }
+    }
+    .footer__content, 
+    .footer__navigation, 
+    .footer--copyright {
+        text-align: center;
     }
 }
