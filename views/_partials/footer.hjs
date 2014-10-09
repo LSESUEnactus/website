@@ -1,12 +1,9 @@
 <footer class="footer">
     <div class="row footer__content js-onScreen">
-        <div class="large-2 small-6 columns">
+        <div class="large-4 columns">
             <a href="/" title="Home"><img src="/img/logo.png" class="footer--logo" alt="LSE SU Enactus"></a>
         </div>
-        <div class="large-2 small-6 columns">
-            <a href="//www.citigroup.com/" title="LSE SU Enactus Corporate Sponsor"><img src="/img/logos/citigroup.png" class="footer--logo" alt="Citigroup"></a>
-        </div>
-        <div class="large-8 small-12 columns text-right">
+        <div class="large-8 columns text-right">
             <div class="row">
                 <div class="large-12 columns">
                     <ul class="inline-list footer__navigation">
