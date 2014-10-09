@@ -1,15 +1,12 @@
 <h1>Milestones</h1>
 <div class="row content__milestones text-center">
-	<div class="large-4 columns">
-		<img src="/img/logos/citigroup-2.png" alt="">
-	</div>
-	<div class="large-8 columns">
+	<div class="large-12 columns">
 			<ul class="no-bullet">
-				<li><b>Corporate Sponsor:</b> Citigroup</li>
 				<li>Enactus UK National Competition Rookies of the Year 2010</li>
 				<li>Enactus UK National Competition Semi Finalists 2011, 2012, 2013</li>
 				<li>LSE SU STARS Gold Award 2012</li>
 				<li>LSE SU STARS Silver Award 2013</li>
+				<li>LSE SU STARS Bronze Award 2014</li>
 			</ul>
 	</div>
 </div>
@@ -17,44 +14,44 @@
 <h1>LSE SU Enactus Committee</h1>
 <ul class="text-center small-block-grid-2 large-block-grid-4">
 	<li>
-		<img src="/img/photos/profile-mei.jpg" alt="">
-		<h6>Mei Yan Pun</h6>
-		<h6 class="subheader">President</h6>
-	</li>
-	<li>
-		<img src="/img/photos/profile-shazia.jpg" alt="">
-		<h6>Shazia Mohamed</h6>
-		<h6 class="subheader">Managing Director</h6>
-	</li>
-	<li>
 		<img src="/img/photos/profile-jamie.jpg" alt="">
 		<h6>Jamie Karia</h6>
+		<h6 class="subheader">Team Leader</h6>
+	</li>
+	<li>
+		<img src="/img/photos/profile-lizzy.jpg" alt="">
+		<h6>Elizabeth Wong</h6>
 		<h6 class="subheader">Managing Director</h6>
 	</li>
 	<li>
-		<img src="/img/photos/profile-wenyi.jpg" alt="">
-		<h6>Wen Yi Hi</h6>
-		<h6 class="subheader">Secretary</h6>
+		<img src="/img/photos/profile-unknown.jpg" alt="">
+		<h6>Kim Wang</h6>
+		<h6 class="subheader">Managing Director</h6>
 	</li>
 	<li>
-		<img src="/img/photos/profile-jacq.jpg" alt="">
-		<h6>Jacqueline Ting</h6>
-		<h6 class="subheader">Finance Director</h6>
-	</li>
-	<li>
-		<img src="/img/photos/profile-matt.jpg" alt="">
-		<h6>Matthew Cleary</h6>
+		<img src="/img/photos/profile-unknown.jpg" alt="">
+		<h6>Asuka Heltmann</h6>
 		<h6 class="subheader">Corporate Relations</h6>
 	</li>
 	<li>
-		<img src="/img/photos/profile-loran.jpg" alt="">
-		<h6>Loran Nguyen Thu Ha</h6>
-		<h6 class="subheader">Commercial Director</h6>
+		<img src="/img/photos/profile-unknown.jpg" alt="">
+		<h6>Nora Zivkovic</h6>
+		<h6 class="subheader">Finance Director</h6>
 	</li>
 	<li>
-		<img src="/img/photos/profile-jan.jpg" alt="">
-		<h6>Jan Niezychowski</h6>
-		<h6 class="subheader">Sponsorship Director</h6>
+		<img src="/img/photos/profile-unknown.jpg" alt="">
+		<h6>Botazhan Makhambetova</h6>
+		<h6 class="subheader">Secretary</h6>
+	</li>
+	<li>
+		<img src="/img/photos/profile-unknown.jpg" alt="">
+		<h6>Chloe Chan</h6>
+		<h6 class="subheader">Student Relations</h6>
+	</li>
+	<li>
+		<img src="/img/photos/profile-unknown.jpg" alt="">
+		<h6>Kelly Wong</h6>
+		<h6 class="subheader">Commercial Director</h6>
 	</li>
 	<li>
 		<img src="/img/photos/profile-ian.jpg" alt="">
@@ -71,34 +68,9 @@
 <h1>Project Leaders</h1>
 <ul class="text-center small-block-grid-2 large-block-grid-4">
 	<li>
-		<img src="/img/photos/profile-lizzy.jpg" alt="">
-		<h6>Elizabeth Wong</h6>
+		<img src="/img/photos/profile-jacq.jpg" alt="">
+		<h6>Jacqueline Ting</h6>
 		<h6 class="subheader">Creative Cycle</h6>
-	</li>
-	<li>
-		<img src="/img/photos/profile-sana.jpg" alt="">
-		<h6>Sana Currimbhoy</h6>
-		<h6 class="subheader">Pathways</h6>
-	</li>
-	<li>
-		<img src="/img/photos/profile-janiece.jpg" alt="">
-		<h6>Janiece King</h6>
-		<h6 class="subheader">Pathways</h6>
-	</li>
-	<li>
-		<img src="/img/photos/profile-paul.jpg" alt="">
-		<h6>Paul Rusen</h6>
-		<h6 class="subheader">LSE Support</h6>
-	</li>
-	<li>
-		<img src="/img/photos/profile-ameya.jpg" alt="">
-		<h6>Ameya Badwe</h6>
-		<h6 class="subheader">Inspires India</h6>
-	</li>
-	<li>
-		<img src="/img/photos/profile-josias.jpg" alt="">
-		<h6>Josias Goh</h6>
-		<h6 class="subheader">Trading Futures</h6>
 	</li>
 	<li>
 		<img src="/img/photos/profile-unknown.jpg" alt="">
