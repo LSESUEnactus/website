@@ -46,21 +46,17 @@ variables = (req, res, next) -> # Set template globals
                 ignore: true
         ]
         projects: [
-                title: 'Trading Futures'
-                slug: 'trading-futures'
-                email: 'trading.futures@enactuslse.co.uk'
+                title: 'Creative Cycle'
+                slug: 'creative-cycle'
+                email: 'creative.cycle@enactuslse.co.uk'
             ,
-                title: 'L.S.E. Support'
-                slug: 'lse-support'
-                email: 'lse.support@enactuslse.co.uk'
+                title: 'Gates to Knowledge'
+                slug: 'gates-to-knowledge'
+                email: 'gates.to.knowledge@enactuslse.co.uk'
             ,
                 title: 'Pathways'
                 slug: 'pathways'
                 email: 'pathways@enactuslse.co.uk'
-            ,
-                title: 'Creative Cycle'
-                slug: 'creative-cycle'
-                email: 'creative.cycle@enactuslse.co.uk'
             ,
                 title: 'Commercial Projects'
                 slug: 'commercial'
