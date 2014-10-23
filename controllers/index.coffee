@@ -67,7 +67,10 @@ class Controller
             next()
 
         @app.get '/ed', (req, res, next) ->
-            res.redirect '//docs.google.com/forms/d/1j_f4GAicwjhBtv2jTJKAp9Nl3NfWjPRjrdBeG4rNaao/viewform?c=0&w=1'
+            res.redirect 302, '//docs.google.com/forms/d/1j_f4GAicwjhBtv2jTJKAp9Nl3NfWjPRjrdBeG4rNaao/viewform?c=0&w=1'
+
+        @app.get '/training', (req, res, next) ->
+            res.redirect 302, '//www.facebook.com/events/288392671368660/'
 
     _notFound: (req, res, next) ->
         res.locals.page.title = "Oops, we can't find what you are looking for! - #{res.locals.page.title}"
