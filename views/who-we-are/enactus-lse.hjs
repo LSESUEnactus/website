@@ -14,12 +14,12 @@
 <h1>LSE SU Enactus Committee</h1>
 <ul class="text-center small-block-grid-2 large-block-grid-4">
 	<li>
-		<img src="/img/photos/profile-jamie.jpg" alt="">
+		<img src="/img/photos/2015/profile-jamie.png" alt="">
 		<h6>Jamie Karia</h6>
 		<h6 class="subheader">Team Leader</h6>
 	</li>
 	<li>
-		<img src="/img/photos/profile-lizzy.jpg" alt="">
+		<img src="/img/photos/2015/profile-lizzy.png" alt="">
 		<h6>Elizabeth Wong</h6>
 		<h6 class="subheader">Managing Director</h6>
 	</li>
@@ -29,7 +29,7 @@
 		<h6 class="subheader">Managing Director</h6>
 	</li>
 	<li>
-		<img src="/img/photos/profile-unknown.jpg" alt="">
+		<img src="/img/photos/2015/profile-asuka.png" alt="">
 		<h6>Asuka Heltmann</h6>
 		<h6 class="subheader">Corporate Relations</h6>
 	</li>
@@ -39,22 +39,22 @@
 		<h6 class="subheader">Finance Director</h6>
 	</li>
 	<li>
-		<img src="/img/photos/profile-unknown.jpg" alt="">
+		<img src="/img/photos/2015/profile-bota.png" alt="">
 		<h6>Botazhan Makhambetova</h6>
 		<h6 class="subheader">Secretary</h6>
 	</li>
 	<li>
-		<img src="/img/photos/profile-unknown.jpg" alt="">
+		<img src="/img/photos/2015/profile-chloe.png" alt="">
 		<h6>Chloe Chan</h6>
 		<h6 class="subheader">Student Relations</h6>
 	</li>
 	<li>
-		<img src="/img/photos/profile-unknown.jpg" alt="">
+		<img src="/img/photos/2015/profile-kelly.png" alt="">
 		<h6>Kelly Wong</h6>
 		<h6 class="subheader">Commercial Director</h6>
 	</li>
 	<li>
-		<img src="/img/photos/profile-ian.jpg" alt="">
+		<img src="/img/photos/2015/profile-ian.png" alt="">
 		<h6>Ian Lai</h6>
 		<h6 class="subheader">Media Director</h6>
 	</li>
@@ -68,10 +68,21 @@
 <h1>Project Leaders</h1>
 <ul class="text-center small-block-grid-2 large-block-grid-4">
 	<li>
-		<img src="/img/photos/profile-jacq.jpg" alt="">
+		<img src="/img/photos/2015/profile-jacq.png" alt="">
 		<h6>Jacqueline Ting</h6>
 		<h6 class="subheader">Creative Cycle</h6>
 	</li>
+	<li>
+		<img src="/img/photos/2015/profile-laura.png" alt="">
+		<h6>Laura Elliot</h6>
+		<h6 class="subheader">Pathways</h6>
+	</li>
+	<li>
+		<img src="/img/photos/2015/profile-kelvin.png" alt="">
+		<h6>Kelvin Tan</h6>
+		<h6 class="subheader">Gates to Knowledge</h6>
+	</li>
+
 	<li>
 		<img src="/img/photos/profile-unknown.jpg" alt="">
 		<h6>YOU</h6>
