@@ -49,7 +49,7 @@ app.use '/components', express.static __dirname + '/bower_components',
 ##
 ## Request body
 ##
-app.use bodyParser.urlencoded()
+app.use '/contact-us', bodyParser.urlencoded extended: false
 app.use require('express-validator')()
 
 ##
@@ -65,8 +65,8 @@ app.use require './config/variables'
 app.use '/contact-us', cookieParser process.env.COOKIE_SECRET or 'not so secret cookie'
 app.use '/contact-us', session
     secret: process.env.SESSION_SECRET or 'not so secret session'
-    resave: false
-    saveUninitialized: true
+    resave: true
+    saveUninitialized: false
 app.use '/contact-us', require('csurf')()
 
 ##
