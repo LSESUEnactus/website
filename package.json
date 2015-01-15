@@ -12,6 +12,10 @@
     }
   ],
   "private": true,
+  "engines": {
+    "node": ">= 0.10.x",
+    "npm": ">= 1.4.x"
+  },
   "scripts": {
     "start": "coffee Enactus.coffee",
     "postinstall": "./node_modules/bower/bin/bower install",
