@@ -41,8 +41,6 @@ results
 npm-debug.log
 node_modules
 
-Enactus.bat
-
 ### SublimeText ###
 # SublimeText project files
 *.sublime-workspace
