@@ -27,10 +27,14 @@ $crumb-radius: 0 0 $global-radius $global-radius;
 $crumb-font-color: $info-color;
 
 // Topbar
+$topbar-bg: transparent;
+$topbar-link-bg-hover: $topbar-bg;
 //$topbar-link-bg-hover: transparent;
 $topbar-link-color-hover: $primary-color;
 $topbar-link-color-active: $primary-color;
 $topbar-link-font-size: rem-calc(16);
-//$topbar-dropdown-bg: transparent;
-//$topbar-dropdown-link-color: #4c4c4c;
-//$topbar-dropdown-link-bg: #FFF;
+
+$topbar-dropdown-bg: transparent;
+$topbar-dropdown-link-bg: #FFF;
+$topbar-dropdown-link-bg-hover: $topbar-dropdown-link-bg;
+$topbar-dropdown-link-color: #4c4c4c;
