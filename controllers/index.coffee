@@ -7,7 +7,7 @@ class Controller
         @app.get '/', require('./home.coffee')['index']
 
         # Contact us
-        if @app.get('mailgun')?
+        if @app.get('mailgun')? or @app.get('env') is 'development'
             @app.post '/contact-us', (req, res) =>
                 require("./contact.coffee")['postIndex'](req, res, @)
 
