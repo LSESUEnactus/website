@@ -20,7 +20,7 @@ variables = (req, res, next) -> # Set template globals
         ]
         scripts: [
             '//cdn.jsdelivr.net/jquery/2.1.1/jquery.min.js'
-            '//cdn.jsdelivr.net/foundation/5.2.2/js/foundation.min.js'
+            '//cdn.jsdelivr.net/foundation/5.5.0/js/foundation.min.js'
             "#{cdn}/js/enactus.js"
         ]
         contacts: [
