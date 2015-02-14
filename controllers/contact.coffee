@@ -9,8 +9,8 @@ index = (req, res, ctrl) ->
     res.locals.scripts.push '/js/contact.js'
 
     # Get and set form parameters
-    typeMeta = _getMeta res.locals.contacts, req.body.type
-    projectMeta = _getMeta res.locals.projects, req.body.project
+    typeMeta = _getMeta res.locals.contacts, req.query.type
+    projectMeta = _getMeta res.locals.projects, req.query.project
     res.locals.selected =
         type:
             title: typeMeta?.title ? res.locals.contacts[0].title
@@ -18,7 +18,7 @@ index = (req, res, ctrl) ->
         project:
             title: projectMeta?.title ? res.locals.projects[0].title
             value: projectMeta?.value ? 0
-        showProjects: true if req.body.type is 'join'
+        showProjects: true if req.query.type is 'join'
 
 # POST index
 postIndex = (req, res, ctrl) ->
