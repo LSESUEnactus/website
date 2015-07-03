@@ -1,0 +1,20 @@
+defaults:
+    - scope:
+        path: ""
+      values:
+        layout: "default"
+        title: "LSE SU Enactus"
+title: "LSE SU Enactus"
+description: "London School of Economics and Political Science Student Union Enactus &ndash; Seeing possibilities. Taking action. Enabling progress."
+styles:
+    - "//brick.a.ssl.fastly.net/Source+Sans+Pro:300,400,700"
+    - "//cdn.jsdelivr.net/fontawesome/4.0.3/css/font-awesome.min.css"
+    - "/css/enactus.css"
+scripts:
+    - "//cdn.jsdelivr.net/jquery/2.1.1/jquery.min.js"
+    - "//cdn.jsdelivr.net/foundation/5.5.0/js/foundation.min.js"
+    - "/js/enactus.js"
+social:
+    - twitter: "//twitter.com/EnactusLSE"
+      facebook: "//facebook.com/LSESUEnactus"
+analytics_id: "UA-5243796-8"

@@ -1,0 +1,32 @@
+{% include header.html %}
+
+{% assign location = page.url | split: "/" %}
+
+{% if location[2] != "index.html" %}
+    {% assign parent = location[1] %}
+    {% assign slug = location[2] %}
+{% else %}
+    {% assign slug = location[1] %}
+{% endif %}
+
+<div class="body row">
+<div class="large-12 columns">
+    <div class="content-container">
+        <div class="content__feature {{ slug }}">
+            <h1 class="content_feature-title text-center text--shadow">{{ page.title }}</h1>
+        </div>
+
+        <ul class="breadcrumbs">
+            <li><a href="/">Home</a></li>
+            {% if parent %}
+                <li><a href="/{{ parent }}">{{ parent | replace: "-", " " | capitalize }}</a></li>
+            {% endif %}
+            <li class="current">{{ page.title }}</li>
+        </ul>
+
+        {{ content }}
+    </div>
+</div>
+</div>
+
+{% include footer.html %}

@@ -1,0 +1,51 @@
+<footer class="footer">
+    <div class="row footer__content js-onScreen">
+        <div class="large-4 columns">
+            <a href="/" title="Home"><img src="/img/logo.png" class="footer--logo" alt="LSE SU Enactus"></a>
+        </div>
+        <div class="large-8 columns text-right">
+            <div class="row">
+                <div class="large-12 columns">
+                    <ul class="inline-list footer__navigation">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="//blog.enactuslse.co.uk" target="social">Blog</a></li>
+                        <li><a href="/contact-us">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="large-12 columns footer--copyright">
+                    &copy; {{ site.time | date: '%Y' }} <a href="//www.enactus.org" target="enactus">Enactus</a> &bull; Built with <span class="fa fa-heart"></span> by <a href="//www.github.com/MrSaints/Enactus-LSESU" target="enactus">LSE SU Enactus Media</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</div>
+
+<!--
+    JavaScript
+-->
+{% for script in site.scripts %}
+<script src="{{ script }}"></script>
+{% endfor %}
+
+{% for script in page.scripts %}
+<script src="{{ script }}"></script>
+{% endfor %}
+
+<!--
+    Google Analytics
+-->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', '{{ site.analytics_id }}', '{{ page.url }}');
+    ga('send', 'pageview');
+</script>
+
+</body>
+
+</html>

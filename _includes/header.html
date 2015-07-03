@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!--[if IE 8]>          <html class="no-js lt-ie9" lang="en">   <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en">          <!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{{ page.title }}{% if page.url != "/index.html" %} &ndash; {{ site.title }}{% endif %}</title>
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <link rel="author" href="/humans.txt">
+
+    <link rel="dns-prefetch" href="//brick.a.ssl.fastly.net">
+    <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+
+    {% for style in page.styles %}
+    <link rel="stylesheet" href="{{ style }}">
+    {% endfor %}
+
+    {% for style in site.styles %}
+    <link rel="stylesheet" href="{{ style }}">
+    {% endfor %}
+
+    <script src="//cdn.jsdelivr.net/modernizr/2.8.2/modernizr.min.js"></script>
+</head>
+
+<body>
+    <div class="{{ page.class }} wrapper">
+    <!--
+        Header
+    -->
+    <header class="header">
+        <!--
+        <div class="header-notice show-for-medium-up">
+            <div class="row">
+                <div class="large-12 columns">
+                    <a href="/what-is-new/events#agm">
+                        Join us for our AGM &amp; election meeting on the 19th March!
+                        All managing committee positions will be open for contest &raquo;
+                    </a>
+                </div>
+            </div>
+        </div>
+        -->
+
+        <div class="row header-main">
+            <!--
+                Logo (Image)
+            -->
+            <div class="large-2 small-5 columns">
+                <a href="/" title="Home"><img src="/img/logo.png" class="logo" alt="LSE SU Enactus"></a>
+            </div>
+
+            <!--
+                Navigation
+            -->
+            <div class="large-10 columns right header__nav">
+                <!--
+                    Social media
+                -->
+                <div class="large-12 columns header__nav-social">
+                    <ul class="inline-list right">
+                        <li><a href="//blog.enactuslse.co.uk" target="social">Blog</a></li>
+                        <li>
+                            <a href="{{ site.social.twitter }}" target="social"><i class="fa fa-twitter"></i> Twitter</a>
+                        </li>
+                        <li>
+                            <a href="{{ site.social.facebook }}" target="social"><i class="fa fa-facebook"></i> Facebook</a>
+                        </li>
+                        <li><a href="/contact-us">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!--
+                    Main navigation
+                -->
+                <div class="large-12 columns header__nav-main">
+                    <nav class="top-bar" data-topbar>
+                        <ul class="title-area">
+                            <li class="name"></li>
+                            <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+                        </ul>
+                        <section class="top-bar-section">
+                            <ul class="right">
+                                <li class="has-dropdown">
+                                    <a href="#">Who We Are</a>
+                                    <ul class="dropdown">
+                                        <li><a href="/who-we-are/what-is-enactus">What is Enactus?</a></li>
+                                        <li><a href="/who-we-are/enactus-lse">Enactus &#64; LSE</a></li>
+                                        <li><a href="/who-we-are/business-advisory-board">Business Advisory Board</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-dropdown">
+                                    <a href="#">What We Do</a>
+                                    <ul class="dropdown">
+                                        <li><a href="/what-we-do/social-projects">Social Projects</a></li>
+                                        <li><a href="/what-we-do/commercial-projects">Commercial Projects</a></li>
+                                        <li><a href="/what-we-do/start-a-new-project">Start a New Project</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-dropdown">
+                                    <a href="#">What Is New</a>
+                                    <ul class="dropdown">
+                                        <li><a href="//blog.enactuslse.co.uk">Blog</a></li>
+                                        <li><a href="/what-is-new/events">Events</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="//www.lsesu.com/activities/societies/society/7398/" class="link--emphasis primary">Join Us</a></li>
+                                <li>
+                                    <a href="//www.enactus.org" target="enactus" class="link--emphasis secondary">Enactus Worldwide</a>
+                                </li>
+                            </ul>
+                        </section>
+                    </nav>
+                </div>
+                <!-- / -->
+            </div>
+        </div>
+    </header>
