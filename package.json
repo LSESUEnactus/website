@@ -1,7 +1,7 @@
 {
   "name": "lsesu-enactus",
   "version": "3.7.3",
-  "description": "The official web site for the LSE SU Enactus society.",
+  "description": "The official web site for the London School of Economics and Political Science Student Union (LSE SU) Enactus society.",
   "author": "Ian Lai <ian@fyianlai.com>",
   "homepage": "http://www.enactuslse.co.uk",
   "cdn": "http://cdn.enactuslse.co.uk",
