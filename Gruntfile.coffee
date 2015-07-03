@@ -2,33 +2,19 @@ module.exports = (grunt) ->
     grunt.initConfig
         pkg: grunt.file.readJSON 'package.json'
         dirs:
-            dist: 'public/dist'
-            src: 'public/src'
+            dist: '.'
+            src: 'src'
         clean: [
             '<%= dirs.dist %>/css'
             '<%= dirs.dist %>/js'
             '<%= dirs.dist %>/img'
         ]
-        coffeelint:
-            app: ['Enactus.coffee']
-            grunt: ['Gruntfile.coffee']
-            config:
-                files:
-                    src: ['config/*.coffee']
-            controllers:
-                files:
-                    src: ['controllers/*.coffee']
-            options:
-                'indentation':
-                    value: 4
-                'max_line_length':
-                    'level': 'ignore'
         compass:
             dist:
                 options:
                     httpPath: '<%= pkg.cdn %>'
                     cssDir: '<%= dirs.dist %>/css'
-                    sassDir: '<%= dirs.src %>/sass'
+                    sassDir: '<%= dirs.src %>/scss'
                     imagesDir: 'img'
                     importPath: 'bower_components/foundation/scss'
                     environment: 'production'
@@ -36,8 +22,9 @@ module.exports = (grunt) ->
                     force: true
             dev:
                 options:
+                    outputStyle: 'expanded'
                     cssDir: '<%= dirs.dist %>/css'
-                    sassDir: '<%= dirs.src %>/sass'
+                    sassDir: '<%= dirs.src %>/scss'
                     imagesDir: 'img'
                     importPath: 'bower_components/foundation/scss'
                     force: true
@@ -79,7 +66,6 @@ module.exports = (grunt) ->
                 ]
 
     grunt.loadNpmTasks 'grunt-contrib-clean'
-    grunt.loadNpmTasks 'grunt-coffeelint'
     grunt.loadNpmTasks 'grunt-contrib-compass'
     grunt.loadNpmTasks 'grunt-contrib-imagemin'
     grunt.loadNpmTasks 'grunt-contrib-uglify'
@@ -87,5 +73,4 @@ module.exports = (grunt) ->
     grunt.registerTask 'default', [
         'clean', 'imagemin', 'uglify', 'compass:dist'
     ]
-    grunt.registerTask 'dev', ['test', 'compass:dev']
-    grunt.registerTask 'test', ['coffeelint']
+    grunt.registerTask 'dev', ['compass:dev']
