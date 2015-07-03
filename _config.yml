@@ -4,6 +4,13 @@ defaults:
       values:
         layout: "default"
         title: "LSE SU Enactus"
+exclude:
+    - CNAME
+    - Gruntfile.coffee
+    - bower.json
+    - package.json
+    - bower_components/
+    - node_modules/
 title: "LSE SU Enactus"
 description: "London School of Economics and Political Science Student Union Enactus &ndash; Seeing possibilities. Taking action. Enabling progress."
 styles:
@@ -15,6 +22,6 @@ scripts:
     - "//cdn.jsdelivr.net/foundation/5.5.0/js/foundation.min.js"
     - "/js/enactus.js"
 social:
-    - twitter: "//twitter.com/EnactusLSE"
-      facebook: "//facebook.com/LSESUEnactus"
+    twitter: "//twitter.com/EnactusLSE"
+    facebook: "//facebook.com/LSESUEnactus"
 analytics_id: "UA-5243796-8"
