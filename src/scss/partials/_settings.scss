@@ -1,0 +1,40 @@
+// Base
+$rem-base: 16px;
+@import "foundation/functions";
+
+$body-font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+
+// Palette
+$primary-color: #FFD200;
+$secondary-color: #C37DB5;
+$alert-color: #EF4656;
+$success-color: #BAD532;
+$info-color: #0096D6;
+
+$global-radius: 3px;
+
+// Typography
+$subheader-font-weight: 300;
+
+// Lists
+$list-side-margin: 1.5rem;
+
+// Breadcrumbs
+$crumb-bg: #FFF;
+$crumb-font-size: rem-calc(12);
+$crumb-function-factor: -15%;
+$crumb-radius: 0 0 $global-radius $global-radius;
+$crumb-font-color: $info-color;
+
+// Topbar
+$topbar-bg: transparent;
+$topbar-link-bg-hover: $topbar-bg;
+//$topbar-link-bg-hover: transparent;
+$topbar-link-color-hover: $primary-color;
+$topbar-link-color-active: $primary-color;
+$topbar-link-font-size: rem-calc(16);
+
+$topbar-dropdown-bg: transparent;
+$topbar-dropdown-link-bg: #FFF;
+$topbar-dropdown-link-bg-hover: $topbar-dropdown-link-bg;
+$topbar-dropdown-link-color: #4c4c4c;

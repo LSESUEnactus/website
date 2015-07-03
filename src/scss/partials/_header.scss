@@ -1,0 +1,41 @@
+.header {
+    background: #4c4c4c;
+}
+    .header-notice {
+        background: lighten(#000, 15%);
+        color: #FFF;
+        font-weight: 300;
+        padding: .5rem 0;
+        text-align: center;
+        @include single-transition;
+        &:hover {
+            background: lighten(#000, 10%);
+        }
+    }
+    .header-main {
+        padding-top: .5rem;
+    }
+
+    .header__nav-main {
+        //padding-right: 0;
+    }
+
+    // Social navigation
+    .header__nav-social {
+        > ul {
+            font-size: rem-calc(12);
+            line-height: 45px;
+            margin-bottom: 0;
+            text-transform: uppercase;
+            > li {
+                margin: 0;
+                padding: 0 15px;
+                &:last-child {
+                    padding: 0;
+                }
+            }
+        }
+        .fa {
+            margin-right: rem-calc(5);
+        }
+    }
