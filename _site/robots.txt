@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: /img/photos/
-Disallow: /vids/
-Disallow: /files/
