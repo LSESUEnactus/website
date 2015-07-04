@@ -77,8 +77,10 @@
         margin-bottom: 2rem !important;
     }
     .content__contact-us {
-        margin: 5rem 0;
-        text-align: center;
+        /*margin: 5rem 0;
+        text-align: center;*/
+
+        .subheader { margin: 1rem 0 2.5rem; }
 
         .alert-box {
             a {

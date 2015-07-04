@@ -2,7 +2,27 @@
 title: "Contact Us"
 ---
 <div class="content__contact-us">
-	<h1>Hi, how can we help you?</h1>
 
-	<!-- TODO -->
+<h1>Hi, how can we help you?</h1>
+<h3 class="subheader">Unfortunately, our contact form is currently unavailable. Please contact us using any of the e-mail addresses listed below. We apologise for the inconveniences caused.</h3>
+
+<div class="row">
+    <div class="large-6 columns">
+    {% for contact in site.data.contacts %}
+    <dl>
+        <dt>{{ contact.title }}</dt>
+        <dd><a href="mailto:{{ contact.email }}">{{ contact.email }}</a></dd>
+    </dl>
+    {% endfor %}
+    </div>
+    <div class="large-6 columns">
+    {% for project in site.data.projects %}
+    <dl>
+        <dt>{{ project.title }}</dt>
+        <dd><a href="mailto:{{ project.email }}">{{ project.email }}</a></dd>
+    </dl>
+    {% endfor %}
+    </div>
+</div>
+
 </div>
