@@ -11,6 +11,7 @@ exclude:
     - package.json
     - bower_components/
     - node_modules/
+    - src/
 title: "LSE SU Enactus"
 description: "London School of Economics and Political Science Student Union Enactus &ndash; Seeing possibilities. Taking action. Enabling progress."
 styles:
