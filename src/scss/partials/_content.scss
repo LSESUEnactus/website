@@ -14,7 +14,7 @@
     a:not(.button) {
         color: #0096D6;
         //border-bottom: 1px dotted #0096D6;
-        &:hover { 
+        &:hover {
             //border-color: darken(#0096D6, 15%);
             color: darken(#0096D6, 15%);
         }

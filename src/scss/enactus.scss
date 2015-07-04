@@ -40,11 +40,11 @@ a {
 }
 .link--emphasis {
     &:hover { color: #FFF !important }
-    &.primary { 
+    &.primary {
         background: #49A942 !important;
         &:hover { background: darken(#49A942, 5%) !important }
     }
-    &.secondary { 
+    &.secondary {
         background: #0096D6 !important;
         &:hover { background: darken(#0096D6, 5%) !important }
     }
