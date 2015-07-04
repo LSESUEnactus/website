@@ -21,6 +21,6 @@
 	Last update: 2015/07/03
 	Language: English
 	Standards: HTML5, CSS3 (SASS with Compass)
-	Components: Normalize.css, Foundation, Font Awesome, Modernizr, jQuery, HTML5 Background Video, Animate.css, Morphext, onScreen.js
+	Components: Normalize.css, Foundation, Font Awesome, Modernizr, jQuery, Vide by VodkaBears, Animate.css, Morphext, onScreen.js
 	Software: Sublime Text 3, Photoshop, Premiere Pro, Coda, Textmate, Git
 	Others: NPM, Bower, Grunt, HTML5 Boilerplate, Jekyll
