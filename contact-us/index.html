@@ -11,7 +11,7 @@ title: "Contact Us"
     {% for contact in site.data.contacts %}
     <dl>
         <dt>{{ contact.title }}</dt>
-        <dd><a href="mailto:{{ contact.email }}">{{ contact.email }}</a></dd>
+        <dd>{{ contact.person }} @ <a href="mailto:{{ contact.email }}">{{ contact.email }}</a></dd>
     </dl>
     {% endfor %}
     </div>
@@ -19,7 +19,7 @@ title: "Contact Us"
     {% for project in site.data.projects %}
     <dl>
         <dt>{{ project.title }}</dt>
-        <dd><a href="mailto:{{ project.email }}">{{ project.email }}</a></dd>
+        <dd>{{ project.person }} @ <a href="mailto:{{ project.email }}">{{ project.email }}</a></dd>
     </dl>
     {% endfor %}
     </div>
