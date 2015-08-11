@@ -1,12 +1,12 @@
 LSE SU Enactus
 ==============
 
-[![Build Status](https://travis-ci.org/MrSaints/Enactus-LSESU.svg?branch=gh-pages)](https://travis-ci.org/MrSaints/Enactus-LSESU)
-[![devDependency Status](https://david-dm.org/MrSaints/Enactus-LSESU/dev-status.svg)](https://david-dm.org/MrSaints/Enactus-LSESU#info=devDependencies)
+[![Build Status](https://travis-ci.org/MrSaints/lsesu-enactus.svg?branch=gh-pages)](https://travis-ci.org/MrSaints/lsesu-enactus)
+[![devDependency Status](https://david-dm.org/MrSaints/lsesu-enactus/dev-status.svg)](https://david-dm.org/MrSaints/lsesu-enactus#info=devDependencies)
 
 _A work in progress._
 
-__This is the Jekyll branch.__ The [`master`](https://github.com/MrSaints/Enactus-LSESU/tree/master) branch contains the dynamic, Express version of the web site.
+__This is the Jekyll branch.__ The [`master`](https://github.com/MrSaints/lsesu-enactus/tree/master) branch contains the dynamic, Express version of the web site.
 
 The official, flat-file, static web site for the London School of Economics and Political Science Student Union (LSE SU) [Enactus society](https://www.lsesu.com/activities/societies/society/7398/).
 The design was inspired by [Enactus' official web site](http://enactus.org/).
